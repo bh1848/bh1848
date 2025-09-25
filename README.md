@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/bh1848/bh1848/main/banner.png" alt="Bang Hyeok's Backend Space" width="600"/>
-  <h1>Hello, I'm Bang Hyeok</h1>
   <p>
     **Java Backend Developer** | Scalability & Optimization | Clean Code
     <br>
