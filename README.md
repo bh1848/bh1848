@@ -1,6 +1,7 @@
 # 👋 Hi, I'm Bang Hyeok
-Backend Developer focused on **Spring Boot, Database Optimization, and Security**.  
-주요 관심사는 **대규모 트래픽 환경에서의 성능 최적화, 안정적인 서비스 아키텍처, 인증·보안 로직 구현**입니다.
+Backend Developer specializing in **Spring Boot, Database Optimization, and Security**.  
+대규모 트래픽 환경에서의 성능 최적화, 안정적인 서비스 아키텍처 설계,  
+그리고 **인증·보안 로직 구현**을 주요 역량으로 삼고 있습니다.
 
 ---
 
@@ -18,26 +19,28 @@ Backend Developer focused on **Spring Boot, Database Optimization, and Security*
 ## 💡 Selected Projects
 
 ### [Donggurami-Backend](https://github.com/bh1848/donggurami-backend)
-대학교 동아리 관리 플랫폼 백엔드  
+대학교 동아리 관리 플랫폼 백엔드 (실제 서비스 배포 및 학생 사용 중)  
 - **JWT 인증·인가 로직 직접 구현**, 사용자 세션 관리 및 보안 강화  
 - RESTful API 설계 및 **Java/Spring 핵심 비즈니스 로직 개발**  
-- 실시간 알림(WebSocket)은 시스템 기능 지원용으로 포함
+- AWS EC2, RDS, S3 기반 서버 운영 및 배포 관리  
 
 ### [Suchat-Backend](https://github.com/bh1848/suchat-backend)
 대학교 랜덤 채팅 서비스 백엔드  
 - **JWT 인증 모듈 설계·구현**, 안전한 사용자 인증 흐름 구축  
-- DB 연동 및 주요 서버 로직 개발  
-- WebSocket은 실시간 메시징 지원에 활용
+- 회원 관리 및 데이터베이스 연동 로직 개발  
+- 이메일 인증 및 토큰 만료 스케줄러 구현  
 
 ### [Yobunjung-Backend](https://github.com/bh1848/yobunjung-backend)
-AI 모델 + LLM 통합 서비스  
+AI 기반 분리수거 가이드 & 재활용 로그 시스템  
 - Flask + SSE 기반 **실시간 피드백 처리**  
-- 다중 기술 스택을 연계한 백엔드 로직 개발 및 데이터 흐름 제어
+- ONNX 모델을 활용한 쓰레기 분류 가이드 제공  
+- 사용자 로그 관리 및 데이터베이스 설계  
 
 ### [Drowsy-Driving-Prevention](https://github.com/bh1848/drowsy-driving-prevention)
 운전자 졸음 감지 및 경고 시스템  
-- **저지연 통신 로직 구현**, 빠른 알림 전달 지원  
-- Spring Boot 기반 서버 개발 및 실시간 데이터 처리 담당
+- OpenCV 기반 **실시간 눈 트래킹 및 졸음 판정 로직** 개발  
+- Arduino 연동 → 핸들 진동 모터 제어 (시리얼 통신)  
+- **저지연 통신 로직**으로 빠른 경고 전달 구현  
 
 ---
 
@@ -45,8 +48,8 @@ AI 모델 + LLM 통합 서비스
 - **Languages**: Java, Python, TypeScript  
 - **Backend**: Spring Boot, Flask  
 - **Database**: MySQL, Redis  
-- **Security**: JWT, REST API  
-- **Tools**: Git
+- **Security**: Spring Security, JWT, REST API, Validation  
+- **Infra & Tools**: AWS (EC2, RDS, S3), Git, Gradle, JPA  
 
 ---
 
