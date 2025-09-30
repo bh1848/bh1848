@@ -18,13 +18,13 @@ Backend Developer focused on **Spring Boot, Database Optimization, and Security*
 ## 💡 Selected Projects
 
 ### [Donggurami-Backend](https://github.com/bh1848/donggurami-backend)
-동아리 관리 플랫폼 백엔드  
+대학교 동아리 관리 플랫폼 백엔드  
 - **JWT 인증·인가 로직 직접 구현**, 사용자 세션 관리 및 보안 강화  
 - RESTful API 설계 및 **Java/Spring 핵심 비즈니스 로직 개발**  
 - 실시간 알림(WebSocket)은 시스템 기능 지원용으로 포함
 
 ### [Suchat-Backend](https://github.com/bh1848/suchat-backend)
-랜덤 채팅 서비스 백엔드  
+대학교 랜덤 채팅 서비스 백엔드  
 - **JWT 인증 모듈 설계·구현**, 안전한 사용자 인증 흐름 구축  
 - DB 연동 및 주요 서버 로직 개발  
 - WebSocket은 실시간 메시징 지원에 활용
