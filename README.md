@@ -1,89 +1,90 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/bh1848/bh1848/main/banner.png" alt="Bang Hyeok's Backend Space" width="600"/>
+  <img src="https://raw.githubusercontent.com/bh1848/bh1848/main/banner.png" alt="Bang Hyeok's Backend Space" width="700"/>
   
-  <h1>Bang Hyeok | Backend </h1>
+  <h1>👋 Hi, I'm Bang Hyeok</h1>
+  <h3>Backend Developer | Java & Spring Specialist | Distributed Systems & Security</h3>
 </div>
 
 ---
 
-## 🛠️ Tech Stack
+## 📖 Research / Publications
 
-<h3 align="center">Primary Stack (Java Ecosystem)</h3>
+### 1. **MySQL과 Redis의 데이터 처리 성능 비교 평가**  
+- **저널명**: 인터넷정보학회논문지 (Journal of Internet Computing and Services, JICS)  
+- **게재 정보**: Vol.25, No.3, pp. 35-41, 2024  
+- **저자**: 방혁, 김서현, 전상훈 (수원대학교)  
+- **DOI**: [10.7472/jksii.2024.25.3.35](https://doi.org/10.7472/jksii.2024.25.3.35)  
+- **핵심 기여**:  
+  - MySQL(RDBMS)과 Redis(NoSQL) 성능 비교 실험 설계 및 분석  
+  - 데이터 삽입·조회·삭제 속도 측정, 캐싱 전략 검증  
+  - 대규모 트래픽 환경에서 NoSQL 기반 성능 최적화 전략 제시  
+- **링크**: [KCI 원문 보기](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) / [GitHub 실험 코드](https://github.com/bh1848/MySQL-Redis-Performance-Comparison)
+
+---
+
+## 🛠 Tech Stack
+
+<h3 align="center">Core Backend</h3>
 <div align="center">
-  <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=java&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/WebSocket-007ACC?style=flat&logo=websocket&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
 </div>
 
-<br>
-
-<h3 align="center">Secondary & Tools</h3>
+<h3 align="center">Additional Tools</h3>
 <div align="center">
+  <img src="https://img.shields.io/badge/JWT-000000?style=flat" />
+  <img src="https://img.shields.io/badge/REST_API-000000?style=flat" />
+  <img src="https://img.shields.io/badge/Git-F05033?style=flat&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05033?style=flat&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/JWT-000000?style=flat" />
-  <img src="https://img.shields.io/badge/REST_API-000000?style=flat" />
 </div>
 
 ---
 
-## 💻 Projects (Core Contributions)
+## 💡 Selected Projects
 
-### 1. **[MySQL-Redis-Performance-Comparison]**
-- **요약**: 대용량 트래픽 환경 대비를 위한 **MySQL vs Redis** 성능 비교 및 분석 프로젝트.
-- **기술**: **Java**, Gradle, **MySQL**, **Redis**
-- **기여**: DB **성능 벤치마킹** 실험 설계 및 데이터 처리 속도 측정. **캐싱 전략의 기술적 근거** 마련.
-- **[Repository]** (https://github.com/bh1848/MySQL-Redis-Performance-Comparison)
+### 🚀 [MySQL-Redis-Performance-Comparison](https://github.com/bh1848/MySQL-Redis-Performance-Comparison)
+- **대규모 트래픽 환경**에서 MySQL vs Redis 성능 비교
+- DB 설계·벤치마킹 실험 및 **캐싱 전략 검증**
 
-### 2. **[Suchat-Backend]**
-- **요약**: **WebSocket**을 이용한 안정적인 실시간 메시징 및 **JWT 기반 인증**을 구현한 랜덤 채팅 백엔드.
-- **기술**: **Java**, **Spring Boot**, **WebSocket**, **JWT**
-- **기여**: 실시간 메시징 **모듈 설계** 및 **안전한 사용자 인증** 플로우 구축.
-- **[Repository]** (https://github.com/bh1848/suchat-backend)
+### 📡 [Donggurami-Backend](https://github.com/bh1848/donggurami-backend)
+- 대학 동아리 관리 플랫폼 백엔드
+- **JWT 인증·인가 로직 직접 구현**, 사용자 세션 및 보안 관리
+- RESTful API 설계 및 **Java/Spring 기반 핵심 로직 개발**
+- WebSocket은 시스템 아키텍처 지원용으로 사용됨
 
-### 3. **[Yobunjung-Backend]**
-- **요약**: AI 모델(ONNX)과 LLM을 통합하여 **실시간 피드백**을 제공하는 스마트 시스템 백엔드.
-- **기술**: **Python**, **Flask**, ONNX, **SSE** (Server-Sent Events)
-- **기여**: **다중 기술 스택 통합** 및 **SSE 기반 비동기 실시간 통신** 아키텍처 구현.
-- **[Repository]** (https://github.com/bh1848/yobunjung-backend)
+### 💬 [Suchat-Backend](https://github.com/bh1848/suchat-backend)
+- 실시간 랜덤 채팅 서비스
+- **JWT 인증 모듈 설계·구현**, 안정적 메시징 환경 지원
+- 서버 핵심 로직 및 DB 연동 담당, WebSocket은 인프라 수준에서 사용
 
-### 4. **[Donggurami-Backend]**
-- **요약**: 동아리 관리 시스템의 백엔드. **WebSocket** 기반의 알림 기능 지원 및 **RESTful API** 설계.
-- **기술**: **Java**, **Spring Boot**, **WebSocket**, **REST API**
-- **기여**: 확장성을 고려한 **모듈화된 API 설계** 및 효율적인 데이터 관리 로직 구현.
-- **[Repository]** (https://github.com/bh1848/donggurami-backend)
+### 🤖 [Yobunjung-Backend](https://github.com/bh1848/yobunjung-backend)
+- ONNX 기반 AI 모델 + LLM 통합
+- Flask + SSE로 **실시간 피드백 시스템 구현**, 백엔드 로직 및 데이터 처리 담당
 
-### 5. **[Drowsy-Driving-Prevention]**
-- **요약**: 운전자 상태 감지 후 **실시간 경고**를 발송하는 안전 시스템 백엔드.
-- **기술**: **Java**, **Spring Boot**, **WebSocket**, **REST API**
-- **기여**: 긴급 상황 대응을 위한 **로우 레이턴시(Low-Latency) 통신** 로직 개발 및 통합.
-- **[Repository]** (https://github.com/bh1848/drowsy-driving-prevention)
+### 🛡 [Drowsy-Driving-Prevention](https://github.com/bh1848/drowsy-driving-prevention)
+- 운전자 상태 감지 및 실시간 경고 발송
+- **저지연 통신 로직 구현**, 백엔드 데이터 처리 담당
 
 ---
 
-## 📈 Activity & Professional Insights
-
+## 📊 GitHub Activity
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&theme=nord&hide_border=true&count_private=true&title_color=2E86C1&icon_color=2E86C1" alt="Bang Hyeok's GitHub Stats" />
-  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bh1848&theme=radical" alt="Profile Details" />
+  <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Bang Hyeok's GitHub Stats" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bh1848&theme=tokyonight" alt="Profile Details" />
 </div>
 
 ---
 
 ## 📫 Connect
-
 <div align="center">
   <a href="mailto:bh1848@naver.com">
-    <img src="https://img.shields.io/badge/Email-000000?style=flat&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email-2E86C1?style=flat&logo=gmail&logoColor=white" />
   </a>
   <a href="https://github.com/bh1848">
     <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" />
-  </a>
-  <a href="[당신의 기술 블로그/LinkedIn 주소]">
-    <img src="https://img.shields.io/badge/Portfolio%20|%20Blog-0A66C2?style=flat&logo=linkedin&logoColor=white" />
   </a>
 </div>
