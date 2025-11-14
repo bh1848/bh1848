@@ -1,7 +1,6 @@
 # 👋 Hi, I'm Bang Hyeok
-Backend Developer specializing in **Spring Boot, Security, and Scalable Service Architecture**.  
-대규모 트래픽 환경에서의 안정적인 서비스 구조 설계,  
-그리고 인증·보안 로직 구축을 주요 역량으로 삼고 있습니다.
+Backend Developer & Systems Researcher specializing in **Spring Boot, Security, and Scalable Architecture.**
+분산 환경에서의 성능·부하 문제를 해결하는 기술과 안정적인 인증·보안 구조를 갖춘 백엔드 시스템 설계에 집중하고 있습니다.
 
 ---
 
@@ -11,8 +10,16 @@ Backend Developer specializing in **Spring Boot, Security, and Scalable Service 
   DOI: [10.7472/jksii.2024.25.3.35](https://doi.org/10.7472/jksii.2024.25.3.35)  
   - MySQL(RDBMS)과 Redis(NoSQL) 성능을 삽입·조회·삭제 속도로 비교
   - NoSQL 기반 캐싱 전략의 기술적 근거 제시  
-  - [실험 코드 (GitHub)](https://github.com/bh1848/MySQL-Redis-Performance-Comparison)
-
+  - [mysql-redis-benchmark](https://github.com/bh1848/mysql-redis-benchmark)
+ 
+- **D-HASH: Dynamic Hot-key Aware Scalable Hashing**
+  *인터넷정보학회논문지 (Journal of Internet Computing and Services, JICS)*
+  DOI:
+  - Consistent Hashing 기반 분산 캐시 시스템에서의 핫키 집중 문제 해결을 목표로 한 라우팅 알고리즘 개발
+  - 실시간 핫키 감지 및 다중 노드 라우팅 전략을 활용한 부하 분산 향상 연구
+  - Redis 기반 실험 환경에서 Throughput, Latency, Load Stddev을 중심으로 성능 평가
+  - [dhash-routing-evaluation](https://github.com/bh1848/dhash-routing-evaluation)
+    
 ---
 
 ## 💡 Selected Projects
