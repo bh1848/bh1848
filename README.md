@@ -9,8 +9,7 @@ Backend Developer specializing in **Spring Boot, Security, and Scalable Service 
 - **MySQL과 Redis의 데이터 처리 성능 비교 평가**  
   *인터넷정보학회논문지 (Journal of Internet Computing and Services, JICS)*, Vol.25, No.3, pp. 35-41, 2024  
   DOI: [10.7472/jksii.2024.25.3.35](https://doi.org/10.7472/jksii.2024.25.3.35)  
-  - MySQL(RDBMS)과 Redis(NoSQL) 성능을 삽입·조회·삭제 속도로 비교  
-  - Redis가 MySQL 대비 삽입 5.84배, 조회 6.61배, 삭제 12.33배 빠른 성능 확인  
+  - MySQL(RDBMS)과 Redis(NoSQL) 성능을 삽입·조회·삭제 속도로 비교
   - NoSQL 기반 캐싱 전략의 기술적 근거 제시  
   - [실험 코드 (GitHub)](https://github.com/bh1848/MySQL-Redis-Performance-Comparison)
 
