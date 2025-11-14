@@ -12,7 +12,7 @@ Backend Developer & Systems Researcher specializing in **Spring Boot, Security, 
   - NoSQL 기반 캐싱 전략의 기술적 근거 제시  
   - [mysql-redis-benchmark](https://github.com/bh1848/mysql-redis-benchmark)
  
-- **D-HASH: Dynamic Hot-key Aware Scalable Hashing**
+- **D-HASH: Dynamic Hot-key Aware Scalable Hashing**  
   *인터넷정보학회논문지 (Journal of Internet Computing and Services, JICS)*
   DOI:
   - Consistent Hashing 기반 분산 캐시 시스템에서의 핫키 집중 문제 해결을 목표로 한 라우팅 알고리즘 개발
