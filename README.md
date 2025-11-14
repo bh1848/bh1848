@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Bang Hyeok
-Backend Developer & Systems Researcher specializing in **Spring Boot, Security, and Scalable Architecture.**
-분산 환경에서의 성능·부하 문제를 해결하는 기술과 안정적인 인증·보안 구조를 갖춘 백엔드 시스템 설계에 집중하고 있습니다.
+Backend Developer & Systems Researcher specializing in **Spring Boot, Security, and Scalable Architecture.**  
+분산 환경에서의 성능·부하 문제를 해결하는 기술과 안정적인 인증·보안 구조를 갖춘 백엔드 시스템 설계에 집중하고 있습니다.  
 
 ---
 
