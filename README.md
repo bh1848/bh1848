@@ -1,7 +1,7 @@
 # 👋 Hi, I'm Bang Hyeok  
 **Backend Developer specializing in Spring Boot, Security, and Scalable Architecture.**  
 대규모 트래픽 환경에서 안정적으로 동작하는 백엔드 시스템,  
-그리고 견고한 인증·보안 구조 설계를 핵심 역량으로 삼고 있습니다.
+인증·보안 구조 설계를 핵심 역량으로 삼고 있습니다.
 
 ---
 
