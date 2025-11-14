@@ -4,7 +4,8 @@ Backend Developer & Systems Researcher specializing in **Spring Boot, Security, 
 
 ---
 
-## 📖 Research / Publications
+## 📖 Research / Publications  
+
 - **MySQL과 Redis의 데이터 처리 성능 비교 평가**  
   *인터넷정보학회논문지 (Journal of Internet Computing and Services, JICS)*, Vol.25, No.3, pp. 35-41, 2024  
   DOI: [10.7472/jksii.2024.25.3.35](https://doi.org/10.7472/jksii.2024.25.3.35)  
@@ -13,12 +14,12 @@ Backend Developer & Systems Researcher specializing in **Spring Boot, Security, 
   - [mysql-redis-benchmark](https://github.com/bh1848/mysql-redis-benchmark)
  
 - **D-HASH: Dynamic Hot-key Aware Scalable Hashing**  
-  *인터넷정보학회논문지 (Journal of Internet Computing and Services, JICS)*
-  DOI:
-  - Consistent Hashing 기반 분산 캐시 시스템에서의 핫키 집중 문제 해결을 목표로 한 라우팅 알고리즘 개발
-  - 실시간 핫키 감지 및 다중 노드 라우팅 전략을 활용한 부하 분산 향상 연구
-  - Redis 기반 실험 환경에서 Throughput, Latency, Load Stddev을 중심으로 성능 평가
-  - [dhash-routing-evaluation](https://github.com/bh1848/dhash-routing-evaluation)
+  *인터넷정보학회논문지 (Journal of Internet Computing and Services, JICS)*  
+  DOI:  
+  - Consistent Hashing 기반 분산 캐시 시스템에서의 핫키 집중 문제 해결을 목표로 한 라우팅 알고리즘 개발  
+  - 실시간 핫키 감지 및 다중 노드 라우팅 전략을 활용한 부하 분산 향상 연구  
+  - Redis 기반 실험 환경에서 Throughput, Latency, Load Stddev을 중심으로 성능 평가  
+  - [dhash-routing-evaluation](https://github.com/bh1848/dhash-routing-evaluation)  
     
 ---
 
