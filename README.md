@@ -8,7 +8,7 @@
 ## 📖 Research Experience  
 
 ### **MySQL–Redis Performance Comparison**  
-*Journal of Internet Computing and Services (JICS), 2024*  
+*Journal of Internet Computing and Services (JICS), Vol.25, No.3, pp. 35-41, 2024*  
 DOI: [10.7472/jksii.2024.25.3.35](https://doi.org/10.7472/jksii.2024.25.3.35)  
 - RDBMS(MySQL) vs NoSQL(Redis) 삽입·조회·삭제 성능 비교  
 - 서비스 캐싱 전략 수립을 위한 기술적 근거 제시  
