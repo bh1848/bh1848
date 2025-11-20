@@ -59,11 +59,12 @@ AI 기반 분리수거 가이드 & 재활용 로그 플랫폼
 
 ### 👀 Drowsy-Driving-Prevention  
 Repository: https://github.com/bh1848/drowsy-driving-prevention  
-실시간 졸음 운전 감지 시스템  
-**Role:** Computer Vision Developer  
-- Python · OpenCV 기반 얼굴/눈 감김 실시간 감지 파이프라인 구현  
-- EAR(Eye Aspect Ratio) 기반 졸음 판별 알고리즘 개발  
-- 졸음 시 경고 이벤트 트리거 및 전체 처리 흐름 설계  
+실시간 졸음 운전 감지 프로토타입 시스템  
+**Role:** Python · Computer Vision Developer     
+- Python + OpenCV 기반 얼굴·눈 랜드마크 실시간 추적 구현  
+- EAR(Eye Aspect Ratio) 기반 졸음 감지 알고리즘 설계  
+- 졸음 발생 시 Arduino 모듈로 경고 신호 전송하는 시리얼 통신 처리  
+- 영상 처리·알고리즘·UI·하드웨어 연동을 하나의 흐름으로 통합
 
 ---
 
