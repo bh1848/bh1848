@@ -49,11 +49,11 @@ Repository: https://github.com/bh1848/suchat-backend
 ### 🗑️ Yobunjung-Backend  
 Repository: https://github.com/bh1848/yobunjung-backend  
 AI 기반 분리수거 가이드 & 재활용 로그 플랫폼  
-**Role:** Backend Developer  
-- Flask 기반 REST API 전체 구현  
-- ONNX Runtime 기반 이미지 분류 모델 추론 연동  
+**Role:** Backend Developer   
+- Flask 기반 REST API 전체 설계 및 구현  
+- ONNX Runtime 기반 이미지 분류 모델 연동 및 추론 파이프라인 구성  
 - SSE 기반 실시간 분류 결과 스트리밍 기능 개발  
-- MySQL 기반 재활용 로그 저장 및 비동기 이벤트 처리  
+- MySQL/SQLite 기반 재활용 로그·사용자·쓰레기통 데이터 모델링 및 CRUD 구현
 
 ---
 
