@@ -26,7 +26,7 @@ DOI: [10.7472/jksii.2024.25.3.35](https://doi.org/10.7472/jksii.2024.25.3.35)
 ## 💡 Selected Projects  
 
 ### 🚀 Donggurami-Backend  
-**수원대학교 동아리 운영·관리 플랫폼 (실서비스 운영 중)**  
+**수원대학교 동아리 운영·관리 플랫폼**  
 **Role:** Backend Developer  
 - Spring Security + JWT 기반 인증/인가 전체 구조 설계  
 - Redis 기반 Refresh Token 저장 및 캐싱 구조 구축  
