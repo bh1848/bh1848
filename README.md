@@ -38,45 +38,34 @@
 ---
 
 ## 💡 Projects
+
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🚀 동구라미</h3>
-      <p><b>동아리 운영·관리 플랫폼</b></p>
-      <ul>
-        <li><b>역할</b>: 백엔드</li>
-        <li><b>포인트</b>: REST API 설계 / 인증·인가(JWT) / Redis 활용</li>
-        <li><b>기간</b>: 2024.05 ~ 2025.03</li>
-      </ul>
-      <p>
-        <a href="https://github.com/bh1848/donggurami-backend">🔗 Repository</a>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat-square&logo=springboot&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Security-4CAF50?style=flat-square&logo=springsecurity&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JWT-111111?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MySQL-3A75B0?style=flat-square&logo=mysql&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
-      </p>
+      <b>🚀 동구라미</b> <sub>(2024.05 ~ 2025.03)</sub><br/>
+      동아리 운영·관리 플랫폼<br/><br/>
+      <b>역할</b>: 백엔드<br/>
+      <b>포인트</b>: REST API 설계 / 인증·인가(JWT) / Redis 활용<br/><br/>
+      <a href="https://github.com/bh1848/donggurami-backend">🔗 Repository</a><br/><br/>
+      <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat-square&logo=springboot&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Security-4CAF50?style=flat-square&logo=springsecurity&logoColor=white"/>
+      <img src="https://img.shields.io/badge/JWT-111111?style=flat-square&logo=jsonwebtokens&logoColor=white"/><br/>
+      <img src="https://img.shields.io/badge/MySQL-3A75B0?style=flat-square&logo=mysql&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
     </td>
 
     <td width="50%" valign="top">
-      <h3>💬 수챗</h3>
-      <p><b>실시간 랜덤 채팅</b></p>
-      <ul>
-        <li><b>역할</b>: 백엔드</li>
-        <li><b>포인트</b>: 인증(JWT) / 실시간 처리 구조 / Redis 활용</li>
-      </ul>
-      <p>
-        <a href="https://github.com/bh1848/suchat-backend">🔗 Repository</a>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat-square&logo=springboot&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JWT-111111?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
-      </p>
+      <b>💬 수챗</b><br/>
+      실시간 랜덤 채팅<br/><br/>
+      <b>역할</b>: 백엔드<br/>
+      <b>포인트</b>: 인증(JWT) / 실시간 처리 구조 / Redis 활용<br/><br/>
+      <a href="https://github.com/bh1848/suchat-backend">🔗 Repository</a><br/><br/>
+      <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat-square&logo=springboot&logoColor=white"/>
+      <img src="https://img.shields.io/badge/JWT-111111?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
     </td>
   </tr>
+</table>
 
   <tr>
     <td width="50%" valign="top">
