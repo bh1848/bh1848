@@ -45,78 +45,65 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🚀 동구라미</h3>
-      <p><b>동아리 운영·관리 플랫폼</b></p>
-      <ul>
-        <li><b>역할</b>: 백엔드</li>
-        <li><b>포인트</b>: REST API 설계 / 인증·인가(JWT) / Redis 활용</li>
-        <li><b>기간</b>: 2024.05 ~ 2025.03</li>
-      </ul>
-      <p>
-        <a href="https://github.com/bh1848/donggurami-backend">🔗 Repository</a>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat-square&logo=springboot&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Security-4CAF50?style=flat-square&logo=springsecurity&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JWT-111111?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MySQL-3A75B0?style=flat-square&logo=mysql&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
-      </p>
+      <b>🚀 동구라미</b> <sub>(2024.05 ~ 2025.03)</sub><br>
+      동아리 운영·관리 플랫폼<br><br>
+
+      <b>역할</b>: 백엔드<br>
+      <b>포인트</b>: REST API 설계 / JWT 인증·인가 / Redis 활용<br><br>
+
+      <a href="https://github.com/bh1848/donggurami-backend">🔗 Repository</a><br><br>
+
+      <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat-square&logo=springboot&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Security-4CAF50?style=flat-square&logo=springsecurity&logoColor=white"/>
+      <img src="https://img.shields.io/badge/JWT-111111?style=flat-square&logo=jsonwebtokens&logoColor=white"/><br>
+      <img src="https://img.shields.io/badge/MySQL-3A75B0?style=flat-square&logo=mysql&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
     </td>
 
     <td width="50%" valign="top">
-      <h3>💬 수챗</h3>
-      <p><b>실시간 랜덤 채팅</b></p>
-      <ul>
-        <li><b>역할</b>: 백엔드</li>
-        <li><b>포인트</b>: 인증(JWT) / 실시간 처리 구조 / Redis 활용</li>
-      </ul>
-      <p>
-        <a href="https://github.com/bh1848/suchat-backend">🔗 Repository</a>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat-square&logo=springboot&logoColor=white"/>
-        <img src="https://img.shields.io/badge/JWT-111111?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
-      </p>
+      <b>💬 수챗</b><br>
+      실시간 랜덤 채팅<br><br>
+
+      <b>역할</b>: 백엔드<br>
+      <b>포인트</b>: JWT 인증 / 실시간 처리 구조 / Redis 활용<br><br>
+
+      <a href="https://github.com/bh1848/suchat-backend">🔗 Repository</a><br><br>
+
+      <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat-square&logo=springboot&logoColor=white"/>
+      <img src="https://img.shields.io/badge/JWT-111111?style=flat-square&logo=jsonwebtokens&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
     </td>
   </tr>
 
   <tr>
     <td width="50%" valign="top">
-      <h3>🗑️ 요분정</h3>
-      <p><b>AI 분리수거 가이드</b></p>
-      <ul>
-        <li><b>역할</b>: 백엔드</li>
-        <li><b>포인트</b>: SSE 기반 실시간 응답 / ONNX 추론 연동 / Redis·MySQL</li>
-      </ul>
-      <p>
-        <a href="https://github.com/bh1848/yobunjung-backend">🔗 Repository</a>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Flask-111111?style=flat-square&logo=flask&logoColor=white"/>
-        <img src="https://img.shields.io/badge/SSE-333333?style=flat-square"/>
-        <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white"/>
-        <img src="https://img.shields.io/badge/MySQL-3A75B0?style=flat-square&logo=mysql&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
-      </p>
+      <b>🗑️ 요분정</b><br>
+      AI 분리수거 가이드<br><br>
+
+      <b>역할</b>: 백엔드<br>
+      <b>포인트</b>: SSE 실시간 응답 / ONNX 추론 / Redis·MySQL<br><br>
+
+      <a href="https://github.com/bh1848/yobunjung-backend">🔗 Repository</a><br><br>
+
+      <img src="https://img.shields.io/badge/Flask-111111?style=flat-square&logo=flask&logoColor=white"/>
+      <img src="https://img.shields.io/badge/SSE-333333?style=flat-square"/>
+      <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white"/><br>
+      <img src="https://img.shields.io/badge/MySQL-3A75B0?style=flat-square&logo=mysql&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Redis-D82C20?style=flat-square&logo=redis&logoColor=white"/>
     </td>
 
     <td width="50%" valign="top">
-      <h3>👀 졸음운전 방지</h3>
-      <p><b>졸음 감지 프로토타입</b></p>
-      <ul>
-        <li><b>역할</b>: Python/CV</li>
-        <li><b>포인트</b>: OpenCV 기반 상태 인식 로직 / Arduino 연동</li>
-      </ul>
-      <p>
-        <a href="https://github.com/bh1848/drowsy-driving-prevention">🔗 Repository</a>
-      </p>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white"/>
-      </p>
+      <b>👀 졸음운전 방지</b><br>
+      졸음 감지 프로토타입<br><br>
+
+      <b>역할</b>: Python/CV<br>
+      <b>포인트</b>: OpenCV 인식 로직 / Arduino 연동<br><br>
+
+      <a href="https://github.com/bh1848/drowsy-driving-prevention">🔗 Repository</a><br><br>
+
+      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white"/>
     </td>
   </tr>
 </table>
