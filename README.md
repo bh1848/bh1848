@@ -41,7 +41,7 @@
 <table>
   <tr>
     <td width="56%">
-      <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github" height="155" />
+      <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true" height="155" />
     </td>
     <td width="44%">
       <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848" height="155" />
