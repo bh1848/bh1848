@@ -1,25 +1,95 @@
-<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Bang Hyeok banner">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#7b84ff"/>
-      <stop offset="55%" stop-color="#b9d6c5"/>
-      <stop offset="100%" stop-color="#f5f08b"/>
+    <!-- Background subtle vignette -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0f1628" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#070b12" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Animated gradient for the bottom ribbon -->
+    <linearGradient id="ribbon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#2D8CFF"/>
+      <stop offset="35%" stop-color="#4CAF50"/>
+      <stop offset="70%" stop-color="#FF9900"/>
+      <stop offset="100%" stop-color="#D82C20"/>
+      <!-- SMIL animation: shift gradient -->
+      <animate attributeName="x1" values="0%;-100%;0%" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;0%;100%" dur="8s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.18"/>
+    <!-- Soft highlight shimmer -->
+    <linearGradient id="shimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Blur for glow -->
+    <filter id="blur8" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8"/>
     </filter>
+
+    <!-- Text styling -->
+    <style>
+      .title { font: 700 46px system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", sans-serif; fill: #EAF0FF; }
+      .sub   { font: 500 18px system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", sans-serif; fill: rgba(234,240,255,.78); }
+      .tag   { font: 600 14px system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", sans-serif; fill: rgba(234,240,255,.72); letter-spacing: .2px; }
+    </style>
   </defs>
 
-  <rect width="1200" height="320" rx="26" fill="url(#g)"/>
-  <path d="M0 230 C 260 185, 420 320, 720 260 C 920 220, 1030 235, 1200 210 L1200 320 L0 320 Z"
-        fill="#ffffff" opacity="0.55"/>
-  <path d="M0 250 C 280 210, 460 335, 740 280 C 960 240, 1050 255, 1200 230 L1200 320 L0 320 Z"
-        fill="#ffffff" opacity="0.35"/>
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bgGlow)"/>
 
-  <text x="600" y="155" text-anchor="middle"
-        font-family="Inter, Pretendard, Apple SD Gothic Neo, Arial, sans-serif"
-        font-size="72" font-weight="800" fill="#2b2b2b" filter="url(#shadow)">
-    Bang Hyeok's GitHub
-  </text>
+  <!-- Top soft glow -->
+  <circle cx="240" cy="70" r="90" fill="#2D8CFF" opacity="0.14" filter="url(#blur8)"/>
+  <circle cx="960" cy="90" r="110" fill="#4CAF50" opacity="0.10" filter="url(#blur8)"/>
+  <circle cx="700" cy="40" r="130" fill="#FF9900" opacity="0.07" filter="url(#blur8)"/>
+
+  <!-- Floating particles (subtle) -->
+  <g opacity="0.35">
+    <circle cx="120" cy="230" r="2" fill="#EAF0FF">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 1100 -20; 0 0" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="110" r="1.6" fill="#EAF0FF" opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 1000 10; 0 0" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="200" r="1.8" fill="#EAF0FF" opacity="0.7">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 900 -15; 0 0" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="620" cy="120" r="1.4" fill="#EAF0FF" opacity="0.65">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 800 12; 0 0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="840" cy="210" r="2.2" fill="#EAF0FF" opacity="0.6">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 700 -10; 0 0" dur="15s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Main text -->
+  <text x="90" y="140" class="title">Bang Hyeok's GitHub</text>
+  <text x="90" y="175" class="sub">Spring Boot API · JWT 인증/인가 · Redis/분산 시스템</text>
+
+  <!-- Small tags (minimal, not “adjective-y”) -->
+  <g>
+    <text x="90" y="212" class="tag">Java</text>
+    <text x="145" y="212" class="tag">·</text>
+    <text x="160" y="212" class="tag">Spring</text>
+    <text x="225" y="212" class="tag">·</text>
+    <text x="240" y="212" class="tag">MySQL</text>
+    <text x="305" y="212" class="tag">·</text>
+    <text x="320" y="212" class="tag">Redis</text>
+    <text x="375" y="212" class="tag">·</text>
+    <text x="390" y="212" class="tag">AWS</text>
+  </g>
+
+  <!-- Bottom animated ribbon -->
+  <g transform="translate(0,0)">
+    <rect x="0" y="276" width="1200" height="6" rx="3" fill="url(#ribbon)"/>
+    <!-- shimmer overlay -->
+    <rect x="-300" y="270" width="260" height="18" fill="url(#shimmer)" opacity="0.9">
+      <animate attributeName="x" values="-300; 1300" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Thin border -->
+  <rect x="18" y="18" width="1164" height="284" rx="18" fill="none" stroke="rgba(234,240,255,.10)"/>
 </svg>
