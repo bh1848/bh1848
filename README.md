@@ -20,14 +20,23 @@
 
 ---
 
+## 📖 연구 (분산 시스템 · Redis)
+
+| 제목 | 상태 | 핵심 내용 | 링크 |
+|---|---|---|---|
+| **[MySQL–Redis 성능 비교](https://doi.org/10.7472/jksii.2024.25.3.35)** | 학술지 게재(2024) | 대규모 트래픽 가정에서 MySQL/Redis 삽입·조회·삭제 성능 비교 및 캐싱 전략 분석 | [코드](https://github.com/bh1848/mysql-redis-benchmark) |
+| **[D-HASH](https://github.com/bh1848/dhash-routing-evaluation)** | 심사 중 | 핫키 스큐 완화를 위한 라우팅 알고리즘 제안(감지 + 다중 노드 라우팅) 및 Redis 실험 | [코드](https://github.com/bh1848/dhash-routing-evaluation) |
+
+---
+
 ## 💡 프로젝트
 
-| 기간 | 프로젝트 | 설명 | 역할 | 기술 스택 | 링크 |
-|---|---|---|---|---|---|
-| 2024.05 ~ 2025.03 | **🚀 동구라미** | 동아리 운영·관리 플랫폼 | 백엔드 개발 | Spring Boot, Security, JWT, Redis, MySQL, AWS | [저장소](https://github.com/bh1848/donggurami-backend) |
-| - | **💬 수챗** | 실시간 랜덤 채팅 | 백엔드 개발 | Spring Boot, JWT, Redis | [저장소](https://github.com/bh1848/suchat-backend) |
-| - | **🗑️ 요분정** | AI 분리수거 가이드 | 백엔드 개발 | Flask, Redis, MySQL, ONNX, SSE | [저장소](https://github.com/bh1848/yobunjung-backend) |
-| - | **👀 졸음운전 방지** | 졸음 감지 프로토타입 | 파이썬/CV | Python, OpenCV, Arduino | [저장소](https://github.com/bh1848/drowsy-driving-prevention) |
+| 기간 | 프로젝트 | 설명 | 역할 | 기술 스택 |
+|---|---|---|---|---|
+| 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 운영·관리 플랫폼 | 백엔드 | Spring Boot, Security, JWT, Redis, MySQL, AWS |
+| - | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 실시간 랜덤 채팅 | 백엔드 | Spring Boot, JWT, Redis |
+| - | **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** | AI 분리수거 가이드 | 백엔드 | Flask, Redis, MySQL, ONNX, SSE |
+| - | **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** | 졸음 감지 프로토타입 | 파이썬/CV | Python, OpenCV, Arduino |
 
 ---
 
@@ -50,10 +59,3 @@
 ![Gradle](https://img.shields.io/badge/Gradle-000000?style=for-the-badge&logo=gradle&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=postman&logoColor=white)
 
----
-
-## 📖 연구
-| 제목 | 상태 | 핵심 내용 | 링크 |
-|---|---|---|---|
-| MySQL–Redis 성능 비교 | 학술지 게재(2024) | 삽입·조회·삭제 비교 / 캐싱 전략 분석 | [논문](https://doi.org/10.7472/jksii.2024.25.3.35) · [코드](https://github.com/bh1848/mysql-redis-benchmark) |
-| D-HASH | 심사 중 | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | [코드](https://github.com/bh1848/dhash-routing-evaluation) |
