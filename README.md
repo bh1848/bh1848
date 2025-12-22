@@ -37,7 +37,6 @@
 
 ---
 
-```md
 ## 💡 Projects
 
 <table>
