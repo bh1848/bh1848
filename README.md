@@ -40,22 +40,29 @@
 
 ---
 
-## 🛠 기술 (Main)
-![Java](https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-000000?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-000000?style=for-the-badge&logo=springsecurity&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA-000000?style=for-the-badge&logo=hibernate&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-000000?style=for-the-badge&logo=redis&logoColor=white)
+## 🧱 기술 스택
 
-## 🧰 기술 (Sub)
-![AWS](https://img.shields.io/badge/AWS-000000?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=white)
-![NGINX](https://img.shields.io/badge/NGINX-000000?style=for-the-badge&logo=nginx&logoColor=white)
+### 백엔드
+![Java](https://img.shields.io/badge/Java-3A75B0?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4CAF50?style=for-the-badge&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-4CAF50?style=for-the-badge&logo=springsecurity&logoColor=white)
+![JPA](https://img.shields.io/badge/Spring%20Data%20JPA-4CAF50?style=for-the-badge&logo=spring&logoColor=white)
 
-## 🧩 도구
-![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-000000?style=for-the-badge&logo=gradle&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-000000?style=for-the-badge&logo=postman&logoColor=white)
+### DB / 캐시
+![MySQL](https://img.shields.io/badge/MySQL-3A75B0?style=for-the-badge&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-D82C20?style=for-the-badge&logo=redis&logoColor=white)
+
+### 인프라
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![Amazon%20EC2](https://img.shields.io/badge/Amazon%20EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
+![Amazon%20RDS](https://img.shields.io/badge/Amazon%20RDS-3B82F6?style=for-the-badge&logo=amazonrds&logoColor=white)
+![Amazon%20S3](https://img.shields.io/badge/Amazon%20S3-2E8B57?style=for-the-badge&logo=amazons3&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2D8CFF?style=for-the-badge&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-2E8B57?style=for-the-badge&logo=nginx&logoColor=white)
+
+### 도구
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-263238?style=for-the-badge&logo=gradle&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
