@@ -13,21 +13,6 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
 
 <br/>
 
-## 🧾 GitHub
-
-<table>
-  <tr>
-    <td width="56%">
-      <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github" height="155" />
-    </td>
-    <td width="44%">
-      <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848" height="155" />
-    </td>
-  </tr>
-</table>
-
-<br/>
-
 ## 📖 연구
 
 | 제목 | 게재/상태 | 핵심 내용 | 링크 |
@@ -97,3 +82,18 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
     </td>
   </tr>
 </table>
+
+## 🧾 GitHub
+
+<table>
+  <tr>
+    <td width="56%">
+      <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github" height="155" />
+    </td>
+    <td width="44%">
+      <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848" height="155" />
+    </td>
+  </tr>
+</table>
+
+<br/>
