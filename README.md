@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.gif" width="100%" alt="banner" />
+  <img src="./assets/banner.svg" width="100%" alt="banner" />
 
 ### 👋 안녕하세요 백엔드 개발자 방혁입니다.
 
