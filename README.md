@@ -3,8 +3,6 @@
 
 ### 👋 안녕하세요 백엔드 개발자 방혁입니다.
 
-Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실험
-
 [![이메일](https://img.shields.io/badge/Email-bh1848@naver.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bh1848@naver.com)
 [![깃허브](https://img.shields.io/badge/GitHub-bh1848-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bh1848)
 </div>
