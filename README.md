@@ -1,30 +1,23 @@
-<div align="center">
-
-# 👋 안녕하세요, 백엔드 개발자 방혁입니다.
+# 👋 안녕하세요 백엔드 개발자 방혁입니다.
 
 **Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실험**을 중심으로 개발해왔습니다.  
 
-<br/>
+[![이메일](https://img.shields.io/badge/Email-bh1848@naver.com-000000?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bh1848@naver.com)
+[![깃허브](https://img.shields.io/badge/GitHub-bh1848-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bh1848)
+[![포트폴리오](https://img.shields.io/badge/Portfolio-준비중-000000?style=for-the-badge&logo=notion&logoColor=white)](#)
 
-<a href="mailto:bh1848@naver.com">
-  <img src="https://img.shields.io/badge/Email-bh1848%40naver.com-111111?style=for-the-badge&logo=gmail&logoColor=white" />
-</a>
-<a href="https://github.com/bh1848">
-  <img src="https://img.shields.io/badge/GitHub-bh1848-111111?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-<a href="#">
-  <img src="https://img.shields.io/badge/Portfolio-Soon-444444?style=for-the-badge&logo=notion&logoColor=white" />
-</a>
+---
 
-<br/><br/>
-
-<a href="#-research--papers">Research</a> ·
-<a href="#-projects">Projects</a> ·
-<a href="#-tech-stack">Tech Stack</a> ·
-<a href="#-activity-optional">Activity</a> ·
-<a href="#-contact">Contact</a>
-
-</div>
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github" height="155" />
+    </td>
+    <td>
+      <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848" height="155" />
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -32,19 +25,19 @@
 
 | 제목 | 게재/상태 | 핵심 내용 | 링크 |
 |---|---|---|---|
-| **MySQL–Redis 성능 비교** | 2024 | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | **DOI**: https://doi.org/10.7472/jksii.2024.25.3.35 |
-| **D-HASH** | 심사 중 | 핫키 감지 + 다중 노드 라우팅 / Redis 기반 실험 | (심사 중) |
+| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | *Journal of Internet Computing and Services (JICS), 2024*<br>DOI: 10.7472/jksii.2024.25.3.35 | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [논문](https://doi.org/10.7472/jksii.2024.25.3.35) |
+| **[D-HASH](https://github.com/bh1848/dhash-routing-evaluation)** | 심사 중 | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | - |
 
 ---
 
 ## 💡 Projects
 
-| 프로젝트 | 요약 | 역할/포인트 | 기술 스택 |
-|---|---|---|---|
-| **🚀 동구라미**<br><sub>2024.05 ~ 2025.03</sub><br><a href="https://github.com/bh1848/donggurami-backend">🔗 Repo</a> | 동아리 운영·관리 플랫폼 | **백엔드**<br>REST API 설계 / 인증·인가(JWT) / Redis 활용 | Spring Boot, Security, JWT<br>MySQL, Redis, AWS |
-| **💬 수챗**<br><a href="https://github.com/bh1848/suchat-backend">🔗 Repo</a> | 실시간 랜덤 채팅 | **백엔드**<br>JWT 인증 / 실시간 처리 구조 / Redis 활용 | Spring Boot, JWT, Redis |
-| **🗑️ 요분정**<br><a href="https://github.com/bh1848/yobunjung-backend">🔗 Repo</a> | AI 분리수거 가이드 | **백엔드**<br>SSE 기반 실시간 응답 / ONNX 추론 연동 / Redis·MySQL | Flask, SSE, ONNX<br>MySQL, Redis |
-| **👀 졸음운전 방지**<br><a href="https://github.com/bh1848/drowsy-driving-prevention">🔗 Repo</a> | 졸음 감지 프로토타입 | **Python/CV**<br>OpenCV 인식 로직 / Arduino 연동 | Python, OpenCV, Arduino |
+| 기간 | 프로젝트 | 설명 | 역할 | 기술 스택 |
+|---|---|---|---|---|
+| 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 운영·관리 플랫폼 | 백엔드 | Spring Boot, Security, JWT, Redis, MySQL, AWS |
+| - | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 실시간 랜덤 채팅 | 백엔드 | Spring Boot, JWT, Redis |
+| - | **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** | AI 분리수거 가이드 | 백엔드 | Flask, Redis, MySQL, ONNX, SSE |
+| - | **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** | 졸음 감지 프로토타입 | 파이썬/CV | Python, OpenCV, Arduino |
 
 ---
 
@@ -73,29 +66,3 @@
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-263238?style=for-the-badge&logo=gradle&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
----
-
-## 📊 Activity
-
-<details>
-  <summary><b>GitHub / BOJ Stats 열기</b></summary>
-  <br/>
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github" height="155" />
-      </td>
-      <td>
-        <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848" height="155" />
-      </td>
-    </tr>
-  </table>
-</details>
-
----
-
-## 📮 Contact
-
-- Email: **bh1848@naver.com**
-- GitHub: https://github.com/bh1848
