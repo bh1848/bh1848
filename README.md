@@ -53,10 +53,10 @@
 
 ## 📖 Research
 
-| Title | Publication | Core Content | Paper |
+| Title | Publication | Core Content | Link |
 |---|---|---|---|
-| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | *JICS, 2024*<br>DOI: 10.7472/jksii.2024.25.3.35 | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [논문](https://doi.org/10.7472/jksii.2024.25.3.35) |
-| **[D-HASH](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | Under Review |
+| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024)<br>DOI: 10.7472/jksii.2024.25.3.35 | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [DOI](https://doi.org/10.7472/jksii.2024.25.3.35) |
+| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | - |
 
 <br/>
 
@@ -64,7 +64,7 @@
 
 | Period | Project | Explanation | Role | Tech Stack |
 |---|---|---|---|---|
-| 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 운영·관리 플랫폼 | 백엔드 | Spring Boot, JWT, MySQL, Redis, AWS EC2/RDS/S3 |
-| - | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 실시간 랜덤 채팅 | 백엔드 | Spring Boot, JWT, MySQL, Redis, AWS EC2 |
-| - | **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** | AI 분리수거 가이드 | 백엔드 | Python, Flask, MySQL, ONNX, SSE |
-| - | **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** | 졸음 감지 프로토타입 | 파이썬/CV | Python, OpenCV |
+| 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 지원 · 홍보 · 동아리원 관리 | 백엔드 | Spring Boot, JWT, MySQL, Redis, AWS EC2/RDS/S3 |
+| - | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot, JWT, MySQL, Redis, AWS EC2 |
+| - | **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** | 쓰레기 분류 · 포인트 적립 | 백엔드 | Python, Flask, MySQL, ONNX, SSE |
+| - | **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** | 졸음 감지 | 파이썬/CV | Python, OpenCV |
