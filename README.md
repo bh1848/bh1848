@@ -56,16 +56,9 @@
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-4CAF50?style=for-the-badge&logo=springsecurity&logoColor=white)
 ![JPA](https://img.shields.io/badge/Spring%20Data%20JPA-4CAF50?style=for-the-badge&logo=spring&logoColor=white)
 
-- REST API 설계 / JWT 인증·인가  
-- 예외·에러 설계 (클라이언트 친화적 응답)  
-- 트랜잭션 관점 데이터 처리(일관성/원자성 고려)
-
 ### DB / Cache
 ![MySQL](https://img.shields.io/badge/MySQL-3A75B0?style=for-the-badge&logo=mysql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-D82C20?style=for-the-badge&logo=redis&logoColor=white)
-
-- 인덱스/쿼리 관점 성능 이해 및 비교 실험  
-- Redis 캐시 전략 / 핫키 상황 부하 분산 관심
 
 ### Infra
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
