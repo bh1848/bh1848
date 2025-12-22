@@ -13,27 +13,7 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
 
 <br/>
 
-## 📖 연구
-
-| 제목 | 게재/상태 | 핵심 내용 | 링크 |
-|---|---|---|---|
-| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | *JICS, 2024*<br>DOI: 10.7472/jksii.2024.25.3.35 | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [논문](https://doi.org/10.7472/jksii.2024.25.3.35) |
-| **[D-HASH](https://github.com/bh1848/dhash-routing-evaluation)** | 심사 중 | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | - |
-
-<br/>
-
-## 💡 프로젝트
-
-| 기간 | 프로젝트 | 설명 | 역할 | 기술 스택 |
-|---|---|---|---|---|
-| 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 운영·관리 플랫폼 | 백엔드 | Spring Boot, Security, JWT, Redis, MySQL, AWS |
-| - | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 실시간 랜덤 채팅 | 백엔드 | Spring Boot, JWT, Redis |
-| - | **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** | AI 분리수거 가이드 | 백엔드 | Flask, Redis, MySQL, ONNX, SSE |
-| - | **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** | 졸음 감지 프로토타입 | 파이썬/CV | Python, OpenCV, Arduino |
-
-<br/>
-
-## 🧱 기술 스택
+## 🧱 Tech Stack
 
 <table>
   <tr>
@@ -42,7 +22,7 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
   </tr>
 
   <tr>
-    <td><b>백엔드</b></td>
+    <td><b>Back-end</b></td>
     <td>
       <img src="https://img.shields.io/badge/Java-3A75B0?style=for-the-badge&logo=openjdk&logoColor=white" />
       <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=for-the-badge&logo=springboot&logoColor=white" />
@@ -52,7 +32,7 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
   </tr>
 
   <tr>
-    <td><b>DB / 캐시</b></td>
+    <td><b>DB / Cache</b></td>
     <td>
       <img src="https://img.shields.io/badge/MySQL-3A75B0?style=for-the-badge&logo=mysql&logoColor=white" />
       <img src="https://img.shields.io/badge/Redis-D82C20?style=for-the-badge&logo=redis&logoColor=white" />
@@ -60,7 +40,7 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
   </tr>
 
   <tr>
-    <td><b>인프라</b></td>
+    <td><b>Infra</b></td>
     <td>
       <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
       <img src="https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white" />
@@ -73,7 +53,7 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
   </tr>
 
   <tr>
-    <td><b>도구</b></td>
+    <td><b>Tools</b></td>
     <td>
       <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
       <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
@@ -83,7 +63,9 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
   </tr>
 </table>
 
-## 🧾 GitHub
+<br/>
+
+## 🧾 GitHub Status
 
 <table>
   <tr>
@@ -97,3 +79,21 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
 </table>
 
 <br/>
+
+## 📖 Research
+
+| Title | Publication | Core Content | Paper |
+|---|---|---|---|
+| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | *JICS, 2024*<br>DOI: 10.7472/jksii.2024.25.3.35 | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [논문](https://doi.org/10.7472/jksii.2024.25.3.35) |
+| **[D-HASH](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | - |
+
+<br/>
+
+## 💡 Projects
+
+| Period | Project | Explanation | Role | Tech Stack |
+|---|---|---|---|---|
+| 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 운영·관리 플랫폼 | 백엔드 | Spring Boot, Security, JWT, Redis, MySQL, AWS |
+| - | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 실시간 랜덤 채팅 | 백엔드 | Spring Boot, JWT, Redis |
+| - | **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** | AI 분리수거 가이드 | 백엔드 | Flask, Redis, MySQL, ONNX, SSE |
+| - | **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** | 졸음 감지 프로토타입 | 파이썬/CV | Python, OpenCV, Arduino |
