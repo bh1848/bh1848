@@ -50,37 +50,50 @@ Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실
 
 ## 🧱 기술 스택
 
-| 분야 | 기술 |
-|---|---|
-| 백엔드 | Java, Spring Boot, Spring Security, Spring Data JPA |
-| DB / 캐시 | MySQL, Redis |
-| 인프라 | AWS(EC2, RDS, S3), Docker, Nginx |
-| 도구 | Git, GitHub, Gradle, Postman |
+<table>
+  <tr>
+    <th align="left" width="140">분야</th>
+    <th align="left">기술</th>
+  </tr>
 
-<br/>
+  <tr>
+    <td><b>백엔드</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Java-3A75B0?style=for-the-badge&logo=openjdk&logoColor=white" />
+      <img src="https://img.shields.io/badge/Spring%20Boot-4CAF50?style=for-the-badge&logo=springboot&logoColor=white" />
+      <img src="https://img.shields.io/badge/Spring%20Security-4CAF50?style=for-the-badge&logo=springsecurity&logoColor=white" />
+      <img src="https://img.shields.io/badge/Spring%20Data%20JPA-4CAF50?style=for-the-badge&logo=spring&logoColor=white" />
+    </td>
+  </tr>
 
-### 배지
+  <tr>
+    <td><b>DB / 캐시</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/MySQL-3A75B0?style=for-the-badge&logo=mysql&logoColor=white" />
+      <img src="https://img.shields.io/badge/Redis-D82C20?style=for-the-badge&logo=redis&logoColor=white" />
+    </td>
+  </tr>
 
-#### Backend
-![Java](https://img.shields.io/badge/Java-3A75B0?style=for-the-badge&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4CAF50?style=for-the-badge&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-4CAF50?style=for-the-badge&logo=springsecurity&logoColor=white)
-![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-4CAF50?style=for-the-badge&logo=spring&logoColor=white)
+  <tr>
+    <td><b>인프라</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+      <img src="https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white" />
+      <img src="https://img.shields.io/badge/RDS-3B82F6?style=for-the-badge&logo=amazonrds&logoColor=white" />
+      <img src="https://img.shields.io/badge/S3-2E8B57?style=for-the-badge&logo=amazons3&logoColor=white" />
+      <br/>
+      <img src="https://img.shields.io/badge/Docker-2D8CFF?style=for-the-badge&logo=docker&logoColor=white" />
+      <img src="https://img.shields.io/badge/Nginx-2E8B57?style=for-the-badge&logo=nginx&logoColor=white" />
+    </td>
+  </tr>
 
-#### DB / Cache
-![MySQL](https://img.shields.io/badge/MySQL-3A75B0?style=for-the-badge&logo=mysql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-D82C20?style=for-the-badge&logo=redis&logoColor=white)
-
-#### Infra
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
-![RDS](https://img.shields.io/badge/RDS-3B82F6?style=for-the-badge&logo=amazonrds&logoColor=white)
-![S3](https://img.shields.io/badge/S3-2E8B57?style=for-the-badge&logo=amazons3&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2D8CFF?style=for-the-badge&logo=docker&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-2E8B57?style=for-the-badge&logo=nginx&logoColor=white)
-
-#### Tools
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-263238?style=for-the-badge&logo=gradle&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+  <tr>
+    <td><b>도구</b></td>
+    <td>
+      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+      <img src="https://img.shields.io/badge/Gradle-263238?style=for-the-badge&logo=gradle&logoColor=white" />
+      <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+    </td>
+  </tr>
+</table>
