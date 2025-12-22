@@ -4,15 +4,14 @@
 
 <br/>
 
-<div align="center">
+---
 
 # 👋 안녕하세요 백엔드 개발자 방혁입니다.
 
-**Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실험**을 중심으로 개발해왔습니다.  
+**Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실험**을 중심으로 개발했습니다.  
 
 [![이메일](https://img.shields.io/badge/Email-bh1848@naver.com-000000?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bh1848@naver.com)
 [![깃허브](https://img.shields.io/badge/GitHub-bh1848-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bh1848)
-[![포트폴리오](https://img.shields.io/badge/Portfolio-준비중-000000?style=for-the-badge&logo=notion&logoColor=white)](#)
 
 ---
 
@@ -29,7 +28,7 @@
 
 ---
 
-## 📖 Research / Papers
+## 📖 연구
 
 | 제목 | 게재/상태 | 핵심 내용 | 링크 |
 |---|---|---|---|
@@ -38,7 +37,7 @@
 
 ---
 
-## 💡 Projects
+## 💡 프로젝트
 
 | 기간 | 프로젝트 | 설명 | 역할 | 기술 스택 |
 |---|---|---|---|---|
@@ -49,7 +48,7 @@
 
 ---
 
-## 🧱 Tech Stack
+## 🧱 기술스택
 
 ### Backend
 ![Java](https://img.shields.io/badge/Java-3A75B0?style=for-the-badge&logo=openjdk&logoColor=white)
