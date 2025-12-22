@@ -1,3 +1,11 @@
+<div align="center">
+  <img src="./assets/banner.svg" width="100%" alt="banner" />
+</div>
+
+<br/>
+
+<div align="center">
+
 # 👋 안녕하세요 백엔드 개발자 방혁입니다.
 
 **Spring Boot 기반 API 설계 · JWT 인증/인가 · Redis/분산 시스템 실험**을 중심으로 개발해왔습니다.  
