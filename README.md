@@ -20,12 +20,12 @@
 
 ---
 
-## 📖 연구 (분산 시스템 · Redis)
+## 📖 연구
 
-| 제목 | 상태 | 핵심 내용 | 링크 |
+| 제목 | 게재/상태 | 핵심 내용 | 링크 |
 |---|---|---|---|
-| **[MySQL–Redis 성능 비교](https://doi.org/10.7472/jksii.2024.25.3.35)** | 학술지 게재(2024) | 대규모 트래픽 가정에서 MySQL/Redis 삽입·조회·삭제 성능 비교 및 캐싱 전략 분석 | [코드](https://github.com/bh1848/mysql-redis-benchmark) |
-| **[D-HASH](https://github.com/bh1848/dhash-routing-evaluation)** | 심사 중 | 핫키 스큐 완화를 위한 라우팅 알고리즘 제안(감지 + 다중 노드 라우팅) 및 Redis 실험 | [코드](https://github.com/bh1848/dhash-routing-evaluation) |
+| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | *Journal of Internet Computing and Services (JICS), 2024*<br>DOI: 10.7472/jksii.2024.25.3.35 | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [논문](https://doi.org/10.7472/jksii.2024.25.3.35) |
+| **[D-HASH](https://github.com/bh1848/dhash-routing-evaluation)** | 심사 중 | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | - |
 
 ---
 
