@@ -65,7 +65,7 @@
 | 기간 | 프로젝트 | 설명 | 역할 | 기술 스택 |
 |---|---|---|---|---|
 | 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 지원 · 홍보 · 동아리원 관리 | 백엔드 | Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3) |
-| - | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2) |
+| 2023.09 ~ 2024.10 | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2) |
 
 ### Other Projects
 - **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)
