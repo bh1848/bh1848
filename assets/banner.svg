@@ -92,4 +92,6 @@
     </rect>
   </g>
 
-  <!
+  <!-- Thin border -->
+  <rect x="18" y="18" width="1164" height="284" rx="18" fill="none" stroke="rgba(234,240,255,.10)"/>
+</svg>
