@@ -60,39 +60,74 @@
 
 <br/>
 
-## 📖 Research
+<h2>📖 Research</h2>
 
-| Title | Publication | Core Content | Link |
-|---|---|---|---|
-| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024)<br>DOI: 10.7472/jksii.2024.25.3.35 | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) |
-| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | - |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="240" align="left">Title</th>
+      <th width="180" align="left">Publication</th>
+      <th align="left">Core Content</th>
+      <th width="80" align="left">Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <b><a href="https://github.com/bh1848/mysql-redis-benchmark">MySQL–Redis 성능 비교</a></b>
+      </td>
+      <td>
+        JICS (2024)<br/>
+        DOI: 10.7472/jksii.2024.25.3.35
+      </td>
+      <td>삽입·조회·삭제 성능 비교 / 캐싱 전략 분석</td>
+      <td><a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301">KCI</a></td>
+    </tr>
+    <tr>
+      <td>
+        <b><a href="https://github.com/bh1848/dhash-routing-evaluation">D-HASH 알고리즘 개발</a></b>
+      </td>
+      <td>Under Review</td>
+      <td>핫키 감지 + 다중 노드 라우팅 / Redis 실험</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 <br/>
 
-## 💡 Projects (Featured)
+<h2>💡 Projects (Featured)</h2>
 
-<table>
-  <tr>
-    <th width="140" align="left">Period</th>
-    <th align="left">Projects</th>
-    <th align="left">Explanation</th>
-    <th width="80" align="left">Role</th>
-    <th align="left">Tech Stack</th>
-  </tr>
-  <tr>
-    <td>2024.05&nbsp;~&nbsp;2025.03</td>
-    <td><b><a href="https://github.com/bh1848/donggurami-backend">🚀동구라미</a></b></td>
-    <td>동아리 지원 · 홍보 · 동아리원 관리</td>
-    <td>백엔드</td>
-    <td>Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3)</td>
-  </tr>
-  <tr>
-    <td>2023.09&nbsp;~&nbsp;2024.10</td>
-    <td><b><a href="https://github.com/bh1848/suchat-backend">💬수챗</a></b></td>
-    <td>대학교 랜덤 채팅 · 실시간 매칭</td>
-    <td>백엔드</td>
-    <td>Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2)</td>
-  </tr>
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="160" align="left">Period</th>
+      <th width="240" align="left">Projects</th>
+      <th align="left">Explanation</th>
+      <th width="90" align="left">Role</th>
+      <th width="420" align="left">Tech Stack</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024.05&nbsp;~&nbsp;2025.03</td>
+      <td>
+        <nobr><b><a href="https://github.com/bh1848/donggurami-backend">🚀&nbsp;동구라미</a></b></nobr>
+      </td>
+      <td>동아리 지원 · 홍보 · 동아리원 관리</td>
+      <td>백엔드</td>
+      <td>Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3)</td>
+    </tr>
+    <tr>
+      <td>2023.09&nbsp;~&nbsp;2024.10</td>
+      <td>
+        <nobr><b><a href="https://github.com/bh1848/suchat-backend">💬&nbsp;수챗</a></b></nobr>
+      </td>
+      <td>대학교 랜덤 채팅 · 실시간 매칭</td>
+      <td>백엔드</td>
+      <td>Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2)</td>
+    </tr>
+  </tbody>
 </table>
 
 ### Other Projects
