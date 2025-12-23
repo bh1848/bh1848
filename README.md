@@ -40,16 +40,21 @@
 
 ## 🧾 GitHub Status
 
-<table>
-  <tr>
-    <td width="56%">
-      <img src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true" height="155" />
-    </td>
-    <td width="44%">
-      <img src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848" height="155" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img
+    src="https://github-readme-stats-rouge-two-91.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github&cache_seconds=86400"
+    height="155"
+    alt="GitHub Stats"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
+    height="155"
+    alt="BOJ Badge"
+  />
+</p>
 
 <br/>
 
