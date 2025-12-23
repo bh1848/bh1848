@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Bang Hyeok banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-label="Bang Hyeok banner">
   <defs>
     <!-- Background subtle vignette -->
-    <radialGradient id="bgGlow" cx="50%" cy="38%" r="80%">
+    <radialGradient id="bgGlow" cx="50%" cy="36%" r="82%">
       <stop offset="0%" stop-color="#0f1628" stop-opacity="1"/>
       <stop offset="100%" stop-color="#070b12" stop-opacity="1"/>
     </radialGradient>
 
     <!-- Top highlight (soft) -->
     <linearGradient id="topHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
-      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.085"/>
+      <stop offset="42%" stop-color="#ffffff" stop-opacity="0.02"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
@@ -19,7 +19,6 @@
       <stop offset="35%" stop-color="#4CAF50"/>
       <stop offset="70%" stop-color="#FF9900"/>
       <stop offset="100%" stop-color="#D82C20"/>
-      <!-- SMIL animation: shift gradient -->
       <animate attributeName="x1" values="0%;-100%;0%" dur="8s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="100%;0%;100%" dur="8s" repeatCount="indefinite"/>
     </linearGradient>
@@ -61,70 +60,68 @@
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="420" fill="url(#bgGlow)"/>
-  <!-- Top highlight overlay -->
-  <rect width="1200" height="420" fill="url(#topHighlight)"/>
+  <rect width="1200" height="460" fill="url(#bgGlow)"/>
+  <rect width="1200" height="460" fill="url(#topHighlight)"/>
 
   <!-- Soft glow blobs -->
-  <circle cx="235" cy="92" r="105" fill="#2D8CFF" opacity="0.14" filter="url(#blur10)"/>
-  <circle cx="980" cy="115" r="130" fill="#4CAF50" opacity="0.10" filter="url(#blur10)"/>
-  <circle cx="720" cy="58" r="155" fill="#FF9900" opacity="0.07" filter="url(#blur10)"/>
+  <circle cx="235" cy="100" r="115" fill="#2D8CFF" opacity="0.14" filter="url(#blur10)"/>
+  <circle cx="980" cy="130" r="145" fill="#4CAF50" opacity="0.10" filter="url(#blur10)"/>
+  <circle cx="720" cy="62" r="165" fill="#FF9900" opacity="0.07" filter="url(#blur10)"/>
 
-  <!-- Floating particles (more + slower, subtle) -->
-  <g opacity="0.33">
-    <circle cx="120" cy="300" r="2" fill="#EAF0FF">
+  <!-- Floating particles (subtle) -->
+  <g opacity="0.32">
+    <circle cx="120" cy="330" r="2" fill="#EAF0FF">
       <animateTransform attributeName="transform" type="translate" values="0 0; 1120 -24; 0 0" dur="18s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="210" cy="150" r="1.6" fill="#EAF0FF" opacity="0.8">
+    <circle cx="210" cy="165" r="1.6" fill="#EAF0FF" opacity="0.8">
       <animateTransform attributeName="transform" type="translate" values="0 0; 1020 14; 0 0" dur="22s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="420" cy="260" r="1.8" fill="#EAF0FF" opacity="0.7">
+    <circle cx="420" cy="290" r="1.8" fill="#EAF0FF" opacity="0.7">
       <animateTransform attributeName="transform" type="translate" values="0 0; 940 -18; 0 0" dur="20s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="620" cy="170" r="1.4" fill="#EAF0FF" opacity="0.65">
+    <circle cx="620" cy="190" r="1.4" fill="#EAF0FF" opacity="0.65">
       <animateTransform attributeName="transform" type="translate" values="0 0; 860 16; 0 0" dur="26s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="860" cy="285" r="2.2" fill="#EAF0FF" opacity="0.58">
+    <circle cx="860" cy="315" r="2.2" fill="#EAF0FF" opacity="0.58">
       <animateTransform attributeName="transform" type="translate" values="0 0; 740 -14; 0 0" dur="19s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="980" cy="210" r="1.5" fill="#EAF0FF" opacity="0.6">
+    <circle cx="980" cy="230" r="1.5" fill="#EAF0FF" opacity="0.6">
       <animateTransform attributeName="transform" type="translate" values="0 0; 520 10; 0 0" dur="24s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- Subtle inner vignette -->
-  <rect x="18" y="18" width="1164" height="384" rx="22" fill="none" stroke="rgba(255,255,255,.06)"/>
-  <rect x="26" y="26" width="1148" height="368" rx="20" fill="none" stroke="rgba(0,0,0,.25)"/>
+  <!-- Subtle double border -->
+  <rect x="18" y="18" width="1164" height="424" rx="24" fill="none" stroke="rgba(255,255,255,.06)"/>
+  <rect x="28" y="28" width="1144" height="404" rx="22" fill="none" stroke="rgba(0,0,0,.22)"/>
 
   <!-- Main text (more breathing room) -->
   <g filter="url(#textShadow)">
-    <text x="90" y="170" class="title">Bang Hyeok's GitHub</text>
-    <text x="90" y="218" class="hello">안녕하세요, 백엔드 개발자 방혁입니다. 👋</text>
-    <text x="90" y="255" class="sub">Spring Boot API · JWT 인증/인가 · Redis/분산 시스템</text>
+    <text x="90" y="190" class="title">Bang Hyeok's GitHub</text>
+    <text x="90" y="245" class="hello">안녕하세요, 백엔드 개발자 방혁입니다. 👋</text>
+    <text x="90" y="288" class="sub">Spring Boot API · JWT 인증/인가 · Redis/분산 시스템</text>
   </g>
 
-  <!-- Small tags -->
+  <!-- Small tags (moved further down) -->
   <g>
-    <text x="90"  y="294" class="tag">Java</text>
-    <text x="145" y="294" class="tag">·</text>
-    <text x="160" y="294" class="tag">Spring</text>
-    <text x="225" y="294" class="tag">·</text>
-    <text x="240" y="294" class="tag">MySQL</text>
-    <text x="305" y="294" class="tag">·</text>
-    <text x="320" y="294" class="tag">Redis</text>
-    <text x="375" y="294" class="tag">·</text>
-    <text x="390" y="294" class="tag">AWS</text>
+    <text x="90"  y="335" class="tag">Java</text>
+    <text x="145" y="335" class="tag">·</text>
+    <text x="160" y="335" class="tag">Spring</text>
+    <text x="225" y="335" class="tag">·</text>
+    <text x="240" y="335" class="tag">MySQL</text>
+    <text x="305" y="335" class="tag">·</text>
+    <text x="320" y="335" class="tag">Redis</text>
+    <text x="375" y="335" class="tag">·</text>
+    <text x="390" y="335" class="tag">AWS</text>
   </g>
 
   <!-- Bottom animated ribbon -->
   <g>
-    <rect x="0" y="372" width="1200" height="7" rx="4" fill="url(#ribbon)"/>
-    <!-- shimmer overlay -->
-    <rect x="-320" y="364" width="280" height="22" fill="url(#shimmer)" opacity="0.9">
+    <rect x="0" y="408" width="1200" height="7" rx="4" fill="url(#ribbon)"/>
+    <rect x="-320" y="398" width="280" height="24" fill="url(#shimmer)" opacity="0.9">
       <animate attributeName="x" values="-320; 1320" dur="4.6s" repeatCount="indefinite"/>
     </rect>
   </g>
 
-  <!-- Outer thin border -->
-  <rect x="18" y="18" width="1164" height="384" rx="22" fill="none" stroke="rgba(234,240,255,.10)"/>
+  <!-- Outer border -->
+  <rect x="18" y="18" width="1164" height="424" rx="24" fill="none" stroke="rgba(234,240,255,.10)"/>
 </svg>
