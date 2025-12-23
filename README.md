@@ -81,14 +81,14 @@
   </tr>
   <tr>
     <td>2024.05&nbsp;~&nbsp;2025.03</td>
-    <td><b><a href="https://github.com/bh1848/donggurami-backend">🚀 동구라미</a></b></td>
+    <td><b><a href="https://github.com/bh1848/donggurami-backend">🚀동구라미</a></b></td>
     <td>동아리 지원 · 홍보 · 동아리원 관리</td>
     <td>백엔드</td>
     <td>Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3)</td>
   </tr>
   <tr>
     <td>2023.09&nbsp;~&nbsp;2024.10</td>
-    <td><b><a href="https://github.com/bh1848/suchat-backend">💬 수챗</a></b></td>
+    <td><b><a href="https://github.com/bh1848/suchat-backend">💬수챗</a></b></td>
     <td>대학교 랜덤 채팅 · 실시간 매칭</td>
     <td>백엔드</td>
     <td>Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2)</td>
@@ -96,5 +96,5 @@
 </table>
 
 ### Other Projects
-- **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)
-- **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** — 졸음 감지 (Python · OpenCV)
+- **[🗑️요분정](https://github.com/bh1848/yobunjung-backend)** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)
+- **[👀졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** — 졸음 감지 (Python · OpenCV)
