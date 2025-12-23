@@ -60,11 +60,29 @@
 
 <br/>
 
-## 💡 Projects
+## 💡 Projects (Featured)
 
-| Period | Project | Explanation | Role | Tech Stack |
-|---|---|---|---|---|
-| 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 지원 · 홍보 · 동아리원 관리 | 백엔드 | Spring Boot, JWT, MySQL, Redis, AWS EC2/RDS/S3 |
-| - | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot, JWT, MySQL, Redis, AWS EC2 |
-| - | **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** | 쓰레기 분류 · 포인트 적립 | 백엔드 | Python, Flask, MySQL, ONNX, SSE |
-| - | **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** | 졸음 감지 | 파이썬/CV | Python, OpenCV |
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🚀 <a href="https://github.com/bh1848/donggurami-backend">동구라미</a></h3>
+      <p>동아리 지원 · 홍보 · 동아리원 관리</p>
+      <p><b>Role</b>: 백엔드</p>
+      <p><b>Tech</b>: Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2/RDS/S3)</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>💬 <a href="https://github.com/bh1848/suchat-backend">수챗</a></h3>
+      <p>대학교 랜덤 채팅 · 실시간 매칭</p>
+      <p><b>Role</b>: 백엔드</p>
+      <p><b>Tech</b>: Spring Boot · JWT · MySQL · Redis · AWS EC2</p>
+    </td>
+  </tr>
+</table>
+
+<details>
+  <summary><b>Other Projects</b></summary>
+  <br/>
+
+  - 🗑️ <a href="https://github.com/bh1848/yobunjung-backend"><b>요분정</b></a> — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)  
+  - 👀 <a href="https://github.com/bh1848/drowsy-driving-prevention"><b>졸음운전 방지</b></a> — 졸음 감지 (Python · OpenCV)
+</details>
