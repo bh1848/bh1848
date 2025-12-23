@@ -64,8 +64,8 @@ API 설계와 Redis·분산 시스템 실험을 중심으로 개발해왔습니�
 
 | 제목 | 게재/상태 | 핵심 내용 | 링크 |
 |---|---|---|---|
-| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024) | 배치 기반 INSERT/SELECT/DELETE 지연시간 측정 / DB vs 캐시 비교 | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) |
-| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 분산 캐시에서 핫 키로 인한 부하 집중 완화 / 요청 분산 라우팅 평가 (Redis) | - |
+| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024) | 배치 기반 INSERT/SELECT/DELETE 지연시간 측정 / 디스크 DB와 인메모리 캐시 성능 비교 | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) |
+| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 분산 캐시에서 특정 키에 요청이 집중되는 문제를 완화하기 위한 요청 분산 라우팅 기법 설계 및 평가 (Redis) | - |
 
 <br/>
 
