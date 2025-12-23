@@ -41,15 +41,15 @@
 ## 🧾 GitHub Status
 
 <p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true" 
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github&cache_seconds=86400"
     height="155"
   />
 </p>
 
 <p align="center">
-  <img 
-    src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848" 
+  <img
+    src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
     height="155"
   />
 </p>
