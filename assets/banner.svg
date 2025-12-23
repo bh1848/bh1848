@@ -66,7 +66,8 @@
 
   <!-- Main text -->
   <text x="90" y="140" class="title">Bang Hyeok's GitHub</text>
-  <text x="90" y="175" class="sub">Spring Boot API · JWT 인증/인가 · Redis/분산 시스템</text>
+  <text x="90" y="168" class="sub">안녕하세요, 백엔드 개발자 방혁입니다. 👋</text>
+  <text x="90" y="195" class="sub">Spring Boot API · JWT 인증/인가 · Redis/분산 시스템</text>
 
   <!-- Small tags (minimal, not “adjective-y”) -->
   <g>
