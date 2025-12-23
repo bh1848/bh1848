@@ -4,8 +4,8 @@
 
 <br/>
 
-안녕하세요. 백엔드 서버 개발자 방혁입니다.  
-Spring Boot 기반 API 설계와 Redis·분산 시스템 실험을 중심으로 개발해왔습니다.
+Spring Boot 기반 백엔드 서버 개발자 방혁입니다.  
+API 설계와 Redis·분산 시스템 실험을 중심으로 개발해왔습니다.
 
 <br/>
 
@@ -64,8 +64,8 @@ Spring Boot 기반 API 설계와 Redis·분산 시스템 실험을 중심으로 
 
 | 제목 | 게재/상태 | 핵심 내용 | 링크 |
 |---|---|---|---|
-| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024) | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) |
-| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | - |
+| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024) | 배치 기반 INSERT/SELECT/DELETE 지연시간 측정 / DB vs 캐시 비교 | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) |
+| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 분산 캐시에서 핫 키로 인한 부하 집중 완화 / 요청 분산 라우팅 평가 (Redis) | - |
 
 <br/>
 
