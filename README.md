@@ -15,7 +15,7 @@
 [![깃허브](https://img.shields.io/badge/GitHub-bh1848-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bh1848)
 </div>
 
-<br/>
+---
 
 ## 🧱 Tech Stack
 
@@ -60,77 +60,22 @@
 
 <br/>
 
-<h2>📖 Research</h2>
+## 📖 Research
 
-<table width="100%">
-  <tr>
-    <td>
-      <table width="100%">
-        <thead>
-          <tr>
-            <th width="260" align="left">Title</th>
-            <th width="210" align="left">Publication</th>
-            <th align="left">Core Content</th>
-            <th width="90" align="left">Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b><a href="https://github.com/bh1848/mysql-redis-benchmark">MySQL–Redis 성능 비교</a></b></td>
-            <td>JICS (2024)<br/>DOI: 10.7472/jksii.2024.25.3.35</td>
-            <td>삽입·조회·삭제 성능 비교 / 캐싱 전략 분석</td>
-            <td><a href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301">KCI</a></td>
-          </tr>
-          <tr>
-            <td><b><a href="https://github.com/bh1848/dhash-routing-evaluation">D-HASH 알고리즘 개발</a></b></td>
-            <td>Under Review</td>
-            <td>핫키 감지 + 다중 노드 라우팅 / Redis 실험</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-  </tr>
-</table>
+| 제목 | 게재/상태 | 핵심 내용 | 링크 |
+|---|---|---|---|
+| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024) | 삽입·조회·삭제 성능 비교 / 캐싱 전략 분석 | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) |
+| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 핫키 감지 + 다중 노드 라우팅 / Redis 실험 | - |
 
-<br/>
+---
 
-<h2>💡 Projects (Featured)</h2>
+## 💡 Projects (Featured)
 
-<table width="100%">
-  <tr>
-    <td>
-      <table width="100%">
-        <thead>
-          <tr>
-            <th width="160" align="left">Period</th>
-            <th width="260" align="left">Projects</th>
-            <th align="left">Explanation</th>
-            <th width="90" align="left">Role</th>
-            <th width="420" align="left">Tech Stack</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2024.05&nbsp;~&nbsp;2025.03</td>
-            <td><nobr><b><a href="https://github.com/bh1848/donggurami-backend">🚀&nbsp;동구라미</a></b></nobr></td>
-            <td>동아리 지원 · 홍보 · 동아리원 관리</td>
-            <td>백엔드</td>
-            <td>Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3)</td>
-          </tr>
-          <tr>
-            <td>2023.09&nbsp;~&nbsp;2024.10</td>
-            <td><nobr><b><a href="https://github.com/bh1848/suchat-backend">💬&nbsp;수챗</a></b></nobr></td>
-            <td>대학교 랜덤 채팅 · 실시간 매칭</td>
-            <td>백엔드</td>
-            <td>Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2)</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-  </tr>
-</table>
+| 기간 | 프로젝트 | 설명 | 역할 | 기술 스택 |
+|---|---|---|---|---|
+| 2024.05 ~ 2025.03 | **[🚀 동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 지원 · 홍보 · 동아리원 관리 | 백엔드 | Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3) |
+| 2023.09 ~ 2024.10 | **[💬 수챗](https://github.com/bh1848/suchat-backend)** | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2) |
 
 ### Other Projects
-- **[🗑️요분정](https://github.com/bh1848/yobunjung-backend)** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)
-- **[👀졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** — 졸음 감지 (Python · OpenCV)
+- **[🗑️ 요분정](https://github.com/bh1848/yobunjung-backend)** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)
+- **[👀 졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** — 졸음 감지 (Python · OpenCV)
