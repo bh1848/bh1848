@@ -74,7 +74,7 @@
       <h3>💬 <a href="https://github.com/bh1848/suchat-backend">수챗</a></h3>
       <p>대학교 랜덤 채팅 · 실시간 매칭</p>
       <p><b>Role</b>: 백엔드</p>
-      <p><b>Tech</b>: Spring Boot · JWT · MySQL · Redis · AWS EC2</p>
+      <p><b>Tech</b>: Spring Boot · Spring Security · JWT · MySQL · Redis · AWS EC2</p>
     </td>
   </tr>
 </table>
