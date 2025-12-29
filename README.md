@@ -4,7 +4,6 @@ Welcome to my page!
 I'm **Bang Hyeok**, a **Backend Developer** building APIs with **Spring Boot** and working with **MySQL/Redis**.  
 I also run **distributed cache experiments (D-HASH)** to validate throughput/latency/load-balancing in a Redis cluster.
 
----
 
 ## Things I code with
 <p>
@@ -19,7 +18,6 @@ I also run **distributed cache experiments (D-HASH)** to validate throughput/lat
   <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
 </p>
 
----
 
 ## Featured projects
 
@@ -28,7 +26,6 @@ I also run **distributed cache experiments (D-HASH)** to validate throughput/lat
 | 🚀 **동구라미** | Club application · promotion · member management | Spring Boot · Security · JWT · MySQL · Redis · Docker · AWS | https://github.com/bh1848/donggurami-backend |
 | 💬 **수챗** | Random chat · real-time matching | Spring Boot · Security · JWT · MySQL · Redis · AWS(EC2) | https://github.com/bh1848/suchat-backend |
 
----
 
 ## Research / experiments
 
@@ -37,7 +34,6 @@ I also run **distributed cache experiments (D-HASH)** to validate throughput/lat
 | **MySQL–Redis 성능 비교** | JICS (2024) | Batch-based INSERT/SELECT/DELETE latency benchmark (DB vs in-memory cache) | https://github.com/bh1848/mysql-redis-benchmark |
 | **D-HASH 알고리즘 개발** | Under Review | Request distribution routing to mitigate hot-key concentration in distributed cache (Redis) | https://github.com/bh1848/dhash-routing-evaluation |
 
----
 
 ## Other projects
 - 🗑️ **요분정** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)  
@@ -45,7 +41,6 @@ I also run **distributed cache experiments (D-HASH)** to validate throughput/lat
 - 👀 **졸음운전 방지** — 졸음 감지 (Python · OpenCV)  
   https://github.com/bh1848/drowsy-driving-prevention
 
----
 
 ## Where to find me
 <p>
