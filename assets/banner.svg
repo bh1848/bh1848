@@ -113,13 +113,13 @@
     <!-- Pills -->
     <g transform="translate(0,108)">
       <rect class="pill" x="0" y="0" rx="12" ry="12" width="170" height="30"/>
-      <text class="meta" x="14" y="20">Latency · TPS · P99</text>
+      <text class="meta" x="14" y="20">API Design</text>
 
       <rect class="pill" x="186" y="0" rx="12" ry="12" width="180" height="30"/>
-      <text class="meta" x="200" y="20">Load Balancing</text>
+      <text class="meta" x="200" y="20">Redis Routing</text>
 
       <rect class="pill" x="382" y="0" rx="12" ry="12" width="160" height="30"/>
-      <text class="meta" x="396" y="20">Reproducible</text>
+      <text class="meta" x="396" y="20">Benchmarking</text>
     </g>
   </g>
 
