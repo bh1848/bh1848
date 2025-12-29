@@ -1,5 +1,5 @@
-# 😎 Hey! Nice to see you.
-#### Welcome to my page! 백엔드 개발자 방혁입니다. 🐶
+# 🐶 Hey! Nice to see you.
+#### Welcome to my page! 백엔드 개발자 방혁입니다.
 
 - Spring Boot로 API를 설계하고 구현합니다.
 
@@ -28,7 +28,7 @@
 </div>
 </details>
 
-#### Contact me
+#### 📱Contact me
 - Email: bh1848@naver.com
 
 
@@ -47,7 +47,7 @@
 </p>
 
 
-### Research / Experiments
+## 🔬 Research / Experiments
 
 <details>
   <summary><b>⚖️ MySQL–Redis 성능 비교</b> · JICS (2024)</summary>
@@ -69,7 +69,7 @@
 </details>
 
 
-### Projects
+## 👨‍💻 Projects
 
 <details>
   <summary><b>🐣동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
@@ -89,7 +89,7 @@
 
 </details>
 
-#### Other Projects
+### Other Projects
 
 <details>
   <summary><b>♻️ 요분정</b> — 쓰레기 분류 · 포인트 적립</summary>
