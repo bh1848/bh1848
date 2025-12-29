@@ -30,6 +30,7 @@
 ### 📱Contact me
 - Email: bh1848@naver.com
 
+---
 
 ### Research / Experiments
 
@@ -52,6 +53,7 @@
 
 </details>
 
+---
 
 ### Projects
 
