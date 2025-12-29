@@ -11,7 +11,7 @@
 
 
 <details>
-<summary><b>My Stats</b></summary>
+<summary><b>Stats</b></summary>
 <br/>
 
 <div align="center">
@@ -88,6 +88,8 @@
 - Tech: `Spring Boot` `Spring Security` `JWT` `MySQL` `Redis` `AWS(EC2)`
 
 </details>
+
+#### Other Projects
 
 <details>
   <summary><b>♻️ 요분정</b> — 쓰레기 분류 · 포인트 적립</summary>
