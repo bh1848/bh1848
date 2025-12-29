@@ -11,7 +11,7 @@
 
 
 <details>
-<summary><b>Stats</b></summary>
+<summary><b>📊 Stats</b></summary>
 <br/>
 
 <div align="center">
