@@ -1,61 +1,40 @@
-## 😎 Hey! Nice to see you.
-
-Welcome to my page! 백엔드 개발자 방혁입니다.  
-Spring Boot로 **백엔드 API를 설계·구현**하고, **MySQL/Redis**를 중심으로 서비스를 만들고 운영해왔습니다.  
-또한 Redis 클러스터 환경에서 **분산 캐시 라우팅 실험(D-HASH)** 을 진행하며 **처리량(TPS) / 지연시간(P95/P99) / 부하 분산** 지표로 검증합니다.
-
-
-## Things I code with
-<p>
-  <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring%20Boot-111827?style=flat&logo=springboot&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring%20Security-111827?style=flat&logo=springsecurity&logoColor=white" />
-  <img src="https://img.shields.io/badge/JPA%2FHibernate-111827?style=flat&logo=hibernate&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-111827?style=flat&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-111827?style=flat&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-111827?style=flat&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-111827?style=flat&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
+<p align="center">
+  <img src="./assets/banner.svg" />
 </p>
 
+Spring Boot 기반 백엔드 서버 개발자 방혁입니다.  
+API 설계와 Redis·분산 시스템 실험을 중심으로 개발해왔습니다.
 
-## Featured projects
+[![이메일](https://img.shields.io/badge/Email-bh1848@naver.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bh1848@naver.com)
+[![깃허브](https://img.shields.io/badge/GitHub-bh1848-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bh1848)
+</div>
 
-| Period | Project | What it is | Role | Tech | Link |
-|---|---|---|---|---|---|
-| 2024.05&nbsp;~&nbsp;2025.03 | 동구라미 | 동아리 지원 · 홍보 · 동아리원 관리 | 백엔드 | Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3) | https://github.com/bh1848/donggurami-backend
-| 2023.09&nbsp;~&nbsp;2024.10 | 수챗 | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2) | https://github.com/bh1848/suchat-backend
+## 🧱 Tech Stack
 
+### Back-end
+![Java](https://img.shields.io/badge/Java-3A75B0?style=flat&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4CAF50?style=flat&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring%20Security-4CAF50?style=flat&logo=springsecurity&logoColor=white)
+![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-4CAF50?style=flat&logo=spring&logoColor=white)
 
-## Research / experiments
+### DB / Cache
+![MySQL](https://img.shields.io/badge/MySQL-3A75B0?style=flat&logo=mysql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-D82C20?style=flat&logo=redis&logoColor=white)
 
-| Title | Status | Summary | Link |
-|---|---|---|---|
-| **MySQL–Redis 성능 비교** | JICS (2024) | 배치 기반 INSERT/SELECT/DELETE 지연시간 벤치마크(DB vs In-memory Cache) | https://github.com/bh1848/mysql-redis-benchmark |
-| **D-HASH 알고리즘 개발** | Under Review | 분산 캐시에서 핫 키로 인한 부하 집중을 완화하는 요청 분산 라우팅 실험(Redis) | https://github.com/bh1848/dhash-routing-evaluation |
+### Infra
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
+![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white)
+![RDS](https://img.shields.io/badge/RDS-3B82F6?style=flat&logo=amazonrds&logoColor=white)
+![S3](https://img.shields.io/badge/S3-2E8B57?style=flat&logo=amazons3&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2D8CFF?style=flat&logo=docker&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-2E8B57?style=flat&logo=nginx&logoColor=white)
 
+### Tools
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white)
 
-## Other projects
-- 🗑️ **요분정** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)  
-  https://github.com/bh1848/yobunjung-backend
-- 👀 **졸음운전 방지** — 졸음 감지 (Python · OpenCV)  
-  https://github.com/bh1848/drowsy-driving-prevention
-
----
-
-## Where to find me
-<p>
-  <a href="mailto:bh1848@naver.com">
-    <img src="https://img.shields.io/badge/Email-bh1848%40naver.com-111827?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://github.com/bh1848">
-    <img src="https://img.shields.io/badge/GitHub-bh1848-111827?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
-
-<details>
-<summary><b>Stats</b></summary>
-<br/>
+## 🧾 GitHub Status
 
 <div align="center">
   <img
@@ -69,4 +48,21 @@ Spring Boot로 **백엔드 API를 설계·구현**하고, **MySQL/Redis**를 중
     alt="BOJ Badge"
   />
 </div>
-</details>
+
+## 📖 Research
+
+| 제목 | 게재/상태 | 핵심 내용 | 링크 |
+|---|---|---|---|
+| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024) | 배치 기반 INSERT/SELECT/DELETE 지연시간 측정 / 디스크 DB와 인메모리 캐시 성능 비교 | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) |
+| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 분산 캐시에서 특정 키에 요청이 집중되는 문제를 완화하기 위한 요청 분산 라우팅 기법 설계 및 평가 (Redis) | - |
+
+## 💡 Featured Projects
+
+| Period | Projects | Explanation | Role | Tech Stack |
+|---|---|---|---|---|
+| 2024.05&nbsp;~&nbsp;2025.03 | **[동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 지원 · 홍보 · 동아리원 관리 | 백엔드 | Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3) |
+| 2023.09&nbsp;~&nbsp;2024.10 | **[수챗](https://github.com/bh1848/suchat-backend)** | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2) |
+
+### Other Projects
+- **[요분정](https://github.com/bh1848/yobunjung-backend)** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)
+- **[졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** — 졸음 감지 (Python · OpenCV)
