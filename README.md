@@ -1,7 +1,7 @@
 ## 😎 Hey! Nice to see you.
 
-Welcome to my page!
-백엔드 개발자 방혁입니다.
+Welcome to my page!  
+백엔드 개발자 방혁입니다.  
 Spring Boot로 **백엔드 API를 설계·구현**하고, **MySQL/Redis**를 중심으로 서비스를 만들고 운영해왔습니다.  
 또한 Redis 클러스터 환경에서 **분산 캐시 라우팅 실험(D-HASH)** 을 진행하며 **처리량(TPS) / 지연시간(P95/P99) / 부하 분산** 지표로 검증합니다.
 
