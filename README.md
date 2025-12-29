@@ -55,7 +55,7 @@
 
 ---
 
-### Projects
+### Projects 
 
 <details>
   <summary><b>🐣동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
@@ -74,8 +74,6 @@
 - Tech: `Spring Boot` `Spring Security` `JWT` `MySQL` `Redis` `AWS(EC2)`
 
 </details>
-
-#### Other Projects
 
 <details>
   <summary><b>♻️ 요분정</b> — 쓰레기 분류 · 포인트 적립</summary>
