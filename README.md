@@ -12,6 +12,10 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 - 또한 Redis 5노드 환경에서 분산 캐시 라우팅(D-HASH) 실험을 진행하며 TPS / Latency(P95/P99) / Load Balancing 지표로 검증했습니다.  
 
 
+## Where to find me
+- Email: bh1848@naver.com
+
+
 ## Things I code with
 <p>
   <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=white" />
@@ -83,18 +87,6 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 - Tech: `Python` `OpenCV`
 
 </details>
-
----
-
-## Where to find me
-<p>
-  <a href="mailto:bh1848@naver.com">
-    <img src="https://img.shields.io/badge/Email-bh1848%40naver.com-111827?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://github.com/bh1848">
-    <img src="https://img.shields.io/badge/GitHub-bh1848-111827?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-</p>
 
 
 <details>
