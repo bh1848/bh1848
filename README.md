@@ -1,5 +1,6 @@
-# 😎 Hey! Nice to see you.  백엔드 개발자 방혁입니다.
-    
+# 😎 Hey! Nice to see you.
+#### Welcome to my page! 백엔드 개발자 방혁입니다.
+
 - Spring Boot로 API를 설계하고 구현합니다.
 
     
