@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Animated blue wave top">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D8CFF"/>
+      <stop offset="55%" stop-color="#1FB6FF"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feColorMatrix in="b" type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.45 0" result="g"/>
+      <feMerge>
+        <feMergeNode in="g"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- A long wave shape (2400px wide) so it can loop seamlessly -->
+    <path id="waveBack" d="
+      M0 150
+      C 140 120, 260 185, 420 155
+      C 560 130, 680 85, 840 112
+      C 980 140, 1100 195, 1200 165
+      C 1340 135, 1460 200, 1620 165
+      C 1760 135, 1880 90, 2040 115
+      C 2180 140, 2300 185, 2400 160
+      L2400 220 L0 220 Z
+    "/>
+
+    <path id="waveFront" d="
+      M0 165
+      C 160 105, 320 210, 520 160
+      C 720 110, 860 70, 1020 120
+      C 1160 165, 1260 205, 1400 175
+      C 1560 140, 1680 215, 1880 170
+      C 2080 125, 2200 90, 2400 135
+      L2400 220 L0 220 Z
+    "/>
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Back layer (slow) -->
+  <g opacity="0.35" filter="url(#glow)">
+    <g>
+      <use href="#waveBack" fill="url(#g)"/>
+      <use href="#waveBack" x="1200" fill="url(#g)"/>
+      <animateTransform attributeName="transform" type="translate"
+        from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Front layer (faster) -->
+  <g opacity="0.85" filter="url(#glow)">
+    <g>
+      <use href="#waveFront" fill="url(#g)"/>
+      <use href="#waveFront" x="1200" fill="url(#g)"/>
+      <animateTransform attributeName="transform" type="translate"
+        from="0 0" to="-1200 0" dur="9s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Highlight crest -->
+  <path d="M0 168 C 180 120, 320 200, 520 165 C 720 130, 870 95, 1020 135 C 1160 170, 1270 195, 1400 175"
+        fill="none" stroke="url(#shine)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+</svg>
