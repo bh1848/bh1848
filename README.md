@@ -9,18 +9,7 @@
   
 - 또한 Redis 5노드 환경에서 분산 캐시 라우팅(D-HASH) 실험을 진행하며 TPS / Latency(P95/P99) / Load Balancing 지표로 검증했습니다.    
 
-<div align="center">
-  <img
-    src="https://github-readme-stats-rouge-two-91.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github&hide_rank=false&hide_border=true&theme=transparent&cache_seconds=86400"
-    height="155"
-    alt="GitHub Stats"
-  />
-  <img
-    src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
-    height="155"
-    alt="BOJ Badge"
-  />
-</div>
+
 
 #### 📱Contact me
 - Email: bh1848@naver.com
@@ -103,3 +92,14 @@
 - Tech: `Python` `OpenCV`
 
 </details>
+
+---
+
+### Algorithm
+<div align="center">
+  <img
+    src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
+    height="155"
+    alt="BOJ Badge"
+  />
+</div>
