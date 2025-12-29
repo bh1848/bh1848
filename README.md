@@ -47,7 +47,7 @@
 </p>
 
 
-## 🔬 Research / Experiments
+## Research / Experiments
 
 <details>
   <summary><b>⚖️ MySQL–Redis 성능 비교</b> · JICS (2024)</summary>
@@ -69,7 +69,7 @@
 </details>
 
 
-## 👨‍💻 Projects
+## Projects
 
 <details>
   <summary><b>🐣동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
