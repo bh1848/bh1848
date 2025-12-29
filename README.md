@@ -5,7 +5,7 @@
 - JWT 기반 인증/인가, MySQL/JPA, Redis를 중심으로 서비스 기능을 만들고 운영한 경험이 있습니다.
 - 또한 Redis 5노드 환경에서 분산 캐시 라우팅(D-HASH) 실험을 진행하며 TPS / Latency(P95/P99) / Load Balancing 지표로 검증했습니다.
 
-### Skills 🥷
+## Skills 🥷
 <p>
   <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring%20Boot-111827?style=flat&logo=springboot&logoColor=white" />
@@ -19,7 +19,7 @@
 </p>
 
 
-### Research / Experiments 🔬
+## Research / Experiments 🔬
 
 <details>
   <summary><b>MySQL–Redis 성능 비교</b> · JICS (2024)</summary>
@@ -41,7 +41,7 @@
 </details>
 
 
-### Projects 👨‍💻
+## Projects 👨‍💻
 
 <details>
   <summary><b>동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
@@ -80,7 +80,7 @@
 </details>
 
 
-### Baekjoon Solved Rank 🏅
+## Baekjoon Solved Rank 🏅
  <img
     src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
     height="155"
