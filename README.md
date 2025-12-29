@@ -31,7 +31,7 @@
 
 ---
 
-### Things I code with
+### Skills
 
 <p>
   <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=white" />
