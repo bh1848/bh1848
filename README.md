@@ -89,10 +89,10 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 ## Where to find me
 <p>
   <a href="mailto:bh1848@naver.com">
-    <img src="https://img.shields.io/badge/Gmail-111827?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email-bh1848%40naver.com-111827?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a href="https://github.com/bh1848">
-    <img src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub-bh1848-111827?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </p>
 
