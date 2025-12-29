@@ -21,10 +21,10 @@ Spring Boot로 **백엔드 API를 설계·구현**하고, **MySQL/Redis**를 중
 
 ## Featured projects
 
-| Project | What it is | Tech | Link |
-|---|---|---|---|
-| **동구라미** | 동아리 지원 · 홍보 · 동아리원 관리 | Spring Boot · Security · JWT · MySQL · Redis · Docker · AWS | https://github.com/bh1848/donggurami-backend |
-| **수챗** | 대학교 랜덤 채팅 · 실시간 매칭 | Spring Boot · Security · JWT · MySQL · Redis · AWS(EC2) | https://github.com/bh1848/suchat-backend |
+| Project | What it is | Role | Tech | Link |
+|---|---|---|---|---|
+| 2024.05&nbsp;~&nbsp;2025.03 | 동구라미 | 동아리 지원 · 홍보 · 동아리원 관리 | 백엔드 | Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3) | https://github.com/bh1848/donggurami-backend
+| 2023.09&nbsp;~&nbsp;2024.10 | 수챗 | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2) | https://github.com/bh1848/suchat-backend
 
 
 ## Research / experiments
