@@ -96,10 +96,8 @@
 ---
 
 ### Algorithm
-<div align="center">
   <img
     src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
     height="155"
     alt="BOJ Badge"
   />
-</div>
