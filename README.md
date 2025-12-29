@@ -41,6 +41,7 @@ Spring Boot로 **백엔드 API를 설계·구현**하고, **MySQL/Redis**를 중
 - 👀 **졸음운전 방지** — 졸음 감지 (Python · OpenCV)  
   https://github.com/bh1848/drowsy-driving-prevention
 
+---
 
 ## Where to find me
 <p>
