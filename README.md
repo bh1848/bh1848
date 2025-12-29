@@ -1,7 +1,4 @@
-# 😎 Hey! Nice to see you.  
-
-Welcome to my page! 백엔드 개발자 방혁입니다.  
-    
+# 😎 Hey! Nice to see you.  백엔드 개발자 방혁입니다.
     
 - Spring Boot로 API를 설계하고 구현합니다.
 
@@ -11,11 +8,13 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
   
 - 또한 Redis 5노드 환경에서 분산 캐시 라우팅(D-HASH) 실험을 진행하며 TPS / Latency(P95/P99) / Load Balancing 지표로 검증했습니다.  
 
-    
+
+#### Contact me
 - Email: bh1848@naver.com
 
 
-## Things I code with
+#### Things I code with
+
 <p>
   <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring%20Boot-111827?style=flat&logo=springboot&logoColor=white" />
@@ -29,7 +28,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 </p>
 
 
-## Research / Experiments
+#### Research / Experiments
 
 <details>
   <summary><b>⚖️ MySQL–Redis 성능 비교</b> · JICS (2024)</summary>
@@ -51,7 +50,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 </details>
 
 
-## Projects
+#### Projects
 
 <details>
   <summary><b>🐣동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
