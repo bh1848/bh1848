@@ -106,20 +106,20 @@
 
   <!-- Text block (left align, clean) -->
   <g transform="translate(84,118)">
-    <text class="subtitle" x="0" y="0">Backend · Systems · Experiments</text>
+    <text class="subtitle" x="0" y="0">Backend · Security · Systems</text>
     <text class="title" x="0" y="54">BangHyeok</text>
-    <text class="meta" x="0" y="86">Spring Boot / Redis / MySQL · Distributed cache routing (D-HASH)</text>
+    <text class="meta" x="0" y="86">Spring Boot / JWT / MySQL / Redis</text>
 
     <!-- Pills -->
     <g transform="translate(0,108)">
       <rect class="pill" x="0" y="0" rx="12" ry="12" width="170" height="30"/>
-      <text class="meta" x="14" y="20">API Design</text>
+      <text class="meta" x="14" y="20">Secure API</text>
 
       <rect class="pill" x="186" y="0" rx="12" ry="12" width="180" height="30"/>
-      <text class="meta" x="200" y="20">Redis Routing</text>
+      <text class="meta" x="200" y="20">Auth · JWT</text>
 
       <rect class="pill" x="382" y="0" rx="12" ry="12" width="160" height="30"/>
-      <text class="meta" x="396" y="20">Benchmarking</text>
+      <text class="meta" x="396" y="20">Redis Routing</text>
     </g>
   </g>
 
