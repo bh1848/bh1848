@@ -31,8 +31,9 @@
 #### 📱Contact me
 - Email: bh1848@naver.com
 
+---
 
-### Things I code with
+#### Things I code with
 
 <p>
   <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=white" />
@@ -46,8 +47,9 @@
   <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
 </p>
 
+---
 
-## Research / Experiments
+#### Research / Experiments
 
 <details>
   <summary><b>⚖️ MySQL–Redis 성능 비교</b> · JICS (2024)</summary>
@@ -68,6 +70,7 @@
 
 </details>
 
+---
 
 ## Projects
 
