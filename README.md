@@ -1,6 +1,8 @@
-<p align="center">
-  <img src="./assets/banner.svg" />
-</p>
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,100:0b1220&height=120&section=header&text=Bang%20Hyeok&fontSize=44&fontColor=ffffff&fontAlignY=40&desc=Backend%20Developer%20·%20Spring%20Boot%20·%20JPA%20·%20MySQL%20·%20Redis%20·%20AWS&descAlignY=72&descSize=16" />
+
+<br/>
 
 Spring Boot 기반 백엔드 서버 개발자 방혁입니다.  
 API 설계와 Redis·분산 시스템 실험을 중심으로 개발해왔습니다.
