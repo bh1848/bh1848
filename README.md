@@ -25,23 +25,41 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
   <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
 </p>
 
-## Research / experiments
+## Research / Experiments
 
-| Title | Status | Summary | Link |
-|---|---|---|---|
-| **[MySQL–Redis 성능 비교](https://github.com/bh1848/mysql-redis-benchmark)** | JICS (2024) | 배치 기반 INSERT/SELECT/DELETE 지연시간 측정 / 디스크 DB와 인메모리 캐시 성능 비교 | [KCI](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301) |
-| **[D-HASH 알고리즘 개발](https://github.com/bh1848/dhash-routing-evaluation)** | Under Review | 분산 캐시에서 특정 키에 요청이 집중되는 문제를 완화하기 위한 요청 분산 라우팅 기법 설계 및 평가 (Redis) | - |
+### **MySQL–Redis 성능 비교** *(JICS, 2024)*
+배치 기반 INSERT/SELECT/DELETE 지연시간을 측정하여 디스크 DB와 인메모리 캐시 성능을 비교했습니다.  
+- Repo: https://github.com/bh1848/mysql-redis-benchmark  
+- Paper: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301  
+- Tech: `MySQL` `Redis` `Benchmark`
+
+### **D-HASH 알고리즘 개발** *(Under Review)*
+분산 캐시에서 특정 키 요청 집중(핫 키) 문제를 완화하기 위한 요청 분산 라우팅 기법을 설계·평가했습니다.  
+- Repo: https://github.com/bh1848/dhash-routing-evaluation  
+- Tech: `Redis` `Docker` `Python` `Load Balancing` `TPS` `P95/P99`
+
 
 ## Featured Projects
 
-| Period | Projects | What it is | Role | Tech |
-|---|---|---|---|---|
-| 2024.05&nbsp;~&nbsp;2025.03 | **[동구라미](https://github.com/bh1848/donggurami-backend)** | 동아리 지원 · 홍보 · 동아리원 관리 | 백엔드 | Spring Boot · Spring Security · JWT · Docker · MySQL · Redis · AWS(EC2/RDS/S3) |
-| 2023.09&nbsp;~&nbsp;2024.10 | **[수챗](https://github.com/bh1848/suchat-backend)** | 대학교 랜덤 채팅 · 실시간 매칭 | 백엔드 | Spring Boot · Spring Security · JWT · MySQL · Redis · AWS(EC2) |
+### **동구라미** *(2024.05 ~ 2025.03 · Backend)*
+동아리 지원 · 홍보 · 동아리원 관리 서비스  
+- Repo: https://github.com/bh1848/donggurami-backend  
+- Tech: `Spring Boot` `Spring Security` `JWT` `Docker` `MySQL` `Redis` `AWS(EC2/RDS/S3)`
+
+### **수챗** *(2023.09 ~ 2024.10 · Backend)*
+대학교 랜덤 채팅 · 실시간 매칭 서비스  
+- Repo: https://github.com/bh1848/suchat-backend  
+- Tech: `Spring Boot` `Spring Security` `JWT` `MySQL` `Redis` `AWS(EC2)`
+
 
 ### Other Projects
-- **[요분정](https://github.com/bh1848/yobunjung-backend)** — 쓰레기 분류 · 포인트 적립 (Flask · MySQL · ONNX · SSE)
-- **[졸음운전 방지](https://github.com/bh1848/drowsy-driving-prevention)** — 졸음 감지 (Python · OpenCV)
+- **요분정** — 쓰레기 분류 · 포인트 적립  
+  Repo: https://github.com/bh1848/yobunjung-backend  
+  Tech: `Flask` `MySQL` `ONNX` `SSE`
+
+- **졸음운전 방지** — 졸음 감지  
+  Repo: https://github.com/bh1848/drowsy-driving-prevention  
+  Tech: `Python` `OpenCV`
 
 ---
 
