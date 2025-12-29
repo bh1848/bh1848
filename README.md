@@ -9,6 +9,7 @@
 ### 📱Contact me 
 - Email: bh1848@naver.com
 
+---
 
 ## 🥷Skills 
 <p>
@@ -23,8 +24,9 @@
   <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
 </p>
 
+---
 
-## 🔬Research / Experiments 
+### 🔬Research / Experiments 
 
 <details>
   <summary><b>MySQL–Redis 성능 비교</b> · JICS (2024)</summary>
@@ -45,8 +47,9 @@
 
 </details>
 
+---
 
-## 👨‍💻Projects 
+### 👨‍💻Projects 
 
 <details>
   <summary><b>동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
@@ -84,8 +87,9 @@
 
 </details>
 
+---
 
-## 🏆Baekjoon Solved Rank
+### 🏆Baekjoon Solved Rank
  <img
     src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
     height="155"
