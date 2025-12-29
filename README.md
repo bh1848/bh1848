@@ -29,7 +29,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 ## Research / Experiments
 
 <details>
-  <summary><b ⚖️ MySQL–Redis 성능 비교</b> · JICS (2024)</summary>
+  <summary><b>⚖️ MySQL–Redis 성능 비교</b> · JICS (2024)</summary>
 
 - 배치 기반 INSERT/SELECT/DELETE 지연시간을 측정하여 디스크 DB와 인메모리 캐시 성능을 비교했습니다.
 - Repo: https://github.com/bh1848/mysql-redis-benchmark  
@@ -39,7 +39,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 </details>
 
 <details>
-  <summary><b> 📈 D-HASH 알고리즘 개발</b> · Under Review</summary>
+  <summary><b>📈 D-HASH 알고리즘 개발</b> · Under Review</summary>
 
 - 분산 캐시에서 특정 키 요청 집중(핫 키) 문제를 완화하기 위한 요청 분산 라우팅 기법을 설계·평가했습니다.
 - Repo: https://github.com/bh1848/dhash-routing-evaluation  
@@ -51,7 +51,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 ## Projects
 
 <details>
-  <summary><b> 🐣동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
+  <summary><b>🐣동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
 
 - What: 동아리 지원 · 홍보 · 동아리원 관리 서비스
 - Repo: https://github.com/bh1848/donggurami-backend  
@@ -60,7 +60,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 </details>
 
 <details>
-  <summary><b> 🤼‍♀️ 수챗</b> · 2023.09 ~ 2024.10 · Backend</summary>
+  <summary><b>🤼‍♀️ 수챗</b> · 2023.09 ~ 2024.10 · Backend</summary>
 
 - What: 대학교 랜덤 채팅 · 실시간 매칭 서비스
 - Repo: https://github.com/bh1848/suchat-backend  
@@ -69,7 +69,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 </details>
 
 <details>
-  <summary><b> ♻️ 요분정</b> — 쓰레기 분류 · 포인트 적립</summary>
+  <summary><b>♻️ 요분정</b> — 쓰레기 분류 · 포인트 적립</summary>
 
 - Repo: https://github.com/bh1848/yobunjung-backend  
 - Tech: `Flask` `MySQL` `ONNX` `SSE`
@@ -77,7 +77,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
 </details>
 
 <details>
-  <summary><b> 😴 졸음운전 방지</b> — 졸음 감지</summary>
+  <summary><b>😴 졸음운전 방지</b> — 졸음 감지</summary>
 
 - Repo: https://github.com/bh1848/drowsy-driving-prevention  
 - Tech: `Python` `OpenCV`
