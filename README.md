@@ -13,6 +13,25 @@
 #### Contact me
 - Email: bh1848@naver.com
 
+    
+<details>
+<summary><b>Stats</b></summary>
+<br/>
+
+<div align="center">
+  <img
+    src="https://github-readme-stats-rouge-two-91.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github&hide_rank=false&hide_border=true&theme=transparent&cache_seconds=86400"
+    height="155"
+    alt="GitHub Stats"
+  />
+  <img
+    src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
+    height="155"
+    alt="BOJ Badge"
+  />
+</div>
+</details>
+
 
 ### Things I code with
 
@@ -85,23 +104,4 @@
 - Repo: https://github.com/bh1848/drowsy-driving-prevention  
 - Tech: `Python` `OpenCV`
 
-</details>
-
-
-<details>
-<summary><b>Stats</b></summary>
-<br/>
-
-<div align="center">
-  <img
-    src="https://github-readme-stats-rouge-two-91.vercel.app/api?username=bh1848&show_icons=true&hide_title=true&rank_icon=github&hide_rank=false&hide_border=true&theme=transparent&cache_seconds=86400"
-    height="155"
-    alt="GitHub Stats"
-  />
-  <img
-    src="https://mazassumnida.wtf/api/v2/generate_badge?boj=bh1848"
-    height="155"
-    alt="BOJ Badge"
-  />
-</div>
 </details>
