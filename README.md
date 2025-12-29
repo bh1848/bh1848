@@ -9,8 +9,7 @@
   
 - 또한 Redis 5노드 환경에서 분산 캐시 라우팅(D-HASH) 실험을 진행하며 TPS / Latency(P95/P99) / Load Balancing 지표로 검증했습니다.    
 
-<summary><b>📊 Stats</b></summary>
-<br/>
+#### 📊 Stats
 
 <div align="center">
   <img
