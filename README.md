@@ -11,8 +11,7 @@ Welcome to my page! 백엔드 개발자 방혁입니다.
   
 - 또한 Redis 5노드 환경에서 분산 캐시 라우팅(D-HASH) 실험을 진행하며 TPS / Latency(P95/P99) / Load Balancing 지표로 검증했습니다.  
 
-
-## Where to find me
+    
 - Email: bh1848@naver.com
 
 
