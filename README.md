@@ -1,6 +1,15 @@
 ## 안녕하세요. 백엔드 개발자 방혁입니다. 🐶 
 
 ### About me 👋
+- Spring Boot로 API를 설계하고 구현합니다.
+
+    
+- JWT 기반 인증/인가, MySQL/JPA, Redis를 중심으로 서비스 기능을 만들고 운영한 경험이 있습니다.
+
+  
+- 또한 Redis 5노드 환경에서 분산 캐시 라우팅(D-HASH) 실험을 진행하며 TPS / Latency(P95/P99) / Load Balancing 지표로 검증했습니다.
+
+### Skills 🥷
 <p>
   <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring%20Boot-111827?style=flat&logo=springboot&logoColor=white" />
@@ -12,14 +21,6 @@
   <img src="https://img.shields.io/badge/Docker-111827?style=flat&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
 </p>
-
-- Spring Boot로 API를 설계하고 구현합니다.
-
-    
-- JWT 기반 인증/인가, MySQL/JPA, Redis를 중심으로 서비스 기능을 만들고 운영한 경험이 있습니다.
-
-  
-- 또한 Redis 5노드 환경에서 분산 캐시 라우팅(D-HASH) 실험을 진행하며 TPS / Latency(P95/P99) / Load Balancing 지표로 검증했습니다.
 
 
 ### Research / Experiments 🔬
