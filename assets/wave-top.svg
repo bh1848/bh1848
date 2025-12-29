@@ -1,51 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-label="Blue wave bottom banner">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-label="Animated blue wave bottom">
   <defs>
-    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2D8CFF"/>
       <stop offset="55%" stop-color="#1FB6FF"/>
       <stop offset="100%" stop-color="#00D4FF"/>
     </linearGradient>
 
-    <filter id="softGlow" x="-20%" y="-30%" width="140%" height="180%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feColorMatrix in="blur" type="matrix"
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feColorMatrix in="b" type="matrix"
         values="1 0 0 0 0
                 0 1 0 0 0
                 0 0 1 0 0
-                0 0 0 0.45 0" result="glow"/>
+                0 0 0 0.45 0" result="g"/>
       <feMerge>
-        <feMergeNode in="glow"/>
+        <feMergeNode in="g"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <path id="waveBack" d="
+      M0 150
+      C 140 120, 260 185, 420 155
+      C 560 130, 680 85, 840 112
+      C 980 140, 1100 195, 1200 165
+      C 1340 135, 1460 200, 1620 165
+      C 1760 135, 1880 90, 2040 115
+      C 2180 140, 2300 185, 2400 160
+      L2400 220 L0 220 Z
+    "/>
+
+    <path id="waveFront" d="
+      M0 165
+      C 160 105, 320 210, 520 160
+      C 720 110, 860 70, 1020 120
+      C 1160 165, 1260 205, 1400 175
+      C 1560 140, 1680 215, 1880 170
+      C 2080 125, 2200 90, 2400 135
+      L2400 220 L0 220 Z
+    "/>
+
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- Flip the same wave vertically so it hugs the top edge -->
-  <g transform="translate(0 240) scale(1 -1)">
-    <path
-      d="M0 170 C 140 140, 260 210, 420 178 C 560 150, 680 105, 840 138 C 980 168, 1090 220, 1200 190 L1200 240 L0 240 Z"
-      fill="url(#waveGrad)"
-      opacity="0.35"
-      filter="url(#softGlow)"
-    />
-    <path
-      d="M0 185 C 160 130, 320 235, 500 182 C 680 130, 820 85, 980 135 C 1100 172, 1160 205, 1200 188 L1200 240 L0 240 Z"
-      fill="url(#waveGrad)"
-      opacity="0.85"
-      filter="url(#softGlow)"
-    />
-    <path
-      d="M0 188 C 170 140, 310 222, 500 185 C 700 146, 830 110, 980 150 C 1100 180, 1165 195, 1200 186"
-      fill="none"
-      stroke="url(#shineGrad)"
-      stroke-width="4"
-      stroke-linecap="round"
-      opacity="0.9"
-    />
+  <!-- Flip vertically so it hugs the top edge as a bottom banner -->
+  <g transform="translate(0 220) scale(1 -1)">
+    <g opacity="0.35" filter="url(#glow)">
+      <g>
+        <use href="#waveBack" fill="url(#g)"/>
+        <use href="#waveBack" x="1200" fill="url(#g)"/>
+        <animateTransform attributeName="transform" type="translate"
+          from="0 0" to="-1200 0" dur="14s" repeatCount="indefinite"/>
+      </g>
+    </g>
+
+    <g opacity="0.85" filter="url(#glow)">
+      <g>
+        <use href="#waveFront" fill="url(#g)"/>
+        <use href="#waveFront" x="1200" fill="url(#g)"/>
+        <animateTransform attributeName="transform" type="translate"
+          from="0 0" to="-1200 0" dur="9s" repeatCount="indefinite"/>
+      </g>
+    </g>
   </g>
+
+  <!-- (Optional) tiny highlight line -->
+  <path d="M0 52 C 180 20, 320 70, 520 50 C 720 30, 870 10, 1020 30 C 1160 45, 1270 60, 1400 55"
+        fill="none" stroke="url(#shine)" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
 </svg>
