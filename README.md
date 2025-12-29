@@ -1,8 +1,8 @@
 ## 😎 Hey! Nice to see you.
 
 Welcome to my page!  
-I'm **Bang Hyeok**, a **Backend Developer** building APIs with **Spring Boot** and working with **MySQL/Redis**.  
-I also run **distributed cache experiments (D-HASH)** to validate throughput/latency/load-balancing in a Redis cluster.
+Spring Boot로 **백엔드 API를 설계·구현**하고, **MySQL/Redis**를 중심으로 서비스를 만들고 운영해왔습니다.  
+또한 Redis 클러스터 환경에서 **분산 캐시 라우팅 실험(D-HASH)** 을 진행하며 **처리량(TPS) / 지연시간(P95/P99) / 부하 분산** 지표로 검증합니다.
 
 
 ## Things I code with
@@ -23,16 +23,16 @@ I also run **distributed cache experiments (D-HASH)** to validate throughput/lat
 
 | Project | What it is | Tech | Link |
 |---|---|---|---|
-| 🚀 **동구라미** | Club application · promotion · member management | Spring Boot · Security · JWT · MySQL · Redis · Docker · AWS | https://github.com/bh1848/donggurami-backend |
-| 💬 **수챗** | Random chat · real-time matching | Spring Boot · Security · JWT · MySQL · Redis · AWS(EC2) | https://github.com/bh1848/suchat-backend |
+| **동구라미** | 동아리 지원 · 홍보 · 동아리원 관리 | Spring Boot · Security · JWT · MySQL · Redis · Docker · AWS | https://github.com/bh1848/donggurami-backend |
+| **수챗** | 대학교 랜덤 채팅 · 실시간 매칭 | Spring Boot · Security · JWT · MySQL · Redis · AWS(EC2) | https://github.com/bh1848/suchat-backend |
 
 
 ## Research / experiments
 
 | Title | Status | Summary | Link |
 |---|---|---|---|
-| **MySQL–Redis 성능 비교** | JICS (2024) | Batch-based INSERT/SELECT/DELETE latency benchmark (DB vs in-memory cache) | https://github.com/bh1848/mysql-redis-benchmark |
-| **D-HASH 알고리즘 개발** | Under Review | Request distribution routing to mitigate hot-key concentration in distributed cache (Redis) | https://github.com/bh1848/dhash-routing-evaluation |
+| **MySQL–Redis 성능 비교** | JICS (2024) | 배치 기반 INSERT/SELECT/DELETE 지연시간 벤치마크(DB vs In-memory Cache) | https://github.com/bh1848/mysql-redis-benchmark |
+| **D-HASH 알고리즘 개발** | Under Review | 분산 캐시에서 핫 키로 인한 부하 집중을 완화하는 요청 분산 라우팅 실험(Redis) | https://github.com/bh1848/dhash-routing-evaluation |
 
 
 ## Other projects
