@@ -56,7 +56,7 @@
   <summary><b>동구라미</b> · 2024.05 ~ 2025.03 · Backend</summary>
 
 - 🐣동아리 지원 · 홍보 · 동아리원 관리 서비스 
-- Repo: https://github.com/bh1848/donggurami-backend  
+- Repo: https://github.com/bh1848/USW-CircleLink-Server  
 - Tech: `Spring Boot` `Spring Security` `JWT` `Docker` `MySQL` `Redis` `AWS(EC2/RDS/S3)`
 
 </details>
