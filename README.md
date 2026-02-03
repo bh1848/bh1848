@@ -98,7 +98,7 @@
 </details>
 
 <details>
-  <summary><b>요분정</b> · AI / Backend</summary>
+  <summary><b>요분정</b> · 2024.09 ~ 2024.11 · AI / Backend</summary>
 
 - ♻️ 딥러닝 기반 쓰레기 분류 및 포인트 적립 서비스
 - **Repo:** [yobunjung-backend](https://github.com/bh1848/yobunjung-backend)
@@ -107,7 +107,7 @@
 </details>
 
 <details>
-  <summary><b>졸음운전 방지 시스템</b> · AI / Embedded</summary>
+  <summary><b>졸음운전 방지 시스템</b> · 2023.09 ~ 2023.11 · AI / Embedded</summary>
 
 - 😴 운전자 눈 깜빡임 감지를 통한 졸음운전 예방 솔루션
 - **Repo:** [drowsy-driving-prevention](https://github.com/bh1848/drowsy-driving-prevention)
