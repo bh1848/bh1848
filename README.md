@@ -2,7 +2,7 @@
   <img src="./assets/banner.svg" width="100%" alt="banner" />
 </p>
 
-# 🐶 안녕하세요. 백엔드 개발자 방혁입니다.
+# 🐶 안녕하세요. 백엔드 개발자 방혁입니다. <a href="https://bh1848.github.io/hzeror"> <img src="https://img.shields.io/badge/Tech%20Blog-hzeror.blog-111827?style=flat&logo=github&logoColor=white" alt="Blog Badge"/> </a>
 
 ### 🔙 Backend Developer
 - **Spring Boot**를 주력으로 안정적이고 확장 가능한 API를 설계하고 구현합니다.
@@ -23,8 +23,9 @@
   <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
 </p>
 
-### 📱 Contact me
+### 📱 Contact & Channel
 - Email: bh1848@naver.com
+- Blog: [hzeror.blog](https://bh1848.github.io/hzeror)
 
 <br/>
 
