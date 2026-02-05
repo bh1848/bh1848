@@ -24,15 +24,8 @@
 </p>
 
 ### 📬 Blog & Email
-<p>
-  <a href="https://bh1848.github.io/hzeror">
-    <img src="https://img.shields.io/badge/Tech%20Blog-hzeror.blog-00C7B7?style=flat&logo=github&logoColor=white"/>
-  </a>
-  &nbsp;
-  <a href="mailto:bh1848@naver.com">
-    <img src="https://img.shields.io/badge/Email-bh1848%40naver.com-111827?style=flat&logo=naver&logoColor=white"/>
-  </a>
-</p>
+- Blog: [hzeror.blog](https://bh1848.github.io/hzeror)
+- Email: bh1848@naver.com
 <br/>
 
 ## 🔬 Research & Engineering
