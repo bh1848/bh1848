@@ -2,12 +2,12 @@
   <img src="./assets/banner.svg" width="100%" alt="banner" />
 </p>
 
-# 🐶 안녕하세요. 백엔드 개발자 방혁입니다. <a href="https://bh1848.github.io/hzeror"> <img src="https://img.shields.io/badge/Tech%20Blog-hzeror.blog-111827?style=flat&logo=github&logoColor=white" alt="Blog Badge"/> </a>
+# 🐶 안녕하세요. 방혁입니다.
 
 ### 🔙 Backend Developer
 - **Spring Boot**를 주력으로 안정적이고 확장 가능한 API를 설계하고 구현합니다.
 - JWT 기반 인증/인가, MySQL/JPA, Redis를 활용한 서비스 개발 및 운영 경험이 있습니다.
-- 대규모 트래픽 처리를 위한 시스템 아키텍처에 관심이 많으며, **Redis 분산 캐시 라우팅(D-HASH) 연구**를 통해 성능 최적화를 검증한 경험이 있습니다.
+- 대규모 트래픽 처리를 위한 시스템 아키텍처에 관심이 많으며, **Redis 분산 캐시 라우팅 알고리즘 D-HASH 연구**를 통해 성능 최적화를 검증한 경험이 있습니다.
 
 ### 🥷 Skills
 <p>
@@ -23,10 +23,16 @@
   <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
 </p>
 
-### 📱 Contact & Channel
-- Email: bh1848@naver.com
-- Blog: [hzeror.blog](https://bh1848.github.io/hzeror)
-
+### 📬 Blog & Email
+<p>
+  <a href="https://bh1848.github.io/hzeror">
+    <img src="https://img.shields.io/badge/Tech%20Blog-hzeror.blog-00C7B7?style=flat&logo=github&logoColor=white"/>
+  </a>
+  &nbsp;
+  <a href="mailto:bh1848@naver.com">
+    <img src="https://img.shields.io/badge/Email-bh1848%40naver.com-111827?style=flat&logo=naver&logoColor=white"/>
+  </a>
+</p>
 <br/>
 
 ## 🔬 Research & Engineering
