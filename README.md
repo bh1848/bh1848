@@ -8,8 +8,8 @@
 - Spring Boot를 주력으로 안정적이고 확장 가능한 API를 설계하고 구현합니다.
 - JWT 기반 인증/인가, MySQL/JPA, Redis를 활용한 서비스 개발 및 운영 경험이 있습니다.
 - 대규모 트래픽 처리를 위한 시스템 아키텍처에 관심이 많으며, Redis 분산 캐시 라우팅 알고리즘인 D-HASH를 개발해 성능 최적화를 연구하고 논문을 작성한 경험이 있습니다.
-- Blog: [hzeror.blog](https://bh1848.github.io/hzeror)
-- Email: bh1848@naver.com
+- 블로그: [hzeror.blog](https://bh1848.github.io/hzeror)
+- 이메일: bh1848@naver.com
 
 ### 🥷 Skills
 <p>
@@ -24,6 +24,9 @@
   <img src="https://img.shields.io/badge/Docker-111827?style=flat&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
 </p>
+
+<br/>
+
 
 ## 🔬 Research & Engineering
 
