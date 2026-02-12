@@ -15,18 +15,22 @@
 <p>
   <img src="https://img.shields.io/badge/Java-111827?style=flat&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring%20Boot-111827?style=flat&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring%20Security-111827?style=flat&logo=springsecurity&logoColor=white" />
   <img src="https://img.shields.io/badge/JPA%2FHibernate-111827?style=flat&logo=hibernate&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-111827?style=flat&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/Redis-111827?style=flat&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-111827?style=flat&logo=amazonaws&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-111827?style=flat&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Postman-111827?style=flat&logo=postman&logoColor=white" />
 </p>
 
 **Sub & Tools (Experience)**
 <p>
-  <img src="https://img.shields.io/badge/Python-111827?style=flat&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring%20Security-111827?style=flat&logo=springsecurity&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-111827?style=flat&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-111827?style=flat&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Nginx-111827?style=flat&logo=nginx&logoColor=white" />
+  <img src="https://img.shields.io/badge/QueryDSL-0078D7?style=flat&logo=java&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/JUnit5-25A162?style=flat&logo=junit5&logoColor=white" />
 </p>
 
 <br/>
