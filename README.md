@@ -36,23 +36,16 @@
 <br/>
 
 ## 🔬 연구
-
-### 1. D-HASH: 분산 캐시 Hot-key 해결 알고리즘 개발 (SCIE)
+### 1. D-HASH: 분산 캐시 Hot-key 해결 알고리즘 (SCIE)
 <img src="https://img.shields.io/badge/SCIE-Accepted-0066CC?style=flat-square&logo=googlescholar&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Algorithm-Optimization-orange?style=flat-square"/>
+> **Hot-key로 인한 서버 부하 불균형을 해결하는 동적 라우팅 기법**
 
-[**🐙 GitHub Repository**](https://github.com/bh1848/D-HASH) | [**📝 Paper (SCIE / TIIS 2026)**](https://doi.org/10.3837/tiis.2026.xx.xxx)
-
-> **Hot-key 병목 현상을 해결하는 클라이언트 사이드 동적 라우팅 프로토콜**
-> *KSII TIIS 2026 게재 (제1저자)*
-
-<br/>
-
-**연구 배경**
-Consistent Hashing 환경에서 특정 데이터(Hot-key)에 트래픽이 쏠릴 경우(상위 1% 키가 요청의 40% 점유), 단일 노드 과부하로 인해 전체 시스템 성능이 저하되는 문제를 발견했습니다. 이를 별도의 프록시 서버 없이 클라이언트단에서 해결하고자 했습니다.
+- **배경:** 대규모 트래픽 환경에서 특정 키(Hot-key)에 요청이 집중될 때 발생하는 단일 노드 과부하 문제 해결 필요
+- **성과:** 독자적인 동적 라우팅 알고리즘을 개발하여 Consistent Hashing 대비 **부하 표준편차 33.8% 감소** 달성
+- **역할:** 알고리즘 설계, 실험 설계·구현·분석, 논문 작성 (제1저자)
+- **Link:** [📝 Paper (SCIE / TIIS 2026)](https://doi.org/10.3837/tiis.2026.xx.xxx) | [🐙 Code](https://github.com/bh1848/D-HASH)
 
 <br/>
-
-**핵심 성과 및 기술적 도전**
 
 **1. 동적 라우팅 알고리즘 설계 (Window-Based Routing)**
 - **문제:** 단순히 요청을 분산하면 캐시 미스가 발생하거나 데이터 정합성이 깨짐.
@@ -70,23 +63,17 @@ Consistent Hashing 환경에서 특정 데이터(Hot-key)에 트래픽이 쏠릴
 
 <br/>
 
-
 ### 2. MySQL vs Redis 성능 비교 벤치마크 (KCI)
 <img src="https://img.shields.io/badge/KCI-Published-00C7B7?style=flat-square"/> <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Strategy-Pattern-orange?style=flat-square"/>
 
-[🐙 GitHub Repository](https://github.com/bh1848/mysql-redis-benchmark) | [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
+> **데이터 연산 유형에 따른 DB별 성능 차이 검증 및 캐시 전략 수립**
 
-> **데이터 연산 유형에 따른 RDBMS vs NoSQL 성능 차이 검증 및 캐시 도입 전략 수립**
-> *한국정보통신학회논문지(JICS) 2024 게재 (제1저자)*
-
-<br/>
-
-**연구 배경**
-단순히 Redis가 빠른 것이 아닌, **어떤 연산에서 얼마나 빠른지**를 분석하여, 실제 서비스 아키텍처 설계 시 **캐시 도입의 기준**을 제시하고자 했습니다.
+- **배경:** 
+- **성과:** 대량 데이터 처리 시 Redis가 MySQL 대비 **평균 7.8배(1.39ms vs 0.17ms) 빠름**을 실험적으로 입증
+- **역할:** 실험 설계·구현·분석 (제1저자)
+- **링크:** [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
 
 <br/>
-
-**핵심 구현 및 실험 설계**
 
 **1. 객체 지향적 벤치마크 프레임워크 설계**
 - **템플릿 메서드 패턴 적용:** 공정한 비교를 위해 `AbstractBatchExperiment` 추상 클래스를 정의하여 측정 로직(타이머, 반복 횟수 등)을 통일하고, DB별 구현체(`MysqlBatchExperiment`, `RedisBatchExperiment`)가 실제 연산만 수행하도록 설계했습니다.
@@ -100,22 +87,16 @@ Consistent Hashing 환경에서 특정 데이터(Hot-key)에 트래픽이 쏠릴
 
 ## 👨‍💻 프로젝트
 
-### 🌕 동구라미
+### 🌕 동구라미 (팀 프로젝트) 2024.05 ~ 2025.03 
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
 
-[🐙 GitHub Repository](https://github.com/bh1848/USW-Circle-Link-Server)
-
 > **대학교 중앙 동아리 및 소모임 통합 관리 플랫폼**
-> *2024.05 ~ 2025.03 (팀 프로젝트)*
 
-<br/>
+- **소개:**
+- **역할:** Backend
+- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/USW-Circle-Link-Server)
 
-**프로젝트 소개**
-교내 동아리 홍보, 가입 신청 간소화, 부원 관리 등 동아리 운영의 전 과정을 지원하는 서비스입니다. 기존에 파편화되어 있던 동아리 정보를 통합하고, 수기 관리의 비효율을 해결하기 위해 개발했습니다.
-
-<br/>
-
-**담당 업무 (Backend)**
+**담당 업무**
 
 **1. 보안 및 인증/인가 시스템 구축**
 - **JWT + Redis 인증:** Access Token과 Refresh Token을 활용한 이중 토큰 방식을 구현하고, Redis를 통해 **Refresh Token Rotation**을 적용하여 탈취 시 보안 위협을 최소화했습니다.
@@ -149,22 +130,17 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 <br/>
 
 
-### 💬 수챗
+### 💬 수챗 (팀 프로젝트) 2023.09 ~ 2024.10 
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Java%20Mail-EA4335?style=flat-square&logo=gmail&logoColor=white"/>
 
-[🐙 GitHub Repository](https://github.com/bh1848/suchat-backend)
 
 > **대학교 이메일 인증 기반 익명 랜덤 매칭 서비스**
-> *2023.09 ~ 2024.10 (팀 프로젝트)*
 
-<br/>
+- **소개:** 교내 이메일 인증을 통해 신뢰할 수 있는 익명 커뮤니티를 형성하고, 실시간 1:1 랜덤 매칭을 제공합니다. 기존 에브리타임 등 커뮤니티의 익명성을 보장하되, "우리 학교 학생"이라는 신뢰를 기반으로 안전한 소통 공간을 만들고자 했습니다.
+- **역할:** Backend
+- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/suchat-backend)
 
-**프로젝트 소개**
-교내 이메일 인증을 통해 신뢰할 수 있는 익명 커뮤니티를 형성하고, 실시간 1:1 랜덤 매칭을 제공합니다. 기존 에브리타임 등 커뮤니티의 익명성을 보장하되, "우리 학교 학생"이라는 신뢰를 기반으로 안전한 소통 공간을 만들고자 했습니다.
-
-<br/>
-
-**담당 업무 (Backend)**
+**담당 업무**
 
 **1. 실시간 랜덤 매칭 알고리즘**
 - **Redis ZSet 대기열:** 매칭 대기열을 DB가 아닌 Redis Sorted Set(ZSet)으로 구현하여, 입/퇴장 빈도가 잦은 매칭 요청의 I/O 성능을 확보하고 대기 순서를 보장했습니다.
@@ -181,22 +157,18 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-### ♻️ 요분정
+### ♻️ 요분정 (4인 프로젝트) 2024.09 ~ 2024.11 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
 
-[🐙 GitHub Repository](https://github.com/bh1848/yobunjung-backend)
 
 > **딥러닝 객체 인식을 활용한 쓰레기 자동 분류 및 리워드 앱**
-> *2024.09 ~ 2024.11 (4인 프로젝트)*
 
-<br/>
+- **소개:** 사용자가 쓰레기를 촬영하면 AI가 종류(캔, 플라스틱, 종이)를 분류하여 **QR 코드를 발급**하고, 이를 수거함에 스캔하면 자동으로 문이 열려 투입 후 포인트를 지급하는 **IoT 기반 자원 순환 서비스**입니다.
+- **역할:** Backend & AI Serving
+- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/yobunjung-backend)
 
-**프로젝트 소개**
-사용자가 쓰레기를 촬영하면 AI가 종류(캔, 플라스틱, 종이)를 분류하여 **QR 코드를 발급**하고, 이를 수거함에 스캔하면 자동으로 문이 열려 투입 후 포인트를 지급하는 **IoT 기반 자원 순환 서비스**입니다.
 
-<br/>
-
-**담당 업무 (Backend & AI Serving)**
+**담당 업무**
 
 **1. AI 모델 경량화 및 실시간 서빙**
 - **ONNX 런타임 적용:** 학습된 YOLO 모델을 실제 서버 환경에서 빠르고 가볍게 구동하기 위해 **ONNX 포맷으로 변환**하여 경량화된 추론 환경을 구축했습니다.
@@ -214,22 +186,19 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-### 😴 딴짓 하지 말아줘
+### 😴 딴짓 하지 말아줘 (4인 프로젝트) 2023.09 ~ 2023.11
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/PyQt5-41CD52?style=flat-square&logo=qt&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/> <img src="https://img.shields.io/badge/dlib-008000?style=flat-square"/>
 
-[🐙 GitHub Repository](https://github.com/bh1848/drowsy-driving-prevention)
 
 > **Computer Vision 기반 실시간 운전자 졸음 및 전방 미주시 감지 솔루션**
-> *2023.09 ~ 2023.11 (4인 프로젝트)*
+
+- **소개:** 웹캠을 통해 운전자의 얼굴을 실시간으로 분석하여 졸음(눈 감음), 하품, 전방 미주시 상태를 감지하고, 위험 단계에 따라 경고음과 시각적 알림을 제공하는 윈도우 애플리케이션입니다.
+- **역할:** Application Dev & CV Implementation
+- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/drowsy-driving-prevention)
 
 <br/>
 
-**프로젝트 소개**
-웹캠을 통해 운전자의 얼굴을 실시간으로 분석하여 졸음(눈 감음), 하품, 전방 미주시 상태를 감지하고, 위험 단계에 따라 경고음과 시각적 알림을 제공하는 윈도우 애플리케이션입니다.
-
-<br/>
-
-**담당 업무 (Application Dev & CV Implementation)**
+**담당 업무**
 
 **1. 데스크탑 애플리케이션 UI/UX 개발**
 - **PyQt5 기반 UI 구축:** `QMainWindow`를 상속받아 운전자 모니터링 화면, 상태 표시바, 제어 버튼이 포함된 직관적인 대시보드를 설계하고 구현했습니다.
