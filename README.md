@@ -40,6 +40,8 @@
 ### 1. D-HASH: 분산 캐시 Hot-key 해결 알고리즘 개발 (SCIE)
 <img src="https://img.shields.io/badge/SCIE-Accepted-0066CC?style=flat-square&logo=googlescholar&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Algorithm-Optimization-orange?style=flat-square"/>
 
+[**🐙 GitHub Repository**](https://github.com/bh1848/D-HASH) | [**📝 Paper (SCIE / TIIS 2026)**](https://doi.org/10.3837/tiis.2026.xx.xxx)
+
 > **Hot-key 병목 현상을 해결하는 클라이언트 사이드 동적 라우팅 프로토콜**
 > *KSII TIIS 2026 게재 (제1저자)*
 
@@ -68,13 +70,11 @@ Consistent Hashing 환경에서 특정 데이터(Hot-key)에 트래픽이 쏠릴
 
 <br/>
 
-- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/D-HASH) | [📝 Paper (SCIE / TIIS 2026)](https://doi.org/10.3837/tiis.2026.xx.xxx)
-
-<br/>
-
 
 ### 2. MySQL vs Redis 성능 비교 벤치마크 (KCI)
 <img src="https://img.shields.io/badge/KCI-Published-00C7B7?style=flat-square"/> <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Strategy-Pattern-orange?style=flat-square"/>
+
+[🐙 GitHub Repository](https://github.com/bh1848/mysql-redis-benchmark) | [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
 
 > **데이터 연산 유형에 따른 RDBMS vs NoSQL 성능 차이 검증 및 캐시 도입 전략 수립**
 > *한국정보통신학회논문지(JICS) 2024 게재 (제1저자)*
@@ -98,14 +98,12 @@ Consistent Hashing 환경에서 특정 데이터(Hot-key)에 트래픽이 쏠릴
 
 <br/>
 
-- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/mysql-redis-benchmark) | [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
-
-<br/>
-
 ## 👨‍💻 프로젝트
 
 ### 🌕 동구라미
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
+
+[🐙 GitHub Repository](https://github.com/bh1848/USW-Circle-Link-Server)
 
 > **대학교 중앙 동아리 및 소모임 통합 관리 플랫폼**
 > *2024.05 ~ 2025.03 (팀 프로젝트)*
@@ -150,13 +148,11 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/USW-Circle-Link-Server)
-
-<br/>
-
 
 ### 💬 수챗
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Java%20Mail-EA4335?style=flat-square&logo=gmail&logoColor=white"/>
+
+[🐙 GitHub Repository](https://github.com/bh1848/suchat-backend)
 
 > **대학교 이메일 인증 기반 익명 랜덤 매칭 서비스**
 > *2023.09 ~ 2024.10 (팀 프로젝트)*
@@ -185,12 +181,10 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/suchat-backend)
-
-<br/>
-
 ### ♻️ 요분정
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
+
+[🐙 GitHub Repository](https://github.com/bh1848/yobunjung-backend)
 
 > **딥러닝 객체 인식을 활용한 쓰레기 자동 분류 및 리워드 앱**
 > *2024.09 ~ 2024.11 (4인 프로젝트)*
@@ -220,12 +214,10 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/yobunjung-backend)
-
-<br/>
-
 ### 😴 딴짓 하지 말아줘
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/PyQt5-41CD52?style=flat-square&logo=qt&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/> <img src="https://img.shields.io/badge/dlib-008000?style=flat-square"/>
+
+[🐙 GitHub Repository](https://github.com/bh1848/drowsy-driving-prevention)
 
 > **Computer Vision 기반 실시간 운전자 졸음 및 전방 미주시 감지 솔루션**
 > *2023.09 ~ 2023.11 (4인 프로젝트)*
@@ -249,10 +241,6 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 **3. 시스템 통합 및 알림 시스템**
 - **상태 기반 경고 시스템:** 정상, 졸음, 하품, 미주시 등 운전자의 상태를 4단계로 정의하고, `pygame` 라이브러리를 활용해 각 상황에 맞는 경고 음성(MP3)이 즉시 재생되도록 이벤트 핸들링을 구현했습니다.
-
-<br/>
-
-- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/drowsy-driving-prevention)
 
 <br/>
 
