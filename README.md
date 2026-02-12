@@ -34,30 +34,73 @@
 ## 🔬 연구
 
 ### 1. D-HASH: 분산 캐시 Hot-key 해결 알고리즘 개발 (SCIE)
-<img src="https://img.shields.io/badge/SCIE-Accepted-0066CC?style=flat-square&logo=googlescholar&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+<img src="https://img.shields.io/badge/SCIE-Accepted-0066CC?style=flat-square&logo=googlescholar&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Algorithm-Optimization-orange?style=flat-square"/>
 
-> **Hot-key로 인한 서버 부하 불균형을 해결하는 동적 라우팅 기법**
+> **Hot-key 병목 현상을 해결하는 클라이언트 사이드 동적 라우팅 프로토콜**
+> *KSII TIIS 2026 게재 (제1저자)*
 
-- **배경:** 대규모 트래픽 환경에서 특정 키(Hot-key)에 요청이 집중될 때 발생하는 단일 노드 과부하 문제 해결 필요
-- **성과:** 독자적인 동적 라우팅 알고리즘을 개발하여 Consistent Hashing 대비 **부하 표준편차 33.8% 감소** 달성
-- **역할:** 제1저자 (알고리즘 설계, Python 시뮬레이션 구현, 논문 작성)
-- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/D-HASH) | [📝 Paper (SCIE / TIIS 2026)](https://doi.org/10.3837/tiis.2026.xx.xxx)
+<br/>
+
+**연구 배경**
+Consistent Hashing 환경에서 특정 데이터(Hot-key)에 트래픽이 쏠릴 경우(상위 1% 키가 요청의 40% 점유), 단일 노드 과부하로 인해 전체 시스템 성능이 저하되는 문제를 발견했습니다. 이를 별도의 프록시 서버 없이 클라이언트단에서 해결하고자 했습니다.
+
+<br/>
+
+**핵심 성과 및 기술적 도전**
+
+**1. 동적 라우팅 알고리즘 설계 (Window-Based Routing)**
+- **문제:** 단순히 요청을 분산하면 캐시 미스(Cache Miss)가 발생하거나 데이터 정합성이 깨짐.
+- **해결:**
+    - **승격(Promotion) 로직:** LRU 카운터를 통해 요청 빈도가 임계값($T$)을 넘는 키를 실시간 감지하여 Hot-key로 승격.
+    - **Guard Phase 도입:** 승격 직후 바로 트래픽을 분산하지 않고, 일정 윈도우($W$) 동안은 데이터를 복제(Pre-warming)하는 **'보호 구간(Guard Phase)'**을 두어 초기 캐시 미스를 방지했습니다.
+    - **결정론적 라우팅:** 랜덤 방식 대신 요청 횟수 기반의 윈도우 스위칭 기법을 적용하여, 메인 노드와 대체 노드 간의 부하를 **결정론적(Deterministic)**으로 분배했습니다.
+
+**2. 데이터 정합성 및 성능 최적화**
+- **Write-Primary 정책:** 읽기 요청은 분산하되, 쓰기/수정 요청은 항상 **메인 노드(Primary Node)**로만 향하게 하여 분산 환경에서의 데이터 파편화를 방지했습니다.
+- **Python 최적화:** `xxHash` 라이브러리를 적용하여 해싱 속도를 높이고, 클래스에 `__slots__`를 선언하여 대량의 키 객체 생성 시 **메모리 사용량을 최적화**했습니다.
+
+**3. 정량적 성과 (Experimental Results)**
+- NASA 웹 로그 및 Zipfian 분포 데이터셋 실험 결과, 기존 Consistent Hashing 대비 **서버 간 부하 표준편차(Load Std Dev) 33.8% 감소**를 달성하여 시스템 안정성을 입증했습니다.
+
+<br/>
+
+- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/D-HASH) | [📝 Paper (SCIE / TIIS 2026)](https://doi.org/10.3837/tiis.2026.xx.xxx)
+
+<br/>
+
 
 ### 2. MySQL vs Redis 성능 비교 벤치마크 (KCI)
-<img src="https://img.shields.io/badge/KCI-Published-00C7B7?style=flat-square"/> <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+<img src="https://img.shields.io/badge/KCI-Published-00C7B7?style=flat-square"/> <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Strategy-Pattern-orange?style=flat-square"/>
 
-> **데이터 연산 유형에 따른 DB별 성능 차이 검증 및 캐시 전략 수립**
+> **데이터 연산 유형에 따른 RDBMS vs NoSQL 성능 차이 검증 및 캐시 도입 전략 수립**
+> *한국정보통신학회논문지(JICS) 2024 게재 (제1저자)*
 
-- **성과:** 대량 데이터 처리 시 Redis가 MySQL 대비 **평균 7.8배(1.39ms vs 0.17ms) 빠름**을 실험적으로 입증
-- **의의:** 단순 도입이 아닌, 수치적 근거에 기반한 캐싱 전략 수립 기준 마련
-- **역할:** 실험 설계·구현·분석 (제1저자)
-- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/mysql-redis-benchmark) | [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
+<br/>
+
+**연구 배경**
+단순히 "Redis가 빠르다"는 통념을 넘어, **어떤 연산(CRUD)에서 얼마나(How much) 빠른지**를 정량적으로 분석하여, 실제 서비스 아키텍처 설계 시 **캐시 도입의 명확한 기준(Trade-off)**을 제시하고자 했습니다.
+
+<br/>
+
+**핵심 구현 및 실험 설계**
+
+**1. 객체 지향적 벤치마크 프레임워크 설계 (Testbed Architecture)**
+- **템플릿 메서드 패턴 적용:** 공정한 비교를 위해 `AbstractBatchExperiment` 추상 클래스를 정의하여 측정 로직(타이머, 반복 횟수 등)을 통일하고, DB별 구현체(`MysqlBatchExperiment`, `RedisBatchExperiment`)가 실제 연산만 수행하도록 설계했습니다.
+- **대량 데이터 배치 처리:** 단건 처리가 아닌 **Batch Processing** 성능을 검증하기 위해 대용량 데이터의 일괄 삽입(Insert), 조회(Select), 수정(Update), 삭제(Delete) 시나리오를 구현했습니다.
+
+**2. 정량적 데이터 분석 및 성과**
+- **성능 격차 규명:** 실험 결과, 단순 Key-Value 조회 시 Redis가 MySQL(Disk I/O 기반) 대비 **평균 7.8배(1.39ms vs 0.17ms) 빠른 응답 속도**를 보임을 입증했습니다.
+- **아키텍처 제언:** 쓰기(Write) 연산이 빈번한 환경과 읽기(Read) 위주의 환경에서의 성능 변화 추이를 분석하여, **"데이터의 정합성이 중요한 원장 데이터는 MySQL에, 빈번한 조회 데이터는 Redis에 위임"**하는 하이브리드 아키텍처의 수치적 근거를 마련했습니다.
+
+<br/>
+
+- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/mysql-redis-benchmark) | [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
 
 <br/>
 
 ## 👨‍💻 프로젝트
 
-### 🌕 동구라미 (Circle Link)
+### 🌕 동구라미
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
 
 > **대학교 중앙 동아리 및 소모임 통합 관리 플랫폼**
@@ -66,7 +109,7 @@
 <br/>
 
 **프로젝트 소개**
-교내 동아리 홍보, 가입 신청 간소화, 부원 관리 등 동아리 운영의 전 과정을 지원하는 서비스입니다. 기존의 나눠져잇던 동아리 정보를 통합하고, 수기 관리의 비효율을 해결하기 위해 개발했습니다.
+교내 동아리 홍보, 가입 신청 간소화, 부원 관리 등 동아리 운영의 전 과정을 지원하는 서비스입니다. 기존에 파편화되어 있던 동아리 정보를 통합하고, 수기 관리의 비효율을 해결하기 위해 개발했습니다.
 
 <br/>
 
@@ -103,10 +146,12 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/USW-Circle-Link-Server)
+- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/USW-Circle-Link-Server)
+
+<br/>
 
 
-### 💬 수챗 (Suchat)
+### 💬 수챗
 <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring%20Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/> <img src="https://img.shields.io/badge/Java%20Mail-EA4335?style=flat-square&logo=gmail&logoColor=white"/>
 
 > **대학교 이메일 인증 기반 익명 랜덤 매칭 서비스**
@@ -136,10 +181,11 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/suchat-backend)
+- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/suchat-backend)
 
+<br/>
 
-### ♻️ 요분정 (Yobunjung)
+### ♻️ 요분정
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
 
 > **딥러닝 객체 인식을 활용한 쓰레기 자동 분류 및 리워드 앱**
@@ -170,8 +216,9 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/yobunjung-backend)
+- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/yobunjung-backend)
 
+<br/>
 
 ### 😴 딴짓 하지 말아줘
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/PyQt5-41CD52?style=flat-square&logo=qt&logoColor=white"/> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/> <img src="https://img.shields.io/badge/dlib-008000?style=flat-square"/>
@@ -201,7 +248,7 @@ em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId 
 
 <br/>
 
-- **링크:** [🐙 GitHub Repository](https://github.com/bh1848/drowsy-driving-prevention)
+- **관련 링크:** [🐙 GitHub Repository](https://github.com/bh1848/drowsy-driving-prevention)
 
 <br/>
 
