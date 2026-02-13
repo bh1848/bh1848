@@ -38,10 +38,10 @@
 ## 🔬 Research
 
 ### [🪜 D-HASH: Dynamic Hot-key Aware Scalable Hashing (SCIE)](https://github.com/bh1848/D-HASH)
-> **개요:** 대규모 트래픽 환경에서 특정 키(Hot-key)에 요청이 집중될 때 발생하는 단일 노드 과부하 문제 해결을 위한 알고리즘 개발  
-> **스택:** Python, Redis, Docker  
+> **개요:** 대규모 트래픽 환경에서 특정 키에 요청이 집중될 때 발생하는 단일 노드 과부하 문제 해결을 위한 알고리즘 개발  
+> **성과:** 독자적인 동적 라우팅 알고리즘을 개발하여 Consistent Hashing 대비 부하 표준편차 33.8% 감소  
 > **역할:** 제1저자 (알고리즘 설계, 실험 설계·구현·분석, 논문 작성)  
-> **성과:** 독자적인 동적 라우팅 알고리즘을 개발하여 Consistent Hashing 대비 **부하 표준편차 33.8% 감소** 달성  
+> **스택:** Python, Redis, Docker  
 > **논문:** [📝 Paper (SCIE / TIIS 2026)](https://doi.org/10.3837/tiis.2026.xx.xxx)
 
 - **동적 라우팅 알고리즘 설계 (Window-Based Routing)**
@@ -62,9 +62,9 @@
 
 ### [⚖️ MySQL vs Redis 성능 비교 벤치마크 (KCI)](https://github.com/bh1848/mysql-redis-benchmark)
 > **개요:** 단순한 기술 도입이 아닌, 데이터의 성격과 연산 유형에 따른 최적의 저장소를 선정하기 위한 정량적 비교 분석 연구  
+> **성과:** 대량 데이터 처리 시 Redis가 MySQL 대비 평균 7.8배(1.39ms vs 0.17ms) 빠름을 입증  
+> **역할:** 제1저자 (실험 설계·구현·분석)    
 > **스택:** Java, Spring Boot, MySQL, Redis  
-> **성과:** 대량 데이터 처리 시 Redis가 MySQL 대비 **평균 7.8배(1.39ms vs 0.17ms) 빠름**을 실험적으로 입증  
-> **역할:** 제1저자 (실험 설계·구현·분석)  
 > **논문:** [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
 
 - **객체 지향적 벤치마크 프레임워크 설계**
@@ -81,7 +81,7 @@
 
 ### [🌕 동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
 > **개요:** 교내 동아리 행정 업무 자동화 및 학생들의 활동 접근성을 높이는 웹어플리케이션 서비스 (2024.05 ~ 2025.03)  
-> **스택:** Java, Spring Boot, Spring Security, JPA/QueryDSL, MySQL, Redis, AWS   
+> **스택:** Java, Spring Boot, Spring Security, Spring Data JPA, QueryDSL, MySQL, Redis, AWS, Docker    
 > **역할:** Backend  
 
 - **보안 및 인증/인가 시스템 구축**
@@ -117,8 +117,8 @@
 
 ### [💬 수챗: 익명 랜덤 매칭 서비스](https://github.com/bh1848/suchat-backend)
 > **개요:** 교내 이메일 인증을 통해 신뢰할 수 있는 익명 커뮤니티 및 실시간 1:1 랜덤 매칭 플랫폼 (2023.09 ~ 2024.10)  
-> **스택:** Java, Spring Boot, Redis(ZSet), WebSocket, Async, MySQL  
-> **역할:** Backend
+> **스택:** Java, Spring Boot, Spring Security, Spring Data JPA, MySQL, Redis, AWS, WebSocket, Async   
+> **역할:** Backend  
 
 - **실시간 랜덤 매칭 알고리즘**
   - **Redis ZSet 대기열:** 매칭 대기열을 DB가 아닌 Redis Sorted Set(ZSet)으로 구현하여, 입/퇴장 빈도가 잦은 매칭 요청의 I/O 성능을 확보하고 대기 순서를 보장했습니다.
@@ -128,7 +128,7 @@
 - **폐쇄형 인증 및 보안 시스템**
   - **이메일 인증(학교 도메인):** `JavaMailSender`를 활용해 학교 웹메일(@suwon.ac.kr)로 인증 링크를 발송하고, 토큰 검증을 통과해야만 정회원으로 전환되도록 하여 외부인의 접근을 원천 차단했습니다.
   - **임시 회원 분리 설계:** 회원가입 시 바로 `Member` 테이블에 넣지 않고 `MemberTemp`(임시) 테이블에 우선 저장한 뒤, 인증이 완료된 시점에 이관하는 구조로 설계하여 **더미 데이터 생성을 방지**했습니다.
-  - **JWT + Redis 보안:** Access Token과 Refresh Token을 발급하며, Refresh Token은 **Redis(TTL 설정)**에 저장하여 로그아웃 시 토큰을 즉시 무효화하거나 탈취 위험을 관리할 수 있도록 구현했습니다.
+  - **JWT + Redis 보안:** Access Token과 Refresh Token을 발급하며, Refresh Token은 Redis(TTL 설정)에 저장하여 로그아웃 시 토큰을 즉시 무효화하거나 탈취 위험을 관리할 수 있도록 구현했습니다.
 
 - **회원 관리 로직**
   - **서비스 계층 분리:** 인증 전 접근 가능한 `MemberOpenService`(가입, 로그인)와 인증 후 접근 가능한 `MemberSecureService`로 비즈니스 로직을 분리하여 보안성을 강화했습니다.
@@ -138,7 +138,7 @@
 ### [♻️ 요분정: AI 기반 쓰레기 분류 및 리워드 앱](https://github.com/bh1848/yobunjung-backend)
 > **개요:** 딥러닝 객체 인식으로 쓰레기를 분류하고 IoT 수거함과 연동하여 리워드를 지급하는 자원 순환 서비스 (2024.09 ~ 2024.11)  
 > **스택:** Python, Flask, MySQL, ONNX, AWS, OpenCV  
-> **역할:** Backend & AI Serving
+> **역할:** Backend & AI Serving  
 
 - **AI 모델 경량화 및 실시간 서빙**
   - **ONNX 런타임 적용:** 학습된 YOLO 모델을 실제 서버 환경에서 빠르고 가볍게 구동하기 위해 **ONNX 포맷으로 변환**하여 경량화된 추론 환경을 구축했습니다.
@@ -158,7 +158,7 @@
 
 ### [😴 딴짓 하지 말아줘: 졸음 운전 방지 솔루션](https://github.com/bh1848/drowsy-driving-prevention)
 > **개요:** Computer Vision 기반으로 운전자의 졸음, 하품, 전방 미주시 상태를 실시간 감지하는 윈도우 애플리케이션 (2023.09 ~ 2023.11)   
-> **스택:** Python, PyQt5, OpenCV, dlib    
+> **스택:** Python, PyQt5, OpenCV, dlib  
 > **역할:** Application Dev & CV Logic  
 
 - **데스크탑 애플리케이션 UI/UX 개발**
