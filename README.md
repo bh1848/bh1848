@@ -80,7 +80,7 @@
 ##  💻 Projects
 
 ### [🌕 동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
-> **개요:** 교내 동아리 행정 업무 자동화 및 학생들의 활동 접근성을 높이는 웹어플리케이션 서비스 (2024.05 ~ 2025.03)  
+> **개요:** 교내 동아리 행정 업무 및 학생들의 활동 접근성을 높이는 웹앱 서비스 (2024.05 ~ 2025.03)  
 > **스택:** Java, Spring Boot, Spring Security, Spring Data JPA, QueryDSL, MySQL, Redis, AWS, Docker    
 > **역할:** Backend  
 
@@ -115,8 +115,8 @@
 
 <br/>
 
-### [💬 수챗: 익명 랜덤 매칭 서비스](https://github.com/bh1848/suchat-backend)
-> **개요:** 교내 이메일 인증을 통해 신뢰할 수 있는 익명 커뮤니티 및 실시간 1:1 랜덤 매칭 플랫폼 (2023.09 ~ 2024.10)  
+### [💬 수챗: 랜덤 채팅 앱](https://github.com/bh1848/suchat-backend)
+> **개요:** 교내 1:1 랜덤 채팅 앱 (2023.09 ~ 2024.10)  
 > **스택:** Java, Spring Boot, Spring Security, Spring Data JPA, MySQL, Redis, AWS, WebSocket, Async   
 > **역할:** Backend  
 
@@ -136,9 +136,11 @@
 <br/>
 
 ### [♻️ 요분정: AI 기반 쓰레기 분류 및 리워드 앱](https://github.com/bh1848/yobunjung-backend)
-> **개요:** 딥러닝 객체 인식으로 쓰레기를 분류하고 IoT 수거함과 연동하여 리워드를 지급하는 자원 순환 서비스 (2024.09 ~ 2024.11)  
+> **개요:** YOLO/ONNX 기반 객체 인식 기술을 활용하여 쓰레기를 자동 분류하고, IoT 수거함과 실시간 연동하여 리워드를 지급하는 End-to-End 재활용 플랫폼입니다.  
+> 사용자의 분리배출 행동을 AI 분석을 통해 검증하고, SSE를 이용해 포인트 적립 결과를 모바일 앱에 즉각적으로 피드백하는 비동기 이벤트 기반 시스템을 구축했습니다.  
 > **스택:** Python, Flask, MySQL, ONNX, AWS, OpenCV  
-> **역할:** Backend & AI Serving  
+> **역할:** Backend & AI Serving
+> **기간:** 2024.09 ~ 2024.11
 
 - **AI 모델 경량화 및 실시간 서빙**
   - **ONNX 런타임 적용:** 학습된 YOLO 모델을 실제 서버 환경에서 빠르고 가볍게 구동하기 위해 **ONNX 포맷으로 변환**하여 경량화된 추론 환경을 구축했습니다.
@@ -156,10 +158,13 @@
 
 <br/>
 
-### [😴 딴짓 하지 말아줘: 졸음 운전 방지 솔루션](https://github.com/bh1848/drowsy-driving-prevention)
-> **개요:** Computer Vision 기반으로 운전자의 졸음, 하품, 전방 미주시 상태를 실시간 감지하는 윈도우 애플리케이션 (2023.09 ~ 2023.11)   
+### [😴 딴짓 하지 말아줘: 졸음 운전 방지 프로그램](https://github.com/bh1848/drowsy-driving-prevention)
+> **개요:** 운전자의 안전을 위해 MediaPipe Face Mesh와 OpenCV를 활용한 실시간 안면 인식 및 상태 판별 시스템입니다.  
+> 468개의 안면 랜드마크를 분석하여 졸음(눈 감음), 하품(입 벌림), 전방 미주시(고개 돌림) 상태를 실시간으로 감지하며,  
+> 이상 상태 지속 시 시리얼 통신을 통해 아두이노 진동 모듈을 제어하고 음성 경고를 출력하는 즉각적인 사고 방지 솔루션을 구현했습니다.       
 > **스택:** Python, PyQt5, OpenCV, dlib  
-> **역할:** Application Dev & CV Logic  
+> **역할:** Application Dev & CV Logic
+> **기간:** 2023.09 ~ 2023.11
 
 - **데스크탑 애플리케이션 UI/UX 개발**
   - **PyQt5 기반 UI 구축:** `QMainWindow`를 상속받아 운전자 모니터링 화면, 상태 표시바, 제어 버튼이 포함된 직관적인 대시보드를 설계하고 구현했습니다.
