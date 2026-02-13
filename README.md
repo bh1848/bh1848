@@ -82,58 +82,70 @@
 ### [🌕 동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
 > **교내 동아리 정보를 통합하고 관리 효율성을 높인 중앙 집중형 시스템**
 
-- **Period**: 2024.05 ~ 2025.03
-- **Role**: Backend Developer (핵심 로직 및 공통 컴포넌트 구현)
-- **Tech Stack**: Java 17, Spring Boot, Spring Security, JPA, QueryDSL, MySQL, Redis, AWS S3/RDS, Docker
+- **기간**: 2024.05 ~ 2025.03 (10개월)
+- **역할**: Backend Developer (핵심 로직 및 공통 컴포넌트 구현)
+- **기술**: Java, Spring Boot, Spring Security, JPA, QueryDSL, MySQL, Redis, AWS EC2/S3/RDS, Docker
 
-#### 주요 담당 업무
+**주요 담당 업무**
 - **확장형 인증 시스템**: `JWT + Redis(RTR)` 기반 아키텍처를 설계하여 **다중 도메인(Admin/Leader/User) 권한 위계를 객체지향적으로 격리**하고 토큰 재사용 공격 차단
 - **DB 성능 최적화**: `QueryDSL` 동적 쿼리 및 `Bulk Delete`를 구현하여 **연관 데이터 삭제 시 발생하는 N+1 문제를 해결**하고 쿼리 실행 수 90% 감소
 - **보안 및 자원 효율화**: `S3 Presigned URL` 도입으로 서버 I/O 점유를 방지하고, `Magic Number` 기반 바이너리 검증으로 **비정상 파일 업로드 원천 차단**
 - **운영 가시성 확보**: `MDC` 기반 로그 추적 시스템 구축 및 **4xx 필터링 등으로 운영 환경 로그 최적화**를 통해 장애 대응 효율성 제고
 
-#### 주요 Trouble Shooting
+**[트러블슈팅]**
 - [Bulk 연산 후 영속성 컨텍스트 불일치 문제 해결](https://github.com/bh1848/USW-Circle-Link-Server#trouble-shooting-1)
 
 <br/>
 
 ### [💬 수챗: 랜덤 채팅 앱](https://github.com/bh1848/suchat-backend)
-> 교내 구성원 간 1:1 실시간 익명 채팅 서비스입니다.
-- **기간**: 2023.09 ~ 2024.10
-- **역할**: Backend Developer
-- **기술**: Java, Spring Boot, Spring Data JPA, MySQL, Redis, WebSocket, Async
+> **교내 구성원 인증 기반의 실시간 1:1 익명 랜덤 채팅 서비스**
 
-**주요 담당 업무 및 성과**
-- Redis Sorted Set(ZSet)과 CompletableFuture 기반의 저지연 비동기 매칭 알고리즘 구현
-- 학교 메일 인증 연동 및 임시/정회원 테이블 분리 설계를 통한 데이터 정합성 확보
-- 인증 여부에 따른 서비스 계층(Open/Secure) 분리로 비즈니스 로직 및 접근 권한 강화
+- **기간**: 2023.09 ~ 2024.09 (13개월)
+- **역할**: Backend Developer (매칭 엔진 및 인증 아키텍처 구축)
+- **기술**: Java, Spring Boot, Spring Security, JPA, MySQL, Redis, AWS EC2, WebSocket, Async
+
+**주요 담당 업무**
+- **실시간 매칭 엔진**: `Redis Sorted Set(ZSet)` 기반 대기열 아키텍처를 설계하여 **초당 발생하는 매칭 트래픽의 DB 부하를 0으로 최적화**
+- **인증 보안 시스템**: `JWT + Redis` 기반 인증 체계를 구축하고, 로그아웃 시 **토큰 블랙리스트(TTL)** 처리로 인증 정보의 재사용 가능성을 원천 차단
+- **비동기 이벤트 처리**: `CompletableFuture`와 `Redis Pub/Sub`을 활용해 **서버 스레드 점유 없이 실시간 매칭 알림**을 전달하는 비동기 구조 구현
+- **데이터 정합성 확보**: `Member-MemberTemp` 테이블 분리 설계와 스케줄러 기반 미인증 데이터 정화로 **메인 DB의 인덱스 효율 및 무결성 유지**
+
+**[트러블슈팅]**
+- 다중 사용자의 동시 매칭 요청 시 발생하는 레이스 컨디션을 Redis의 원자적 연산을 활용해 해결
 
 <br/>
 
 ### [♻️ 요분정: AI 기반 쓰레기 분류 플랫폼](https://github.com/bh1848/yobunjung-backend)
-> YOLO 기반 객체 인식으로 쓰레기를 분류하고 IoT 수거함과 연동하는 서비스입니다.
-- **기간**: 2024.09 ~ 2024.11
-- **역할**: Backend & AI Serving
-- **기술**: Python, Flask, MySQL, ONNX, OpenCV, AWS EC2/RDS
+> **AI 객체 인식 기술과 IoT 수거함을 결합한 스마트 분리배출 지원 서비스**
+- **기간**: 2024.09 ~ 2024.11 (3개월)
+- **역할**: Backend & AI Serving (백엔드 전 공정 및 AI 파이프라인 구축 전담)
+- **기술**: Python, Flask, MySQL, ONNX, OpenCV, AWS EC2
 
 **주요 담당 업무 및 성과**
-- YOLO 모델의 ONNX 변환/경량화 서빙 및 OpenCV 이미지 전처리 파이프라인 구축
-- SSE(Server-Sent Events) 프로토콜을 이용한 하드웨어-앱 간 실시간 데이터 통신 구현
-- Lock 및 Event 기반 동시성 제어를 통해 비동기 통신 중 데이터 정합성 보장
-- Flask Blueprint 기반 모듈화 구조 설계 및 AWS 인프라 구축/운영 총괄
+- **AI 서빙 최적화**: YOLO 모델의 **ONNX 변환 및 경량화 서빙**으로 CPU 환경 추론 속도 최적화 및 OpenCV 기반 이미지 전처리 파이프라인 구축
+- **실시간 통신 인프라**: **SSE(Server-Sent Events)** 프로토콜을 도입하여 하드웨어(아두이노)-서버-앱 간의 실시간 분류 결과 피드백 시스템 구현
+- **동시성 및 정합성 제어**: `Lock` 및 `Event` 기반의 **Thread-Safe 상태 관리**로 비동기 하드웨어 통신 중 데이터 경합 및 중복 요청 방지
+- **아키텍처 및 인프라**: Flask Blueprint 기반의 도메인 모듈화 설계 및 **AWS EC2/RDS 인프라 직접 구축/운영**을 통한 서비스 안정성 확보
+
+**[트러블슈팅]**
+- AI 모델 추론 병목 해결을 위해 ONNX Runtime 도입 및 이미지 채널(HWC→CHW) 변환 최적화로 응답 속도 개선
 
 <br/>
 
-### [😴 딴짓 하지 말아줘: 졸음 운전 방지 프로그램](https://github.com/bh1848/drowsy-driving-prevention)
-> MediaPipe를 활용한 실시간 안면 상태 분석 및 사고 방지 솔루션입니다.
-- **기간**: 2023.09 ~ 2023.11
-- **역할**: Application Developer
-- **기술**: Python, PyQt5, OpenCV, dlib, MediaPipe
+### [🚗 딴짓 하지 말아줘: 졸음운전 방지 시스템](https://github.com/bh1848/drowsy-driving-prevention)
+> **MediaPipe 안면 랜드마크 분석 기술을 활용한 실시간 운전자 상태 모니터링 및 경고 솔루션**
+- **기간**: 2023.09 ~ 2023.11 (3개월)
+- **역할**: Application Developer (메인 로직 및 비동기 파이프라인 구현)
+- **기술**: Python, OpenCV, MediaPipe, PyQt5, Pygame
 
 **주요 담당 업무 및 성과**
-- EAR(Eye Aspect Ratio) 공식을 활용한 졸음 감지 및 안면 랜드마크 기반 상태 판별 알고리즘 구현
-- QTimer 기반 비동기 프레임 처리 파이프라인 구축으로 UI 프리징 해결 및 실시간성 확보
-- 상황별 경고 이벤트 핸들링 및 시리얼 통신을 통한 하드웨어 제어 로직 구현
+- **실시간 데이터 파이프라인**: `MediaPipe` 랜드마크 데이터를 시스템에 통합하고, 초당 프레임(FPS) 처리에 최적화된 **메인 이벤트 루프 및 스트리밍 구조 구축**
+- **비동기 성능 최적화**: `QTimer` 기반의 비동기 프레임 처리 방식을 도입하여 **영상 분석 중 발생하는 UI 프리징 현상을 해결**하고 시스템의 실시간 응답성 확보
+- **판단 알고리즘 시스템화**: EAR(Eye Aspect Ratio) 수치를 기반으로 **연속 프레임 카운팅 로직**을 구현하여 판별 신뢰도 향상
+- **멀티미디어 피드백 제어**: `Pygame` 및 `PIL`을 활용하여 상황별 **음성 경고 재생 및 실시간 시각화 UI** 구현
+
+**[트러블슈팅]**
+- 고해상도 영상 처리 시 랜드마크 계산 부하로 인한 프레임 드랍 문제를 비동기 처리 및 연산 최적화를 통해 해결
 
 <br/>
 
