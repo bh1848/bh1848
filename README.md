@@ -77,105 +77,63 @@
 
 <br/>
 
-##  💻 Projects
+## 💻 Projects
 
 ### [🌕 동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
-> **개요:** 교내 동아리 행정 업무 및 학생들의 활동 접근성을 높이는 웹앱 서비스 (2024.05 ~ 2025.03)  
-> **스택:** Java, Spring Boot, Spring Security, Spring Data JPA, QueryDSL, MySQL, Redis, AWS, Docker    
-> **역할:** Backend  
+> **교내 동아리 정보를 통합하고 관리 효율성을 높인 중앙 집중형 시스템**
 
-- **보안 및 인증/인가 시스템 구축**
-  - **JWT + Redis 인증:** Access Token과 Refresh Token을 활용한 이중 토큰 방식을 구현하고, Redis를 통해 **Refresh Token Rotation**을 적용하여 탈취 시 보안 위협을 최소화했습니다.
-  - **보안 쿠키 전략:** XSS 및 CSRF 공격 방지를 위해 Refresh Token을 `HttpOnly`, `Secure`, `SameSite=Lax` 속성이 적용된 쿠키로 관리했습니다.
-  - **Spring Security 커스텀:** `UserDetailsService`를 재정의하여 관리자, 동아리 회장, 일반 학생의 권한을 분리하고 도메인별 접근 제어를 구현했습니다.
+- **Period**: 2024.05 ~ 2025.03
+- **Role**: Backend Developer (핵심 로직 및 공통 컴포넌트 구현)
+- **Tech Stack**: Java 17, Spring Boot, Spring Security, JPA, QueryDSL, MySQL, Redis, AWS S3/RDS, Docker
 
-  - **데이터 처리 및 성능 최적화**
-  - **QueryDSL 도입:** 동아리 검색 및 필터링(문자열 필터) 기능을 위해 동적 쿼리를 작성하고, 복잡한 조회 로직을 Type-Safe하게 구현했습니다.
-  - **JPQL 최적화:** `new` 오퍼레이션을 활용한 DTO Projection으로 불필요한 데이터 조회를 줄이고, 연관 데이터 삭제 시 **Bulk Delete** 쿼리를 사용하여 N+1 문제를 해결했습니다.
-    ~~~java
-    // Bulk Delete 예시: N번의 Delete 쿼리 대신 한 번의 쿼리로 처리
-    em.createQuery("DELETE FROM ClubMemberAccountStatus cmas WHERE cmas.club.clubId = :clubId")
-       .setParameter("clubId", clubId)
-       .executeUpdate();
-    ~~~
-  - **DB 운영:** AWS RDS(MySQL)와 Redis를 연동하여 영속성 데이터와 캐시/세션 데이터를 분리 운영했습니다.
+#### 주요 담당 업무
+- **확장형 인증 시스템**: `JWT + Redis(RTR)` 기반 아키텍처를 설계하여 **다중 도메인(Admin/Leader/User) 권한 위계를 객체지향적으로 격리**하고 토큰 재사용 공격 차단
+- **DB 성능 최적화**: `QueryDSL` 동적 쿼리 및 `Bulk Delete`를 구현하여 **연관 데이터 삭제 시 발생하는 N+1 문제를 해결**하고 쿼리 실행 수 90% 감소
+- **보안 및 자원 효율화**: `S3 Presigned URL` 도입으로 서버 I/O 점유를 방지하고, `Magic Number` 기반 바이너리 검증으로 **비정상 파일 업로드 원천 차단**
+- **운영 가시성 확보**: `MDC` 기반 로그 추적 시스템 구축 및 **4xx 필터링 등으로 운영 환경 로그 최적화**를 통해 장애 대응 효율성 제고
 
-- **인프라 및 파일 시스템**
-  - **AWS S3 Presigned URL:** 서버의 부하를 줄이기 위해 클라이언트가 S3로 직접 파일을 업로드하는 Presigned URL 방식을 도입하여 I/O Blocking을 방지했습니다.
-  - **파일 검증 로직:** 단순 확장자 체크뿐만 아니라 파일 시그니처(Magic Number)를 검증하여 위변조된 파일 업로드를 차단했습니다.
-  - **환경 분리:** `application-dev.yml`, `application-prod.yml` 등 프로파일을 분리하여 민감 정보를 관리하고 배포 환경을 최적화했습니다.
-
-- **API 품질 및 안정성**
-  - **Global Exception Handling:** `@RestControllerAdvice`를 활용해 예외를 중앙에서 처리하고, 표준화된 `ErrorResponse` 포맷을 정의하여 프론트엔드와의 협업 효율을 높였습니다.
-  - **스마트 로깅:** 운영(Prod) 환경에서는 클라이언트 실수인 4xx 에러 로그를 남기지 않도록 설정하여 **로그 가시성**을 확보하고 디스크 낭비를 막았습니다.
-  - **데이터 검증:** `@Valid` 및 커스텀 어노테이션을 활용해 요청 데이터의 유효성 검사(Validation)를 꼼꼼하게 처리했습니다.
-
-- **비즈니스 로직 구현**
-  - **기능 구현:** 앱 관리자 기능, 중앙동아리 연합회 관리, 공지사항 CRUD, 동아리 지원서 제출, 동아리 목록 조회 로직 전반을 개발했습니다.
+#### 주요 Trouble Shooting
+- [Bulk 연산 후 영속성 컨텍스트 불일치 문제 해결](https://github.com/bh1848/USW-Circle-Link-Server#trouble-shooting-1)
 
 <br/>
 
 ### [💬 수챗: 랜덤 채팅 앱](https://github.com/bh1848/suchat-backend)
-> **개요:** 교내 1:1 랜덤 채팅 앱 (2023.09 ~ 2024.10)  
-> **스택:** Java, Spring Boot, Spring Security, Spring Data JPA, MySQL, Redis, AWS, WebSocket, Async   
-> **역할:** Backend  
+> 교내 구성원 간 1:1 실시간 익명 채팅 서비스입니다.
+- **기간**: 2023.09 ~ 2024.10
+- **역할**: Backend Developer
+- **기술**: Java, Spring Boot, Spring Data JPA, MySQL, Redis, WebSocket, Async
 
-- **실시간 랜덤 매칭 알고리즘**
-  - **Redis ZSet 대기열:** 매칭 대기열을 DB가 아닌 Redis Sorted Set(ZSet)으로 구현하여, 입/퇴장 빈도가 잦은 매칭 요청의 I/O 성능을 확보하고 대기 순서를 보장했습니다.
-  - **비동기 매칭 처리:** `CompletableFuture`와 `@Async`를 활용해 매칭 로직을 비동기로 처리하여, 사용자가 대기하는 동안 서버 스레드가 차단(Blocking)되지 않도록 최적화했습니다.
-  - **매칭 로직:** 대기열에 2명 이상이 모이면 즉시 UUID 기반의 고유 채팅방(Room ID)을 생성하고 양쪽 사용자에게 배정하는 로직을 구현했습니다.
-
-- **폐쇄형 인증 및 보안 시스템**
-  - **이메일 인증(학교 도메인):** `JavaMailSender`를 활용해 학교 웹메일(@suwon.ac.kr)로 인증 링크를 발송하고, 토큰 검증을 통과해야만 정회원으로 전환되도록 하여 외부인의 접근을 원천 차단했습니다.
-  - **임시 회원 분리 설계:** 회원가입 시 바로 `Member` 테이블에 넣지 않고 `MemberTemp`(임시) 테이블에 우선 저장한 뒤, 인증이 완료된 시점에 이관하는 구조로 설계하여 **더미 데이터 생성을 방지**했습니다.
-  - **JWT + Redis 보안:** Access Token과 Refresh Token을 발급하며, Refresh Token은 Redis(TTL 설정)에 저장하여 로그아웃 시 토큰을 즉시 무효화하거나 탈취 위험을 관리할 수 있도록 구현했습니다.
-
-- **회원 관리 로직**
-  - **서비스 계층 분리:** 인증 전 접근 가능한 `MemberOpenService`(가입, 로그인)와 인증 후 접근 가능한 `MemberSecureService`로 비즈니스 로직을 분리하여 보안성을 강화했습니다.
+**주요 담당 업무 및 성과**
+- Redis Sorted Set(ZSet)과 CompletableFuture 기반의 저지연 비동기 매칭 알고리즘 구현
+- 학교 메일 인증 연동 및 임시/정회원 테이블 분리 설계를 통한 데이터 정합성 확보
+- 인증 여부에 따른 서비스 계층(Open/Secure) 분리로 비즈니스 로직 및 접근 권한 강화
 
 <br/>
 
-### [♻️ 요분정: AI 기반 쓰레기 분류 및 리워드 앱](https://github.com/bh1848/yobunjung-backend)
-> **개요:** YOLO/ONNX 기반 객체 인식 기술을 활용하여 쓰레기를 자동 분류하고, IoT 수거함과 실시간 연동하여 리워드를 지급하는 End-to-End 재활용 플랫폼입니다.  
-> 사용자의 분리배출 행동을 AI 분석을 통해 검증하고, SSE를 이용해 포인트 적립 결과를 모바일 앱에 즉각적으로 피드백하는 비동기 이벤트 기반 시스템을 구축했습니다.  
-> **스택:** Python, Flask, MySQL, ONNX, AWS, OpenCV  
-> **역할:** Backend & AI Serving
-> **기간:** 2024.09 ~ 2024.11
+### [♻️ 요분정: AI 기반 쓰레기 분류 플랫폼](https://github.com/bh1848/yobunjung-backend)
+> YOLO 기반 객체 인식으로 쓰레기를 분류하고 IoT 수거함과 연동하는 서비스입니다.
+- **기간**: 2024.09 ~ 2024.11
+- **역할**: Backend & AI Serving
+- **기술**: Python, Flask, MySQL, ONNX, OpenCV, AWS EC2/RDS
 
-- **AI 모델 경량화 및 실시간 서빙**
-  - **ONNX 런타임 적용:** 학습된 YOLO 모델을 실제 서버 환경에서 빠르고 가볍게 구동하기 위해 **ONNX 포맷으로 변환**하여 경량화된 추론 환경을 구축했습니다.
-  - **이미지 전처리 최적화:** OpenCV를 활용해 수거함 카메라(아두이노)에서 전송된 이미지의 크기 조정(Resize), 정규화(Normalization), 채널 변환(HWC→CHW) 로직을 직접 구현하여 모델 인식률을 최적화했습니다.
-
-- **하드웨어-서버-클라이언트 데이터 파이프라인**
-  - **SSE(Server-Sent Events) 통신:** 아두이노가 쓰레기를 감지하고 분류 결과를 서버로 보내면, 사용자 앱(Client)에 실시간으로 포인트 적립 알림을 띄우기 위해 **SSE 프로토콜**을 구현했습니다.
-  - **동시성 제어:** 하드웨어와 앱 간의 비동기 통신 중 데이터 정합성을 보장하기 위해 `threading.Event`와 `Lock`을 활용하여 안정적인 이벤트 스트리밍 구조를 설계했습니다.
-  - **아두이노 연동 협업:** 하드웨어 팀원과 협업하여 HTTP 통신 규격을 정의하고, 이미지 전송 및 결과 반환 프로토콜을 연동했습니다.
-
-- **백엔드 아키텍처 및 인프라**
-  - **API 서버 구축:** Flask의 **Blueprint** 기능을 활용해 인증(Auth), 사용자(User), 재활용(Recycle) 등 기능별로 모듈화된 확장 가능한 백엔드 구조를 설계했습니다.
-  - **AWS 인프라 총괄:** AWS EC2 서버 배포 및 MySQL 데이터베이스 설계/구축을 전담하여 서비스의 운영 환경을 책임졌습니다.
-  - **부가 기능 구현:** 사용자 고유 ID와 분류 정보를 포함한 **QR 코드 생성(로고 오버레이)** 로직 및 JWT 인증 시스템을 개발했습니다.
+**주요 담당 업무 및 성과**
+- YOLO 모델의 ONNX 변환/경량화 서빙 및 OpenCV 이미지 전처리 파이프라인 구축
+- SSE(Server-Sent Events) 프로토콜을 이용한 하드웨어-앱 간 실시간 데이터 통신 구현
+- Lock 및 Event 기반 동시성 제어를 통해 비동기 통신 중 데이터 정합성 보장
+- Flask Blueprint 기반 모듈화 구조 설계 및 AWS 인프라 구축/운영 총괄
 
 <br/>
 
 ### [😴 딴짓 하지 말아줘: 졸음 운전 방지 프로그램](https://github.com/bh1848/drowsy-driving-prevention)
-> **개요:** 운전자의 안전을 위해 MediaPipe Face Mesh와 OpenCV를 활용한 실시간 안면 인식 및 상태 판별 시스템입니다.  
-> 468개의 안면 랜드마크를 분석하여 졸음(눈 감음), 하품(입 벌림), 전방 미주시(고개 돌림) 상태를 실시간으로 감지하며,  
-> 이상 상태 지속 시 시리얼 통신을 통해 아두이노 진동 모듈을 제어하고 음성 경고를 출력하는 즉각적인 사고 방지 솔루션을 구현했습니다.       
-> **스택:** Python, PyQt5, OpenCV, dlib  
-> **역할:** Application Dev & CV Logic
-> **기간:** 2023.09 ~ 2023.11
+> MediaPipe를 활용한 실시간 안면 상태 분석 및 사고 방지 솔루션입니다.
+- **기간**: 2023.09 ~ 2023.11
+- **역할**: Application Developer
+- **기술**: Python, PyQt5, OpenCV, dlib, MediaPipe
 
-- **데스크탑 애플리케이션 UI/UX 개발**
-  - **PyQt5 기반 UI 구축:** `QMainWindow`를 상속받아 운전자 모니터링 화면, 상태 표시바, 제어 버튼이 포함된 직관적인 대시보드를 설계하고 구현했습니다.
-  - **실시간 영상 처리 파이프라인:** `QTimer`와 `OpenCV`를 연동하여 UI 끊김(Freezing) 없이 웹캠 영상을 프레임 단위로 캡처하고 분석 결과를 오버레이(Overlay)하는 비동기 처리 구조를 구현했습니다.
-
-- **운전자 상태 판단 로직 구현**
-  - **졸음 감지 알고리즘(EAR):** `dlib`의 68개 얼굴 랜드마크를 활용, 눈의 종횡비를 계산하는 **EAR(Eye Aspect Ratio)** 공식을 코드로 구현하여 눈 감김 지속 시간을 기반으로 졸음 여부를 판단했습니다.
-  - **전방 미주시 및 하품 감지:** 얼굴의 각도와 입의 개폐 정도(MAR)를 수치화하여, 운전자가 정면을 보지 않거나 하품을 하는 상황을 실시간으로 탐지하는 로직을 작성했습니다.
-
-- **시스템 통합 및 알림 시스템**
-  - **상태 기반 경고 시스템:** 정상, 졸음, 하품, 미주시 등 운전자의 상태를 4단계로 정의하고, `pygame` 라이브러리를 활용해 각 상황에 맞는 경고 음성(MP3)이 즉시 재생되도록 이벤트 핸들링을 구현했습니다.
+**주요 담당 업무 및 성과**
+- EAR(Eye Aspect Ratio) 공식을 활용한 졸음 감지 및 안면 랜드마크 기반 상태 판별 알고리즘 구현
+- QTimer 기반 비동기 프레임 처리 파이프라인 구축으로 UI 프리징 해결 및 실시간성 확보
+- 상황별 경고 이벤트 핸들링 및 시리얼 통신을 통한 하드웨어 제어 로직 구현
 
 <br/>
 
