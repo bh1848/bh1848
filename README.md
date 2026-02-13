@@ -37,7 +37,7 @@
 
 ## 🔬 Research
 
-### [🪜 D-HASH: Dynamic Hot-key Aware Scalable Hashing (SCIE)](https://github.com/bh1848/D-HASH)
+### [📊 D-HASH: Dynamic Hot-key Aware Scalable Hashing (SCIE)](https://github.com/bh1848/D-HASH)
 > **개요:** 대규모 트래픽 환경에서 특정 키에 요청이 집중될 때 발생하는 단일 노드 과부하 문제 해결을 위한 알고리즘 개발  
 > **성과:** 독자적인 동적 라우팅 알고리즘을 개발하여 Consistent Hashing 대비 부하 표준편차 33.8% 감소  
 > **스택:** Python, Redis, Docker    
