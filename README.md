@@ -17,6 +17,7 @@
   <img src="https://img.shields.io/badge/Spring%20Boot-111827?style=flat-square&logo=springboot&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring%20Security-111827?style=flat-square&logo=springsecurity&logoColor=white" />
   <img src="https://img.shields.io/badge/JPA%2FHibernate-111827?style=flat-square&logo=hibernate&logoColor=white" />
+  <img src="https://img.shields.io/badge/JUnit5-25A162?style=flat-square&logo=junit5&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-111827?style=flat-square&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/Redis-111827?style=flat-square&logo=redis&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-111827?style=flat-square&logo=python&logoColor=white" />
@@ -30,12 +31,9 @@
   <img src="https://img.shields.io/badge/QueryDSL-0078D7?style=flat-square&logo=java&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
-  <img src="https://img.shields.io/badge/JUnit5-25A162?style=flat-square&logo=junit5&logoColor=white" />
 </p>
 
 <br/>
-
-## 🔬 Research
 
 ## 🔬 Research
 
@@ -82,9 +80,9 @@
 - **평균 7.8배의 성능 격차 규명**: Redis가 MySQL 대비 평균 7.8배(1.39ms vs 0.17ms) 빠른 Latency를 기록함을 입증했으며, 특히 Delete 연산에서 최대 12.3배의 성능 우위 확인
 
 **트러블슈팅**
-- 반복 테스트 시 PK 충돌 문제를 `ddl-auto: create` 옵션을 통한 실행 시점 초기화 로직으로 해결 [상세보기](#)
-- 단건 조회 시 `0ms`로 측정되는 현상을 Batch 단위 총 소요 시간을 측정 후 평균을 역산하는 방식으로 해결 [상세보기](#)
-- 동기식(Sync) 구조에 따른 Network RTT 병목을 확인하고, 지표를 'Client Side Latency'로 재정의하여 실험의 객관성 확보 [상세보기](#)
+- 반복 테스트 시 PK 충돌 문제를 `ddl-auto: create` 옵션을 통한 실행 시점 초기화 로직으로 해결 [[상세보기]](/)
+- 단건 조회 시 `0ms`로 측정되는 현상을 Batch 단위 총 소요 시간을 측정 후 평균을 역산하는 방식으로 해결 [[상세보기]](/)
+- 동기식(Sync) 구조에 따른 Network RTT 병목을 확인하고, 지표를 'Client Side Latency'로 재정의하여 실험의 객관성 확보 [[상세보기]](/)
 
 <br/>
 
@@ -100,11 +98,10 @@
 **주요 담당 업무**
 - **확장형 인증 시스템**: `JWT + Redis(RTR)` 기반 아키텍처를 설계하여 **다중 도메인(Admin/Leader/User) 권한 위계를 객체지향적으로 격리**하고 토큰 재사용 공격 차단
 - **DB 성능 최적화**: `QueryDSL` 동적 쿼리 및 `Bulk Delete`를 구현하여 **연관 데이터 삭제 시 발생하는 N+1 문제를 해결**하고 쿼리 실행 수 90% 감소
-- **보안 및 자원 효율화**: `S3 Presigned URL` 도입으로 서버 I/O 점유를 방지하고, `Magic Number` 기반 바이너리 검증으로 **비정상 파일 업로드 원천 차단**
-- **운영 가시성 확보**: `MDC` 기반 로그 추적 시스템 구축 및 **4xx 필터링 등으로 운영 환경 로그 최적화**를 통해 장애 대응 효율성 제고
+- **보안 및 운영 가시성**: `S3 Presigned URL`과 `Magic Number` 검증으로 자원 효율을 높이고, `MDC` 로그 추적 시스템을 구축하여 장애 대응 효율 제고
 
 **트러블슈팅**
-- [Bulk 연산 후 영속성 컨텍스트 불일치 문제 해결](https://github.com/bh1848/USW-Circle-Link-Server#trouble-shooting-1)
+(작성 예정)
 
 <br/>
 
@@ -117,17 +114,17 @@
 
 **주요 담당 업무**
 - **실시간 매칭 엔진**: `Redis Sorted Set(ZSet)` 기반 대기열 아키텍처를 설계하여 **초당 발생하는 매칭 트래픽의 DB 부하를 0으로 최적화**
-- **인증 보안 시스템**: `JWT + Redis` 기반 인증 체계를 구축하고, 로그아웃 시 **토큰 블랙리스트(TTL)** 처리로 인증 정보의 재사용 가능성을 원천 차단
 - **비동기 이벤트 처리**: `CompletableFuture`와 `Redis Pub/Sub`을 활용해 **서버 스레드 점유 없이 실시간 매칭 알림**을 전달하는 비동기 구조 구현
-- **데이터 정합성 확보**: `Member-MemberTemp` 테이블 분리 설계와 스케줄러 기반 미인증 데이터 정화로 **메인 DB의 인덱스 효율 및 무결성 유지**
+- **인증 및 데이터 정합성**: `JWT + Redis TTL` 기반 블랙리스트 체계로 보안을 강화하고, 스케줄러 기반 미인증 데이터 정화로 **메인 DB의 인덱스 효율 유지**
 
 **트러블슈팅**
-- 다중 사용자의 동시 매칭 요청 시 발생하는 레이스 컨디션을 Redis의 원자적 연산을 활용해 해결
+(작성 예정)
 
 <br/>
 
 ### [♻️ 요분정: AI 기반 쓰레기 분류 플랫폼](https://github.com/bh1848/yobunjung-backend)
 > **AI 객체 인식 기술과 IoT 수거함을 결합한 스마트 분리배출 지원 서비스**
+
 - **Period**: 2024.09 ~ 2024.11 (3개월)
 - **Role**: Backend & AI Serving (백엔드 전 공정 및 AI 파이프라인 구축 전담)
 - **Tech Stack**: Python, Flask, MySQL, ONNX, OpenCV, AWS EC2
@@ -136,15 +133,15 @@
 - **AI 서빙 최적화**: YOLO 모델의 **ONNX 변환 및 경량화 서빙**으로 CPU 환경 추론 속도 최적화 및 OpenCV 기반 이미지 전처리 파이프라인 구축
 - **실시간 통신 인프라**: **SSE(Server-Sent Events)** 프로토콜을 도입하여 하드웨어(아두이노)-서버-앱 간의 실시간 분류 결과 피드백 시스템 구현
 - **동시성 및 정합성 제어**: `Lock` 및 `Event` 기반의 **Thread-Safe 상태 관리**로 비동기 하드웨어 통신 중 데이터 경합 및 중복 요청 방지
-- **아키텍처 및 인프라**: Flask Blueprint 기반의 도메인 모듈화 설계 및 **AWS EC2/RDS 인프라 직접 구축/운영**을 통한 서비스 안정성 확보
 
 **트러블슈팅**
-- AI 모델 추론 병목 해결을 위해 ONNX Runtime 도입 및 이미지 채널(HWC→CHW) 변환 최적화로 응답 속도 개선
+(작성 예정)
 
 <br/>
 
 ### [🚗 딴짓 하지 말아줘: 졸음운전 방지 시스템](https://github.com/bh1848/drowsy-driving-prevention)
 > **MediaPipe 안면 랜드마크 분석 기술을 활용한 실시간 운전자 상태 모니터링 및 경고 솔루션**
+
 - **Period**: 2023.09 ~ 2023.11 (3개월)
 - **Role**: Application Developer (메인 로직 및 비동기 파이프라인 구현)
 - **Tech Stack**: Python, OpenCV, MediaPipe, PyQt5, Pygame
@@ -152,11 +149,10 @@
 **주요 담당 업무**
 - **실시간 데이터 파이프라인**: `MediaPipe` 랜드마크 데이터를 시스템에 통합하고, 초당 프레임(FPS) 처리에 최적화된 **메인 이벤트 루프 및 스트리밍 구조 구축**
 - **비동기 성능 최적화**: `QTimer` 기반의 비동기 프레임 처리 방식을 도입하여 **영상 분석 중 발생하는 UI 프리징 현상을 해결**하고 시스템의 실시간 응답성 확보
-- **판단 알고리즘 시스템화**: EAR(Eye Aspect Ratio) 수치를 기반으로 **연속 프레임 카운팅 로직**을 구현하여 판별 신뢰도 향상
-- **멀티미디어 피드백 제어**: `Pygame` 및 `PIL`을 활용하여 상황별 **음성 경고 재생 및 실시간 시각화 UI** 구현
+- **판단 알고리즘 시스템화**: EAR(Eye Aspect Ratio) 수치 분석 기반의 **연속 프레임 카운팅 로직**을 구현하여 실시간 상태 판별의 신뢰도 향상
 
 **트러블슈팅**
-- 고해상도 영상 처리 시 랜드마크 계산 부하로 인한 프레임 드랍 문제를 비동기 처리 및 연산 최적화를 통해 해결
+(작성 예정)
 
 <br/>
 
