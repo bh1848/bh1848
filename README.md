@@ -95,7 +95,7 @@
 - **Tech Stack**: Java, Spring Boot, Spring Security, JPA, QueryDSL, MySQL, Redis, AWS EC2/S3/RDS, Docker
 
 **주요 담당 업무**
-- **인증 및 권한 관리**: `JWT + Redis(RTR)` 도입으로 토큰 탈취 위협을 완화하고, 도메인별 권한 검증 로직을 분리하여 유지보수성 확보
+- **인증/권한 아키텍처 전담**: **Custom JWT Filter** 및 `Redis(RTR)`·보안 쿠키 전략을 독자 설계하여 토큰 탈취를 방어하고, 다중 도메인 권한 제어 파이프라인 구축
 - **DB 성능 최적화**: `QueryDSL` 동적 쿼리 및 Bulk Delete 적용으로 N+1 문제를 해결하여 **쿼리 실행 수 90% 절감** (효율적인 데이터 로드 전략의 중요성을 체감함)
 - **리소스 효율화 및 보안**: `S3 Presigned URL` 적용으로 서버 대역폭 절감 및 `Magic Number` 검증을 통한 악성 파일 업로드 방지
 - **운영 가시성 확보**: `MDC` 기반 로그 추적 시스템 구축 및 환경별 로그 최적화를 통해 장애 대응 효율 제고
@@ -113,6 +113,7 @@
 - **Tech Stack**: Java, Spring Boot, Spring Security, JPA, MySQL, Redis, AWS EC2, WebSocket, Async
 
 **주요 담당 업무**
+- **인증 보안 시스템 구축:** 독자적으로 설계한 `JWT + Redis` 블랙리스트 전략으로 로그아웃 시 토큰 재사용을 차단하고, 무중단 서비스를 위한 인증 파이프라인 완성
 - **매칭 엔진**: `Redis ZSet` 기반 대기열 아키텍처 설계로 **DB 부하 제로(0)화** 달성 (확장성을 고려한 선제적 조치)
 - **이벤트 비동기 처리**: `CompletableFuture`와 `Redis Pub/Sub`을 활용하여 Non-blocking 알림 시스템 구축
 - **데이터 정합성 유지**: 임시 테이블 분리 및 스케줄러 기반 정화 로직 도입으로 메인 DB 무결성 확보
