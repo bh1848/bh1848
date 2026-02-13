@@ -55,7 +55,7 @@
 - NASA 웹 로그 실험 결과, 기존 Consistent Hashing 대비 **노드 간 부하 표준편차 33.8% 감소** 달성
 
 **트러블슈팅**
-- Python 내장 함수의 성능 한계로 인한 속도 저하를 **xxHash64 교체 및 `__slots__` 활용**으로 해결 [[상세보기]](https://bh1848.github.io/hzeror/D-HASH-python-hash-optimization/)
+- Python 내장 함수의 성능 한계로 인한 속도 저하를 **xxHash64 교체 및 `__slots__` 활용**으로 해결 [[상세보기]](https://bh1848.github.io/hzeror/D-HASH-python-xxhash/)
 - 승격 직후 대체 노드 부재 문제를 **Guard Phase 도입 및 쓰기 병행 예열(Pre-warming)** 로직으로 해결 [[상세보기]](https://bh1848.github.io/hzeror/D-HASH-Hot-key-Promotion-Latency-Guard-Phase/)
 - 분산 노드 간 정합성 문제를 **Write-Primary 정책**을 통해 구조적으로 해결 [[상세보기]](https://bh1848.github.io/hzeror/D-HASH-Write-Primary-Routing-Strategy/)
 - 동기 I/O 요청 대기로 인한 측정 지연을 **ThreadPoolExecutor 비동기 부하 테스트**로 전환하여 측정 정밀도 확보 [[상세보기]](https://bh1848.github.io/hzeror/D-HASH-Asynchronous-Test-Environment/)
