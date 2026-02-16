@@ -59,7 +59,7 @@
 - Latency Spike 억제: Guard Phase 설계를 통해 트래픽 분산 시점의 초기 캐시 미스 방지 (부하 편차 33.8% 개선)
 - 데이터 정합성 100% 보장: Write-Primary 라우팅 정책으로 분산 환경 내 데이터 파편화 이슈 원천 차단
 - 18만 OPS 검증: `ThreadPoolExecutor` 기반 비동기 환경 구축으로 클라이언트 병목 해소 및 정밀 측정  
-- <a href="https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#troubleshooting">**상세 해결 기록 확인하기 →**</a>
+- <a href="https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅">**상세 해결 기록 확인하기 →**</a>
 
 <br/>
 
