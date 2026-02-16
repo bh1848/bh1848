@@ -46,21 +46,20 @@
 - **Publication**: [📝 Paper (SCIE / TIIS 2026 예정)](https://doi.org/10.3837/tiis.2026.xx.xxx)
 
 **주요 연구 내용**
-- **동적 라우팅 시스템**: LRU 카운터 기반 Hot-key 실시간 감지 및 트래픽 분산 알고리즘 구현
-- **Guard Phase 아키텍처**: Hot-key 승격 시 캐시 미스 방지를 위한 데이터 복제(Pre-warming) 메커니즘 설계
-- **데이터 정합성 보장**: 읽기 분산 및 쓰기 중앙화(Write-Primary) 정책을 통한 데이터 일관성 유지
-- **메모리 및 연산 최적화**: `xxHash` 적용 및 `__slots__` 메모리 최적화를 통한 고속 해싱 성능 확보
+- 동적 라우팅 시스템: LRU 카운터 기반 Hot-key 실시간 감지 및 트래픽 분산 알고리즘 구현
+- Guard Phase 아키텍처: Hot-key 승격 시 캐시 미스 방지를 위한 데이터 복제(Pre-warming) 메커니즘 설계
+- 데이터 정합성 보장: 읽기 분산 및 쓰기 중앙화(Write-Primary) 정책을 통한 데이터 일관성 유지
+- 메모리 및 연산 최적화: `xxHash` 적용 및 `__slots__` 메모리 최적화를 통한 고속 해싱 성능 확보
 
 **연구 성과**
-- NASA 웹 로그 실험 결과, 기존 Consistent Hashing 대비 **노드 간 부하 표준편차 33.8% 감소** 달성
+- NASA 웹 로그 실험 결과, 기존 Consistent Hashing 대비 노드 간 부하 표준편차 33.8% 감소 달성
 
 **트러블슈팅**
-| 문제 상황 및 원인 | 해결 방안 | 성과 | 상세 |
-| :--- | :--- | :--- | :--- |
-| Python 내장 해시 함수의 성능 한계로 인한 처리 속도 저하 및 메모리 오버헤드 | `xxHash64` 알고리즘 교체 및 `__slots__` 활용으로 객체 구조 최적화 | **해싱 연산 속도 및 메모리 효율성 대폭 향상** | [🔗 Link](https://bh1848.github.io/hzeror/D-HASH-python-xxhash/) |
-| Hot-key 승격 직후 데이터 부재로 인해 일시적으로 발생하는 초기 캐시 미스 | Guard Phase 도입 및 쓰기 병행 예열(Pre-warming) 로직 설계 | **승격 시점의 Latency Spike 제거 및 서비스 안정성 확보** | [🔗 Link](https://bh1848.github.io/hzeror/D-HASH-guard-phase/) |
-| 분산 노드 간 데이터 파편화로 인해 발생하는 읽기/쓰기 정합성 불일치 | Write-Primary 정책을 통한 쓰기 경로 단일화 및 라우팅 구조 개선 | **분산 환경 내 데이터 무결성 및 완벽한 정합성 보장** | [🔗 Link](https://bh1848.github.io/hzeror/D-HASH-routing-strategy/) |
-| 동기 I/O 요청 대기로 인해 부하 테스트 시 발생하는 측정 지연 및 정밀도 저하 | `ThreadPoolExecutor` 기반 비동기 부하 테스트 환경으로 시스템 전환 | **실제 운영 환경에 근접한 고정밀 벤치마크 지표 확보** | [🔗 Link](https://bh1848.github.io/hzeror/D-HASH-Asynchronous-Test-Environment/) |
+* 해싱 성능 20배 향상: `xxHash64` 도입 및 `__slots__` 활용으로 연산 속도 개선 및 메모리 50% 절감
+* Latency Spike 억제: Guard Phase 설계를 통해 트래픽 분산 시점의 초기 캐시 미스 방지 (부하 편차 33.8% 개선)
+* 데이터 정합성 100% 보장: Write-Primary 라우팅 정책으로 분산 환경 내 데이터 파편화 이슈 원천 차단
+* 18만 OPS 검증: `ThreadPoolExecutor` 기반 비동기 환경 구축으로 클라이언트 병목 해소 및 정밀 측정
+* **[상세 해결 기록 확인하기 →](https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅)**
 
 <br/>
 
@@ -73,17 +72,18 @@
 - **Publication**: [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
 
 **주요 연구 내용**
-- **벤치마크 환경 구축**: `AbstractBatchExperiment`로 측정 로직 공통화 및 Warm-up을 통한 초기 오차 배제
-- **환경 격리 및 통제**: Spring Profile 활용 비대상 DB Bean 생성 차단으로 간섭 없는 독립적 실험 환경 조성
-- **Disk vs Memory 정량 분석**: 10,000회 연산 및 네트워크 비용을 포함한 Latency 측정으로 B-Tree와 Hash 구조의 트레이드오프 검증
+- 벤치마크 환경 구축: `AbstractBatchExperiment`로 측정 로직 공통화 및 Warm-up을 통한 초기 오차 배제
+- 환경 격리 및 통제: Spring Profile 활용 비대상 DB Bean 생성 차단으로 간섭 없는 독립적 실험 환경 조성
+- Disk vs Memory 정량 분석: 10,000회 연산 및 네트워크 비용을 포함한 Latency 측정으로 B-Tree와 Hash 구조의 트레이드오프 검증
 
 **연구 성과**
-- Redis가 MySQL 대비 **평균 7.8배 빠른 속도**를 보임을 수치로 증명하여 캐싱 도입의 근거 마련
+- Redis가 MySQL 대비 평균 7.8배 빠른 속도를 보임을 수치로 증명하여 캐싱 도입의 근거 마련
 
 **트러블슈팅**
-- 반복 테스트 시 PK 충돌 문제를 `ddl-auto: create` 옵션을 통한 실행 시점 초기화 로직으로 해결 [[상세보기]](/)
-- 단건 조회 시 `0ms`로 측정되는 현상을 Batch 단위 총 소요 시간을 측정 후 평균을 역산하는 방식으로 해결 [[상세보기]](/)
-- 동기식(Sync) 구조에 따른 Network RTT 병목을 확인하고, 지표를 'Client Side Latency'로 재정의하여 실험의 객관성 확보 [[상세보기]](/)
+* 테스트 멱등성 확보: JPA `ddl-auto: create` 및 환경 격리로 반복 실행 시에도 데이터 무결성 보장
+* 0.17ms 정밀 측정: 배치 단위 평균 역산 방식을 도입하여 `System.currentTimeMillis()`의 정밀도 한계 극복
+* 병목 구간 규명: 동기식 I/O 환경 내 Network RTT가 처리량에 미치는 물리적 한계 분석
+* **[상세 해결 기록 확인하기 →](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)**
 
 <br/>
 
