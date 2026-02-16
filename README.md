@@ -83,7 +83,7 @@
 - 테스트 멱등성 확보: JPA `ddl-auto: create` 및 환경 격리로 반복 실행 시에도 데이터 무결성 보장
 - 0.17ms 정밀 측정: 배치 단위 평균 역산 방식을 도입하여 `System.currentTimeMillis()`의 정밀도 한계 극복
 - 병목 구간 규명: 동기식 I/O 환경 내 Network RTT가 처리량에 미치는 물리적 한계 분석  
-- <a href="https://github.com/bh1848/mysql-redis-benchmark#troubleshooting">**상세 해결 기록 확인하기 →**</a>
+- <a href="https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅">**상세 해결 기록 확인하기 →**</a>
 
 <br/>
 
