@@ -45,21 +45,21 @@
 - **Tech Stack**: Python, Redis, Docker
 - **Publication**: [📝 Paper (SCIE / TIIS 2026 예정)](https://doi.org/10.3837/tiis.2026.xx.xxx)
 
-**주요 연구 내용**
+#### 주요 연구 내용
 - 동적 라우팅 시스템: LRU 카운터 기반 Hot-key 실시간 감지 및 트래픽 분산 알고리즘 구현
 - Guard Phase 아키텍처: Hot-key 승격 시 캐시 미스 방지를 위한 데이터 복제(Pre-warming) 메커니즘 설계
 - 데이터 정합성 보장: 읽기 분산 및 쓰기 중앙화(Write-Primary) 정책을 통한 데이터 일관성 유지
 - 메모리 및 연산 최적화: `xxHash` 적용 및 `__slots__` 메모리 최적화를 통한 고속 해싱 성능 확보
 
-**연구 성과**
+#### 연구 성과
 - NASA 웹 로그 실험 결과, 기존 Consistent Hashing 대비 노드 간 부하 표준편차 33.8% 감소 달성
 
-**트러블슈팅**
+#### 트러블슈팅
 * 해싱 성능 20배 향상: `xxHash64` 도입 및 `__slots__` 활용으로 연산 속도 개선 및 메모리 50% 절감
 * Latency Spike 억제: Guard Phase 설계를 통해 트래픽 분산 시점의 초기 캐시 미스 방지 (부하 편차 33.8% 개선)
 * 데이터 정합성 100% 보장: Write-Primary 라우팅 정책으로 분산 환경 내 데이터 파편화 이슈 원천 차단
-* 18만 OPS 검증: `ThreadPoolExecutor` 기반 비동기 환경 구축으로 클라이언트 병목 해소 및 정밀 측정
-* **[상세 해결 기록 확인하기 →](https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅)**
+* 18만 OPS 검증: `ThreadPoolExecutor` 기반 비동기 환경 구축으로 클라이언트 병목 해소 및 정밀 측정  
+* <a href="https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅">**상세 해결 기록 확인하기 →**</a>
 
 <br/>
 
@@ -71,19 +71,19 @@
 - **Tech Stack**: Java, Spring Boot, MySQL, Redis
 - **Publication**: [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
 
-**주요 연구 내용**
+#### 주요 연구 내용
 - 벤치마크 환경 구축: `AbstractBatchExperiment`로 측정 로직 공통화 및 Warm-up을 통한 초기 오차 배제
 - 환경 격리 및 통제: Spring Profile 활용 비대상 DB Bean 생성 차단으로 간섭 없는 독립적 실험 환경 조성
 - Disk vs Memory 정량 분석: 10,000회 연산 및 네트워크 비용을 포함한 Latency 측정으로 B-Tree와 Hash 구조의 트레이드오프 검증
 
-**연구 성과**
+#### 연구 성과
 - Redis가 MySQL 대비 평균 7.8배 빠른 속도를 보임을 수치로 증명하여 캐싱 도입의 근거 마련
 
-**트러블슈팅**
-* 테스트 멱등성 확보: JPA `ddl-auto: create` 및 환경 격리로 반복 실행 시에도 데이터 무결성 보장
-* 0.17ms 정밀 측정: 배치 단위 평균 역산 방식을 도입하여 `System.currentTimeMillis()`의 정밀도 한계 극복
-* 병목 구간 규명: 동기식 I/O 환경 내 Network RTT가 처리량에 미치는 물리적 한계 분석
-* **[상세 해결 기록 확인하기 →](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)**
+#### 트러블슈팅
+- 테스트 멱등성 확보: JPA `ddl-auto: create` 및 환경 격리로 반복 실행 시에도 데이터 무결성 보장
+- 0.17ms 정밀 측정: 배치 단위 평균 역산 방식을 도입하여 `System.currentTimeMillis()`의 정밀도 한계 극복
+- 병목 구간 규명: 동기식 I/O 환경 내 Network RTT가 처리량에 미치는 물리적 한계 분석  
+- <a href="https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅">**상세 해결 기록 확인하기 →**</a>
 
 <br/>
 
