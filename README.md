@@ -59,7 +59,7 @@
 - Latency Spike 억제: Guard Phase 설계를 통해 트래픽 분산 시점의 초기 캐시 미스 방지 (부하 편차 33.8% 개선)
 - 데이터 정합성 100% 보장: Write-Primary 라우팅 정책으로 분산 환경 내 데이터 파편화 이슈 원천 차단
 - 18만 OPS 검증: `ThreadPoolExecutor` 기반 비동기 환경 구축으로 클라이언트 병목 해소 및 정밀 측정  
-- <a href="https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅">**상세 해결 기록 확인하기 →**</a>
+- [**상세 해결 기록 확인하기 →**](https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅)
 
 <br/>
 
@@ -83,7 +83,7 @@
 - 테스트 멱등성 확보: JPA `ddl-auto: create` 및 환경 격리로 반복 실행 시에도 데이터 무결성 보장
 - 0.17ms 정밀 측정: 배치 단위 평균 역산 방식을 도입하여 `System.currentTimeMillis()`의 정밀도 한계 극복
 - 병목 구간 규명: 동기식 I/O 환경 내 Network RTT가 처리량에 미치는 물리적 한계 분석  
-- <a href="https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅">**상세 해결 기록 확인하기 →**</a>
+- [**상세 해결 기록 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)
 
 <br/>
 
@@ -96,14 +96,18 @@
 - **Role**: Backend Developer (핵심 로직 및 공통 컴포넌트 구현)
 - **Tech Stack**: Java, Spring Boot, Spring Security, JPA, QueryDSL, MySQL, Redis, AWS EC2/S3/RDS, Docker
 
-**주요 담당 업무**
+#### 주요 담당 업무
 - **인증/권한 아키텍처 전담**: **Custom JWT Filter** 및 `Redis(RTR)`·보안 쿠키 전략을 독자 설계하여 토큰 탈취를 방어하고, 다중 도메인 권한 제어 파이프라인 구축
 - **DB 성능 최적화**: `QueryDSL` 동적 쿼리 및 Bulk Delete 적용으로 N+1 문제를 해결하여 **쿼리 실행 수 90% 절감** (효율적인 데이터 로드 전략의 중요성을 체감함)
 - **리소스 효율화 및 보안**: `S3 Presigned URL` 적용으로 서버 대역폭 절감 및 `Magic Number` 검증을 통한 악성 파일 업로드 방지
 - **운영 가시성 확보**: `MDC` 기반 로그 추적 시스템 구축 및 환경별 로그 최적화를 통해 장애 대응 효율 제고
 
-**트러블슈팅**
-(작성 예정)
+#### 트러블슈팅
+- **다중 인증 파이프라인 설계**: 책임 연쇄(CoR) 패턴과 예외 기반 제어 흐름을 도입하여 UUID 기반의 다중 도메인 인증 시 발생하는 `if-else` 분기를 제거하고 OCP 확보
+- **데이터 삭제 성능 및 정합성 최적화**: JPQL 벌크 연산을 통해 쿼리 수를 90% 이상 절감($2N+2 \rightarrow$ 고정 10)하고, 의도적 계층 결합으로 S3 고아 파일 발생 리스크를 설계 단계에서 차단
+- **전역 XSS 및 파일 업로드 보안 강화**: `Jsoup` 기반 커스텀 화이트리스트와 바이트 단위 `Magic Number` 직접 검증 로직을 시스템 입구(@InitBinder)에 배치하여 휴먼 에러를 배제한 보안 무결성 달성
+- **크로스 도메인 인증 유지**: 브라우저의 `SameSite` 정책 강화에 대응하기 위해 로우레벨 헤더 제어와 환경별 프로파일 정책 이원화 전략으로 CORS 환경 내 쿠키 전송 호환성 확보
+- [**상세 해결 기록 확인하기 →**](https://github.com/bh1848/USW-Circle-Link-Server#6-트러블-슈팅)
 
 <br/>
 
