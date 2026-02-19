@@ -55,10 +55,10 @@
 - NASA 웹 로그 실험 결과, 기존 Consistent Hashing 대비 노드 간 부하 표준편차 33.8% 감소 달성
 
 #### 트러블슈팅
-- 해싱 성능 20배 향상: `xxHash64` 도입 및 `__slots__` 활용으로 연산 속도 개선 및 메모리 50% 절감
-- Latency Spike 억제: Guard Phase 설계를 통해 트래픽 분산 시점의 초기 캐시 미스 방지 (부하 편차 33.8% 개선)
-- 데이터 정합성 100% 보장: Write-Primary 라우팅 정책으로 분산 환경 내 데이터 파편화 이슈 원천 차단
-- 18만 OPS 검증: `ThreadPoolExecutor` 기반 비동기 환경 구축으로 클라이언트 병목 해소 및 정밀 측정  
+- **xxHash64 및 메모리 구조 최적화**: MD5의 연산 오버헤드를 줄이기 위해 `xxHash64`를 도입하고, `__slots__`로 객체 메모리 점유율을 50% 절감하여 해싱 속도 20배 향상
+- **Guard Phase 설계를 통한 Cold Start 방지**: Hot-key 승격 직후 발생하는 캐시 미스를 방지하기 위해 물리적 전송 지연 구간(Guard Phase)과 능동적 예열(Pre-warming) 기법을 설계하여 부하 표준편차 33.8% 개선
+- **Write-Primary 정책 기반 데이터 무결성 확보**: 동적 라우팅 환경의 데이터 파편화를 방지하기 위해 쓰기 경로를 Primary 노드로 단일화하여 분산 환경 내 정합성 이슈를 원천 차단
+- **ThreadPoolExecutor 기반 고정밀 벤치마크 구축**: 클라이언트 사이드 병목을 해소하기 위해 비동기 병렬 처리 모델을 도입, 실제 운영 환경 수준인 18만 OPS의 처리량 검증 및 정밀 측정 환경 확보
 - [**상세 해결 기록 확인하기 →**](https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅)
 
 <br/>
@@ -80,9 +80,9 @@
 - Redis가 MySQL 대비 평균 7.8배 빠른 속도를 보임을 수치로 증명하여 캐싱 도입의 근거 마련
 
 #### 트러블슈팅
-- 테스트 멱등성 확보: JPA `ddl-auto: create` 및 환경 격리로 반복 실행 시에도 데이터 무결성 보장
-- 0.17ms 정밀 측정: 배치 단위 평균 역산 방식을 도입하여 `System.currentTimeMillis()`의 정밀도 한계 극복
-- 병목 구간 규명: 동기식 I/O 환경 내 Network RTT가 처리량에 미치는 물리적 한계 분석  
+- **JPA ddl-auto 기반 테스트 멱등성 확보**: 반복 실행 시 발생하는 PK 충돌을 해결하기 위해 `ddl-auto: create` 전략과 환경 격리 프로파일을 구축하여 인덱스 파편화 없는 순수 테스트 환경 조성
+- **통계적 보정을 통한 레이턴시 정밀 측정**: `System.currentTimeMillis()`의 해상도 한계를 극복하기 위해 단건 측정값의 산술 평균 도출 방식을 도입하여 0.17ms 단위의 유효 지표 확보
+- **네트워크 RTT 기반 처리량 병목 구간 규명**: 이론적 성능 대비 낮은 OPS의 원인을 동기식 I/O의 Stop-and-Wait 물리적 한계로 분석하고, 실무를 대변하는 'Client Side Latency'를 핵심 지표로 채택
 - [**상세 해결 기록 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)
 
 <br/>
@@ -97,8 +97,8 @@
 - **Tech Stack**: Java, Spring Boot, Spring Security, JPA, QueryDSL, MySQL, Redis, AWS EC2/S3/RDS, Docker
 
 #### 주요 담당 업무
-- **인증/권한 아키텍처 전담**: **Custom JWT Filter** 및 `Redis(RTR)`·보안 쿠키 전략을 독자 설계하여 토큰 탈취를 방어하고, 다중 도메인 권한 제어 파이프라인 구축
-- **DB 성능 최적화**: `QueryDSL` 동적 쿼리 및 Bulk Delete 적용으로 N+1 문제를 해결하여 **쿼리 실행 수 90% 절감** (효율적인 데이터 로드 전략의 중요성을 체감함)
+- **인증/권한 아키텍처 전담**: Custom JWT Filter 및 `Redis(RTR)`·보안 쿠키 전략을 독자 설계하여 토큰 탈취를 방어하고, 다중 도메인 권한 제어 파이프라인 구축
+- **DB 성능 최적화**: `QueryDSL` 동적 쿼리 및 Bulk Delete 적용으로 N+1 문제를 해결하여 쿼리 실행 수 90% 절감 (효율적인 데이터 로드 전략의 중요성을 체감함)
 - **리소스 효율화 및 보안**: `S3 Presigned URL` 적용으로 서버 대역폭 절감 및 `Magic Number` 검증을 통한 악성 파일 업로드 방지
 - **운영 가시성 확보**: `MDC` 기반 로그 추적 시스템 구축 및 환경별 로그 최적화를 통해 장애 대응 효율 제고
 
