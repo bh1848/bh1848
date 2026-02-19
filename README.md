@@ -40,7 +40,7 @@
 ### [📊 D-HASH: Dynamic Hot-key Aware Scalable Hashing (SCIE)](https://github.com/bh1848/D-HASH)
 > **대규모 트래픽 환경의 특정 키 집중 과부하 해결을 위한 동적 해싱 알고리즘 연구**
 
-- **Period**: 2025.01 ~ 2026.02 (13개월) | **Role**: 제1저자 (알고리즘 설계 및 벤치마크 분석)
+- **Period**: 2025.01 ~ 2026.02 (13개월) | **Role**: 제1저자 (알고리즘 설계, 실험 설계·구현·분석, 논문 작성)
 - **Tech Stack**: Python, Redis, Docker
 - **Publication**: [📝 Paper (SCIE / TIIS 2026 예정)](https://doi.org/10.3837/tiis.2026.xx.xxx)
 - **🏆 성과**: NASA 웹 로그 기반 실험 결과, **기존 Consistent Hashing 대비 노드 간 부하 표준편차 33.8% 감소** 달성
@@ -101,8 +101,7 @@
 ### [🌕 동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
 > **교내 동아리 정보를 통합하고 관리 효율성을 높인 중앙 집중형 시스템**
 
-- **Period**: 2024.05 ~ 2025.03 (10개월)
-- **Role**: Backend Developer (핵심 로직 및 공통 컴포넌트 구현)
+- **Period**: 2024.05 ~ 2025.03 (10개월) | **Role**: Backend Developer (핵심 로직 및 공통 컴포넌트 구현)
 - **Tech Stack**: Java, Spring Boot, Spring Security, JPA, QueryDSL, MySQL, Redis, AWS EC2/S3/RDS, Docker
 
 #### 주요 담당 업무
@@ -132,8 +131,7 @@
 ### [💬 수챗: 랜덤 채팅 앱](https://github.com/bh1848/suchat-backend)
 > **교내 구성원 인증 기반의 실시간 1:1 익명 랜덤 채팅 서비스**
 
-- **Period**: 2023.09 ~ 2024.09 (13개월)
-- **Role**: Backend Developer (매칭 엔진 및 인증 아키텍처 구축)
+- **Period**: 2023.09 ~ 2024.09 (13개월) | **Role**: Backend Developer (매칭 엔진 및 인증 아키텍처 구축)
 - **Tech Stack**: Java, Spring Boot, Spring Security, JPA, MySQL, Redis, AWS EC2, WebSocket, Async
 
 #### 주요 담당 업무
@@ -161,8 +159,7 @@
 ### [♻️ 요분정: AI 기반 쓰레기 분류 플랫폼](https://github.com/bh1848/yobunjung-backend)
 > **AI 객체 인식 기술과 IoT 수거함을 결합한 스마트 분리배출 지원 서비스**
 
-- **Period**: 2024.09 ~ 2024.11 (3개월)
-- **Role**: Backend & AI Serving (백엔드 전 공정 및 AI 파이프라인 구축 전담)
+- **Period**: 2024.09 ~ 2024.11 (3개월) | **Role**: Backend & AI Serving (백엔드 전 공정 및 AI 파이프라인 구축 전담)
 - **Tech Stack**: Python, Flask, MySQL, ONNX, OpenCV, AWS EC2
 
 #### 주요 담당 업무
@@ -181,8 +178,7 @@
 ### [🚗 딴짓 하지 말아줘: 졸음운전 방지 시스템](https://github.com/bh1848/drowsy-driving-prevention)
 > **MediaPipe 안면 랜드마크 분석 기술을 활용한 실시간 운전자 상태 모니터링 및 경고 솔루션**
 
-- **Period**: 2023.09 ~ 2023.11 (3개월)
-- **Role**: Application Developer (메인 로직 및 비동기 파이프라인 구현)
+- **Period**: 2023.09 ~ 2023.11 (3개월) | **Role**: Application Developer (메인 로직 및 비동기 파이프라인 구현)
 - **Tech Stack**: Python, OpenCV, MediaPipe, PyQt5, Pygame
 
 #### 주요 담당 업무
