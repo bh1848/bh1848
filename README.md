@@ -37,62 +37,47 @@
 
 ## 🔬 Research
 
-### [📊 D-HASH: Dynamic Hot-key Aware Scalable Hashing (SCIE)](https://github.com/bh1848/D-HASH)
-> **대규모 트래픽 환경의 특정 키 집중 과부하 해결을 위한 동적 해싱 알고리즘 연구**
+### [📊 D-HASH: 분산 캐시 Hot-key 쏠림 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
+> **대규모 트래픽 환경에서 특정 노드에 부하가 집중되는 문제를 풀기 위한 커스텀 해싱 알고리즘**
 
 - **Period**: 2025.01 ~ 2026.02 (13개월) | **Role**: 제1저자 (알고리즘 설계, 실험 설계·구현·분석, 논문 작성)
 - **Tech Stack**: Python, Redis, Docker
-- **Publication**: [📝 Paper (SCIE / TIIS 2026 예정)](https://doi.org/10.3837/tiis.2026.xx.xxx)
-- **🏆 성과**: NASA 웹 로그 기반 실험 결과, **기존 Consistent Hashing 대비 노드 간 부하 표준편차 33.8% 감소** 달성
+- **Publication**: [📝 TIIS 2026 게재 예정 (SCIE)](https://doi.org/10.3837/tiis.2026.xx.xxx)
+- **핵심 성과**: NASA 웹 로그 기반 실험 결과, **기존 Consistent Hashing 대비 부하 불균형 33.8% 감소** 달성
 
-#### 주요 연구 내용
-- **LRU 카운터 기반 동적 라우팅 엔진 구현**  
-  런타임 Hot-key 실시간 감지를 위해 LRU 카운팅 메커니즘을 설계하고, 부하 상태에 따른 지능형 트래픽 분산 알고리즘 구축
-- **Guard Phase 및 능동적 예열(Pre-warming) 아키텍처 설계**  
-  Hot-key 승격 시 발생하는 Alternate Node의 Cache Cold Start 문제를 해결하기 위해 물리적 전송 지연 구간과 비동기 데이터 복제 메커니즘 고안
-- **Write-Primary 정책을 통한 분산 정합성 보장**  
-  동적 라우팅 환경 내 데이터 파편화(Fragmentation)를 방지하기 위해 쓰기 경로를 Primary 노드로 단일화하여 데이터 일관성 무결성 확보
-- **xxHash64 및 __slots__ 활용 연산 최적화**  
-  대규모 해싱 연산 오버헤드와 Python 객체의 메모리 낭비를 줄이기 위해 비암호화 고속 해시 알고리즘과 메모리 구조 최적화 기법 적용
+#### 핵심 메커니즘
+- **실시간 트래픽 라우팅 엔진**: LRU 카운터 기반 모니터링을 통해 Hot-key 발생 시 즉시 요청 경로를 분산하는 로직 구축
+- **서비스 가용성 및 Cold Start 방지**: Hot-key 승격 시점의 성능 저하를 제어하기 위한 **Guard Phase** 및 **비동기 예열(Pre-warming)** 구조 도입
+- **데이터 일관성 확보**: **Write-Primary** 정책을 적용하여 분산 환경 내 데이터 파편화 및 정합성 이슈 해결
 
 #### 트러블슈팅
-- **xxHash64 및 메모리 구조 최적화**  
-  MD5의 연산 오버헤드를 줄이기 위해 `xxHash64`를 도입하고, `__slots__`로 객체 메모리 점유율을 50% 절감하여 해싱 속도 20배 향상
-- **Guard Phase 설계를 통한 Cold Start 방지**  
-  Hot-key 승격 직후 발생하는 캐시 미스를 방지하기 위해 물리적 전송 지연 구간(Guard Phase)과 능동적 예열(Pre-warming) 기법을 설계하여 부하 표준편차 33.8% 개선
-- **Write-Primary 정책 기반 데이터 무결성 확보**  
-  동적 라우팅 환경의 데이터 파편화를 방지하기 위해 쓰기 경로를 Primary 노드로 단일화하여 분산 환경 내 정합성 이슈를 원천 차단
-- **ThreadPoolExecutor 기반 고정밀 벤치마크 구축**  
-  클라이언트 사이드 병목을 해소하기 위해 비동기 병렬 처리 모델을 도입, 실제 운영 환경 수준인 18만 OPS의 처리량 검증 및 정밀 측정 환경 확보
+- **해싱 및 메모리 효율 개선**: MD5 연산 병목을 `xxHash64`로 대체하고 `__slots__`를 적용하여 **해싱 속도 20배 향상 및 메모리 50% 절감**
+- **Hot-key 승격 시 Latency Spike 방어**: 특정 키 집중 부하(Zipfian) 환경에서 **Guard Phase**로 캐시 미스 구간을 제어하여 부하 분산 효율 확보
+- **벤치마크 처리량 한계 극복**: 클라이언트 I/O 블로킹 문제를 `ThreadPoolExecutor` 비동기 모델로 해결하여 **180,000 OPS급 고부하 테스트 환경** 직접 구축
 
 👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅)
 
 <br/>
 
 ### [⚖️ MySQL vs Redis 성능 비교 벤치마크 (KCI)](https://github.com/bh1848/mysql-redis-benchmark)
-> **데이터 저장 방식(Disk vs Memory) 및 연산 유형에 따른 최적의 저장소 선정을 위한 정량적 비교 분석 연구**
+> **저장 매체(Disk vs Memory) 및 데이터 구조에 따른 쓰기/조회 성능 정량 분석**
 
 - **Period**: 2023.10 ~ 2024.06 (9개월) | **Role**: 제1저자 (실험 설계 및 분석)
-- **Publication**: [📜 Paper (KCI / JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
-- **🏆 성과**: Redis가 MySQL 대비 평균 **7.8배 빠른 속도**를 보임을 정량적으로 증명하여 시스템 캐싱 도입의 공학적 근거 마련
+- **Tech Stack**: Java, Spring Boot, MySQL, Redis
+- **Publication**: [📜 2024 JICS 게재 (KCI)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
+- **핵심 성과**: 연산 유형별 성능 차이(평균 7.8배)를 데이터로 입증하여 캐시 도입의 기술적 근거 확보
 
-#### 주요 연구 내용
-- **측정 로직 공통화 및 벤치마크 프레임워크 구축**  
-  `AbstractBatchExperiment`를 활용하여 DB 연산 측정 로직을 추상화하고, Connection Warm-up을 통해 초기 측정 오차를 배제한 실험 환경 설계
-- **Spring Profile 기반 독립적 실험 환경 제어**  
-  환경 격리를 통해 벤치마크 비대상 Bean 생성을 원천 차단하고, 실험군 간의 상호 간섭 없는 순수 시스템 성능 측정 기반 조성
-- **데이터 저장 구조별 레이턴시 정량 분석**  
-  10,000회 이상의 배치 연산 수행 및 네트워크 RTT를 포함한 'Client Side Latency' 측정을 통해 B-Tree(Disk)와 Hash(Memory) 구조의 성능 트레이드오프 검증
+#### 핵심 메커니즘
+- **벤치마크 프레임워크 구축**: `AbstractBatchExperiment` 추상화로 측정 로직을 공통화하고, Connection Warm-up을 통해 초기 측정 오차 제거
+- **Spring Profile 기반 환경 격리**: 벤치마크 대상 외의 Bean 생성을 차단하여 타 서비스 간섭 없는 순수 시스템 성능 측정 환경 조성
+- **데이터 구조별 레이턴시 분석**: 10,000건 이상의 배치 연산을 수행하며 B-Tree(Disk)와 Hash(Memory) 간의 성능 트레이드오프 검증
 
 #### 트러블슈팅
-- **JPA ddl-auto 기반 테스트 멱등성 확보**  
-  반복 실행 시 발생하는 PK 충돌을 해결하기 위해 `ddl-auto: create` 전략과 환경 격리 프로파일을 구축하여 인덱스 파편화 없는 순수 테스트 환경 조성
-- **통계적 보정을 통한 레이턴시 정밀 측정**  
-  `System.currentTimeMillis()`의 해상도 한계를 극복하기 위해 단건 측정값의 산술 평균 도출 방식을 도입하여 0.17ms 단위의 유효 지표 확보
-- **네트워크 RTT 기반 처리량 병목 구간 규명**  
-  이론적 성능 대비 낮은 OPS의 원인을 동기식 I/O의 Stop-and-Wait 물리적 한계로 분석하고, 실무를 대변하는 'Client Side Latency'를 핵심 지표로 채택
+- **테스트 멱등성 확보**: 반복 실행 시 PK 충돌 및 인덱스 파편화 문제를 해결하기 위해 `ddl-auto: create`와 전용 프로파일을 활용한 클린 테스트 환경 유지
+- **측정 정밀도 개선**: `System.currentTimeMillis()`의 해상도 한계를 극복하고자 대량 연산 후 산술 평균을 도출하여 **0.17ms 단위의 유효 지표** 확보
+- **병목 구간 파악**: 이론치 대비 낮은 처리량의 원인을 동기식 I/O의 **Stop-and-Wait 물리적 한계**로 분석하고, 실무 관점의 'Client Side Latency'를 핵심 지표로 채택
 
-👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)
+👉 [**자세한 트러블슈팅 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)
 
 <br/>
 
