@@ -77,7 +77,7 @@
 - **측정 정밀도 개선**: `System.currentTimeMillis()`의 해상도 한계를 극복하고자 대량 연산 후 산술 평균을 도출하여 **0.17ms 단위의 유효 지표** 확보
 - **병목 구간 파악**: 이론치 대비 낮은 처리량의 원인을 동기식 I/O의 **Stop-and-Wait 물리적 한계**로 분석하고, 실무 관점의 'Client Side Latency'를 핵심 지표로 채택
 
-👉 [**자세한 트러블슈팅 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)
+👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)
 
 <br/>
 
