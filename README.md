@@ -8,7 +8,7 @@
 
 사용자 경험을 최우선으로 생각하며, 특히 **대용량 트래픽 처리**와 **시스템 아키텍처**에 깊은 관심을 가지고 있습니다. 
 - **Email:** bh1848@naver.com
-- **Blog:** [hzeror.blog](https://bh1848.github.io/hzeror)
+- **Blog:** [hzeror.blog](https://hzeror.netlify.app/)
 
 ### 🥷 Skills
 **Main (Product-Level)**
