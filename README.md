@@ -38,7 +38,7 @@
 ## 🔬 Research
 
 ### [📊 D-HASH: 분산 캐시 Hot-key 쏠림 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
-> **대규모 트래픽 환경에서 특정 노드에 부하가 집중되는 문제를 풀기 위한 커스텀 해싱 알고리즘 논문**
+> **대규모 트래픽 환경에서 특정 노드에 부하가 집중되는 문제를 풀기 위한 커스텀 해싱 알고리즘 논문 프로젝트**
 
 - **Period**: 2025.01 ~ 2026.02 (13개월)
 - **Role**: 제1저자 (알고리즘 설계, 실험 설계·구현·분석, 논문 작성)
@@ -61,12 +61,12 @@
 <br/>
 
 ### [⚖️ MySQL vs Redis 성능 비교 벤치마크](https://github.com/bh1848/mysql-redis-benchmark)
-> **저장 매체(Disk vs Memory) 및 데이터 구조에 따른 쓰기/조회 성능 분석 논문**
+> **저장 매체(Disk vs Memory) 및 데이터 구조에 따른 쓰기/조회 성능 분석 논문 프로젝트**
 
 - **Period**: 2023.10 ~ 2024.06 (9개월)
 - **Role**: 제1저자 (실험 설계 및 분석)
 - **Tech Stack**: Java, Spring Boot, MySQL, Redis
-- **Publication**: [📜 KCI 게재 (JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
+- **Publication**: [📜 JICS 2024 게재 (KCI)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
 - **주요 성과**: 연산 유형별 성능 차이(평균 7.8배)를 데이터로 증명해 캐시 도입의 기술적 근거 마련
 
 #### 핵심 로직
