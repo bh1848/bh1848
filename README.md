@@ -59,7 +59,7 @@
 
 <br/>
 
-### [⚖️ MySQL vs Redis 성능 비교 벤치마크 (KCI)](https://github.com/bh1848/mysql-redis-benchmark)
+### [⚖️ MySQL vs Redis 성능 비교 벤치마크](https://github.com/bh1848/mysql-redis-benchmark)
 > **저장 매체(Disk vs Memory) 및 데이터 구조에 따른 쓰기/조회 성능 정량 분석**
 
 - **Period**: 2023.10 ~ 2024.06 (9개월) | **Role**: 제1저자 (실험 설계 및 분석)
@@ -68,7 +68,7 @@
 - **핵심 성과**: 연산 유형별 성능 차이(평균 7.8배)를 데이터로 입증하여 캐시 도입의 기술적 근거 확보
 
 #### 핵심 메커니즘
-- **벤치마크 프레임워크 구축**: `AbstractBatchExperiment` 추상화로 측정 로직을 공통화하고, Connection Warm-up을 통해 초기 측정 오차 제거
+- **벤치마크 프레임워크 구축**: `AbstractBatchExperiment` 추상화로 측정 로직을 통합하고, Connection Warm-up을 통해 초기 측정 오차 제거
 - **Spring Profile 기반 환경 격리**: 벤치마크 대상 외의 Bean 생성을 차단하여 타 서비스 간섭 없는 순수 시스템 성능 측정 환경 조성
 - **데이터 구조별 레이턴시 분석**: 10,000건 이상의 배치 연산을 수행하며 B-Tree(Disk)와 Hash(Memory) 간의 성능 트레이드오프 검증
 
