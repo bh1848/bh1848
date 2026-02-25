@@ -38,44 +38,46 @@
 ## 🔬 Research
 
 ### [📊 D-HASH: 분산 캐시 Hot-key 쏠림 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
-> **대규모 트래픽 환경에서 특정 노드에 부하가 집중되는 문제를 풀기 위한 커스텀 해싱 알고리즘**
+> **대규모 트래픽 환경에서 특정 노드에 부하가 집중되는 문제를 풀기 위한 커스텀 해싱 알고리즘 논문**
 
-- **Period**: 2025.01 ~ 2026.02 (13개월) | **Role**: 제1저자 (알고리즘 설계, 실험 설계·구현·분석, 논문 작성)
-- **Tech Stack**: Python, Redis, Docker
+- **Period**: 2025.01 ~ 2026.02 (13개월)
+- **Role**: 제1저자 (알고리즘 설계, 실험 설계·구현·분석, 논문 작성)
+- **Tech Stack**: Python, Redis, Docker, xxHash
 - **Publication**: [📝 TIIS 2026 게재 예정 (SCIE)](https://doi.org/10.3837/tiis.2026.xx.xxx)
-- **핵심 성과**: NASA 웹 로그 기반 실험 결과, **기존 Consistent Hashing 대비 부하 불균형 33.8% 감소** 달성
+- **주요 성과**: NASA 웹 로그 테스트 결과, **기존 Consistent Hashing 대비 부하 불균형 33.8% 개선**
 
-#### 핵심 메커니즘
-- **실시간 트래픽 라우팅 엔진**: LRU 카운터 기반 모니터링을 통해 Hot-key 발생 시 즉시 요청 경로를 분산하는 로직 구축
-- **서비스 가용성 및 Cold Start 방지**: Hot-key 승격 시점의 성능 저하를 제어하기 위한 **Guard Phase** 및 **비동기 예열(Pre-warming)** 구조 도입
-- **데이터 일관성 확보**: **Write-Primary** 정책을 적용하여 분산 환경 내 데이터 파편화 및 정합성 이슈 해결
+#### 핵심 로직
+- **실시간 트래픽 분산**: LRU 카운터 기반 모니터링으로 Hot-key 발생 시 즉시 요청 경로를 바꿈
+- **가용성 최적화**: Hot-key 승격 시 발생하는 성능 저하를 막기 위해 **Guard Phase** 및 **비동기 예열** 구조 도입
+- **데이터 일관성 해결**: **Write-Primary** 정책을 적용해 분산 환경의 데이터 꼬임 및 정합성 이슈 해결
 
 #### 트러블슈팅
-- **해싱 및 메모리 효율 개선**: MD5 연산 병목을 `xxHash64`로 대체하고 `__slots__`를 적용하여 **해싱 속도 20배 향상 및 메모리 50% 절감**
-- **Hot-key 승격 시 Latency Spike 방어**: 특정 키 집중 부하(Zipfian) 환경에서 **Guard Phase**로 캐시 미스 구간을 제어하여 부하 분산 효율 확보
-- **벤치마크 처리량 한계 극복**: 클라이언트 I/O 블로킹 문제를 `ThreadPoolExecutor` 비동기 모델로 해결하여 **180,000 OPS급 고부하 테스트 환경** 직접 구축
+- **해싱 및 메모리 효율 개선**: MD5 연산 병목을 `xxHash64`로 대체하고 `__slots__`를 적용해 **속도 20배 향상 및 메모리 50% 절감**
+- **Latency Spike 대응**: 특정 키에 요청이 몰리는 환경(Zipfian)에서 **Guard Phase**로 캐시 미스 구간을 제어해 부하 분산 효율 개선
+- **테스트 처리량(Throughput) 한계 극복**: I/O 블로킹 문제를 `ThreadPoolExecutor` 비동기 모델로 해결해 **180,000 OPS급 고부하 테스트 환경** 구축
 
 👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅)
 
 <br/>
 
 ### [⚖️ MySQL vs Redis 성능 비교 벤치마크](https://github.com/bh1848/mysql-redis-benchmark)
-> **저장 매체(Disk vs Memory) 및 데이터 구조에 따른 쓰기/조회 성능 정량 분석**
+> **저장 매체(Disk vs Memory) 및 데이터 구조에 따른 쓰기/조회 성능 분석 논문**
 
-- **Period**: 2023.10 ~ 2024.06 (9개월) | **Role**: 제1저자 (실험 설계 및 분석)
-- **Tech Stack**: Java, Spring Boot, MySQL, Redis
-- **Publication**: [📜 2024 JICS 게재 (KCI)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
-- **핵심 성과**: 연산 유형별 성능 차이(평균 7.8배)를 데이터로 입증하여 캐시 도입의 기술적 근거 확보
+- **Period**: 2023.10 ~ 2024.06 (9개월)
+- **Role**: 제1저자 (실험 설계 및 분석)
+- **Tech Stack**: Java, Spring Boot, MySQL, Redis, JPA
+- **Publication**: [📜 KCI 게재 (JICS 2024)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
+- **주요 성과**: 연산 유형별 성능 차이(평균 7.8배)를 데이터로 증명해 캐시 도입의 기술적 근거 마련
 
-#### 핵심 메커니즘
-- **벤치마크 프레임워크 구축**: `AbstractBatchExperiment` 추상화로 측정 로직을 통합하고, Connection Warm-up을 통해 초기 측정 오차 제거
-- **Spring Profile 기반 환경 격리**: 벤치마크 대상 외의 Bean 생성을 차단하여 타 서비스 간섭 없는 순수 시스템 성능 측정 환경 조성
-- **데이터 구조별 레이턴시 분석**: 10,000건 이상의 배치 연산을 수행하며 B-Tree(Disk)와 Hash(Memory) 간의 성능 트레이드오프 검증
+#### 핵심 로직
+- **벤치마크 환경 구축**: `AbstractBatchExperiment` 추상화로 측정 로직을 하나로 합치고, Connection Warm-up으로 초기 측정 오차 제거
+- **Spring Profile 기반 환경 격리**: 테스트 대상 외의 Bean 생성을 막아 다른 서비스 간섭 없는 순수 시스템 성능 측정 환경 구축
+- **데이터 구조별 성능 분석**: B-Tree(Disk)와 Hash(Memory) 구조 차이에 따른 배치 연산 성능 차이(Trade-off) 검증
 
 #### 트러블슈팅
-- **테스트 멱등성 확보**: 반복 실행 시 PK 충돌 및 인덱스 파편화 문제를 해결하기 위해 `ddl-auto: create`와 전용 프로파일을 활용한 클린 테스트 환경 유지
-- **측정 정밀도 개선**: `System.currentTimeMillis()`의 해상도 한계를 극복하고자 대량 연산 후 산술 평균을 도출하여 **0.17ms 단위의 유효 지표** 확보
-- **병목 구간 파악**: 이론치 대비 낮은 처리량의 원인을 동기식 I/O의 **Stop-and-Wait 물리적 한계**로 분석하고, 실무 관점의 'Client Side Latency'를 핵심 지표로 채택
+- **테스트 반복 실행 이슈 해결**: PK 충돌 및 인덱스 파편화를 막기 위해 `ddl-auto: create`와 전용 프로파일로 클린한 테스트 환경 유지
+- **측정 정밀도 개선**: `System.currentTimeMillis()`의 한계를 대량 연산 후 산술 평균을 내는 방식으로 보완해 **0.17ms 단위 지표** 확보
+- **병목 원인 파악**: 동기식 I/O의 Stop-and-Wait 구조 때문에 처리량이 떨어지는 것을 확인, 실무 관점의 **'Client Side Latency'를 핵심 지표로 채택**해 데이터 신뢰도 개선
 
 👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)
 
@@ -86,7 +88,8 @@
 ### [🌕 동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
 > **교내 동아리 정보를 통합하고 관리 효율성을 높인 중앙 집중형 시스템**
 
-- **Period**: 2024.05 ~ 2025.03 (10개월) | **Role**: Backend Developer (핵심 로직 및 공통 컴포넌트 구현)
+- **Period**: 2024.05 ~ 2025.03 (10개월)
+- **Role**: Backend Developer (핵심 로직 및 공통 컴포넌트 구현)
 - **Tech Stack**: Java, Spring Boot, Spring Security, JPA, QueryDSL, MySQL, Redis, AWS EC2/S3/RDS, Docker
 
 #### 주요 담당 업무
@@ -116,7 +119,8 @@
 ### [💬 수챗: 랜덤 채팅 앱](https://github.com/bh1848/suchat-backend)
 > **교내 구성원 인증 기반의 실시간 1:1 익명 랜덤 채팅 서비스**
 
-- **Period**: 2023.09 ~ 2024.09 (13개월) | **Role**: Backend Developer (매칭 엔진 및 인증 아키텍처 구축)
+- **Period**: 2023.09 ~ 2024.09 (13개월)
+- **Role**: Backend Developer (매칭 엔진 및 인증 아키텍처 구축)
 - **Tech Stack**: Java, Spring Boot, Spring Security, JPA, MySQL, Redis, AWS EC2, WebSocket, Async
 
 #### 주요 담당 업무
@@ -144,7 +148,8 @@
 ### [♻️ 요분정: AI 기반 쓰레기 분류 플랫폼](https://github.com/bh1848/yobunjung-backend)
 > **AI 객체 인식 기술과 IoT 수거함을 결합한 스마트 분리배출 지원 서비스**
 
-- **Period**: 2024.09 ~ 2024.11 (3개월) | **Role**: Backend & AI Serving (백엔드 전 공정 및 AI 파이프라인 구축 전담)
+- **Period**: 2024.09 ~ 2024.11 (3개월)
+- **Role**: Backend & AI Serving (백엔드 전 공정 및 AI 파이프라인 구축 전담)
 - **Tech Stack**: Python, Flask, MySQL, ONNX, OpenCV, AWS EC2
 
 #### 주요 담당 업무
@@ -163,7 +168,8 @@
 ### [🚗 딴짓 하지 말아줘: 졸음운전 방지 시스템](https://github.com/bh1848/drowsy-driving-prevention)
 > **MediaPipe 안면 랜드마크 분석 기술을 활용한 실시간 운전자 상태 모니터링 및 경고 솔루션**
 
-- **Period**: 2023.09 ~ 2023.11 (3개월) | **Role**: Application Developer (메인 로직 및 비동기 파이프라인 구현)
+- **Period**: 2023.09 ~ 2023.11 (3개월)
+- **Role**: Application Developer (메인 로직 및 비동기 파이프라인 구현)
 - **Tech Stack**: Python, OpenCV, MediaPipe, PyQt5, Pygame
 
 #### 주요 담당 업무
