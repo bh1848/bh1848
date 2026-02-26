@@ -90,7 +90,7 @@
 
 - **Period**: 2024.05 ~ 2025.03 (10개월)
 - **Role**: Backend Developer (인증/보안 및 핵심 API 구현)
-- **Tech Stack**: Java 17, Spring Boot, Spring Security, JPA/QueryDSL, MySQL, Redis, AWS (EC2/S3/RDS), Docker
+- **Tech Stack**: Java, Spring Boot, Spring Security, JPA/QueryDSL, MySQL, Redis, AWS (EC2/S3/RDS), Docker
 
 #### 주요 작업 내용
 - **인증 및 권한 구조 설계**: JWT와 Redis(RTR)를 조합한 보안 쿠키 전략으로 토큰 탈취를 방어하고, 도메인별 다중 권한 제어 로직 구현
@@ -113,7 +113,7 @@
 
 - **Period**: 2023.09 ~ 2024.09 (13개월)
 - **Role**: Backend Developer (매칭 엔진 및 인증 구조 설계·구현)
-- **Tech Stack**: Java 11, Spring Boot, Spring Security, MySQL, Redis, AWS, WebSocket
+- **Tech Stack**: Java, Spring Boot, Spring Security, MySQL, Redis, AWS, WebSocket
 
 #### 주요 작업 내용
 - **인증 및 보안 시스템 구축**: JWT와 Redis 블랙리스트를 조합해 로그아웃 시 토큰 재사용을 방지하고, 안전한 인증 파이프라인 구현
