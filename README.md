@@ -7,7 +7,7 @@
 > **"대용량 트래픽 환경의 성능 최적화와 보안 아키텍처 설계에 집중합니다."**
 
 - **Email:** bh1848@naver.com
-- **Blog:** [hzeror.blog](https://hzeror.netlify.app/)
+- **Blog:** [banghyeok.blog](https://velog.io/@bh1848/posts)
 
 ### 🥷 Skills
 **Main**
