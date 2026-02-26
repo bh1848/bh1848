@@ -28,7 +28,6 @@
 
 **Sub**
 <p>
-  <img src="https://img.shields.io/badge/QueryDSL-111827?style=flat-square&logo=java&logoColor=white" />
   <img src="https://img.shields.io/badge/OpenCV-111827?style=flat-square&logo=opencv&logoColor=white" />
   <img src="https://img.shields.io/badge/Flask-111827?style=flat-square&logo=flask&logoColor=white" />
 </p>
@@ -128,46 +127,6 @@
 - **매칭 상태 동기화**: 분산 환경의 매칭 상태 불일치 해결을 위해 Redis를 활용한 상태 공유 및 원자적(Atomic) 연산 적용
 
 👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/suchat-backend/#6-트러블슈팅)
-
-<br/>
-
-### [♻️ 요분정: AI 기반 쓰레기 분류 플랫폼](https://github.com/bh1848/yobunjung-backend)
-> **AI 객체 인식 기술과 IoT 수거함을 결합한 스마트 분리배출 지원 서비스**
-
-- **Period**: 2024.09 ~ 2024.11 (3개월)
-- **Role**: Backend & AI Serving (백엔드 전 공정 및 AI 파이프라인 구축 전담)
-- **Tech Stack**: Python, Flask, MySQL, ONNX, OpenCV, AWS
-
-#### 주요 작업 내용
-- **AI 추론 최적화**  
-  YOLO 모델의 `ONNX` 경량화 및 `OpenCV` 전처리 파이프라인 구축으로 CPU 환경 내 실시간성 확보
-- **실시간 통신 인프라**  
-  `SSE` 프로토콜 도입으로 하드웨어-앱 간 저지연 피드백 시스템 구현
-- **동시성 제어**  
-  `Lock` 기반의 Thread-Safe 상태 관리를 적용하여 비동기 통신 간 데이터 경합 방지
-
-#### 트러블슈팅
-(작성 예정)
-
-<br/>
-
-### [🚗 딴짓 하지 말아줘: 졸음운전 방지 시스템](https://github.com/bh1848/drowsy-driving-prevention)
-> **MediaPipe 안면 랜드마크 분석 기술을 활용한 실시간 운전자 상태 모니터링 및 경고 솔루션**
-
-- **Period**: 2023.09 ~ 2023.11 (3개월)
-- **Role**: Application Developer (메인 로직 및 비동기 파이프라인 구현)
-- **Tech Stack**: Python, OpenCV, MediaPipe, PyQt5, Pygame
-
-#### 주요 작업 내용
-- **데이터 파이프라인**  
-  `MediaPipe` 분석 데이터 처리에 최적화된 이벤트 루프 설계 및 시스템 통합
-- **비동기 성능 최적화**  
-  `QTimer` 기반 비동기 프레임 처리로 UI 프리징 해결 및 실시간 응답성 확보
-- **판단 알고리즘 고도화**  
-  EAR 수치와 연속 프레임 카운팅 로직을 결합하여 판별 신뢰도 향상
-
-#### 트러블슈팅
-(작성 예정)
 
 <br/>
 
