@@ -56,7 +56,7 @@
 - **Latency Spike 대응**: 특정 키에 요청이 몰리는 환경(Zipfian)에서 **Guard Phase**로 캐시 미스 구간을 제어해 부하 분산 효율 개선
 - **테스트 처리량(Throughput) 한계 극복**: I/O 블로킹 문제를 `ThreadPoolExecutor` 비동기 모델로 해결해 **180,000 OPS급 고부하 테스트 환경** 구축
 
-👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#7-트러블-슈팅)
+👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/D-HASH/blob/main/docs/REPORT_KR.md#5-트러블슈팅)
 
 <br/>
 
@@ -79,7 +79,7 @@
 - **측정 정밀도 개선**: `System.currentTimeMillis()`의 한계를 대량 연산 후 산술 평균을 내는 방식으로 보완해 **0.17ms 단위 지표** 확보
 - **병목 원인 파악**: 동기식 I/O의 Stop-and-Wait 구조 때문에 처리량이 떨어지는 것을 확인, 실무 관점의 **'Client Side Latency'를 핵심 지표로 채택**해 데이터 신뢰도 개선
 
-👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#6-트러블-슈팅)
+👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/mysql-redis-benchmark#4-트러블슈팅)
 
 <br/>
 
@@ -104,7 +104,7 @@
 - **파일 업로드 및 XSS 보안**: `Jsoup` 화이트리스트와 바이트 단위 검증 로직을 공통 인터셉터(@InitBinder)에 배치해 누락 없는 보안 환경 구축
 - **CORS 환경 내 쿠키 전송 이슈 해결**: 브라우저 `SameSite` 정책 강화에 대응해 로우레벨 헤더 제어와 환경별 프로파일 이원화로 크로스 도메인 인증 문제 해결
 
-👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/USW-Circle-Link-Server#6-트러블-슈팅)
+👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/USW-Circle-Link-Server#6-트러블슈팅)
 
 <br/>
 
@@ -127,7 +127,7 @@
 - **유령 데이터 자동 정리**: 미인증 회원 데이터 누적으로 인한 리소스 낭비를 막기 위해, `@Scheduled` 기반의 배치 작업으로 주기적인 데이터 클리닝 로직 구축
 - **매칭 상태 동기화 이슈**: 분산 환경에서 발생하는 매칭 상태 불일치를 해결하기 위해 Redis를 활용한 상태 공유 및 원자적(Atomic) 연산 적용
 
-👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/suchat-backend/#6-트러블-슈팅)
+👉 [**트러블슈팅 확인하기 →**](https://github.com/bh1848/suchat-backend/#6-트러블슈팅)
 
 <br/>
 
