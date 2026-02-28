@@ -69,7 +69,7 @@
 ## Impactful Projects
 
 ### [🌕 동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
-> **2024.05 - 2025.03 | 백엔드 전반 설계 및 API 개발 (팀 4인)**
+> **2024.05 - 2025.03 | 백엔드 설계 및 API 개발 (팀 12인 - BE 4, FE 7, DE 1)**
 - **Core**: JWT/Redis RTR 보안 아키텍처 및 JPA 벌크 연산 최적화
 
 #### **💫 Key Achievements & Troubleshooting**
@@ -84,7 +84,7 @@
 <br/>
 
 ### [💬 수챗: 대학교 커뮤니티 기반 랜덤 채팅 서비스](https://github.com/bh1848/suchat-backend)
-> **2023.09 - 2024.09 | 백엔드 아키텍처 및 매칭 엔진 개발 (팀 5인)**
+> **2023.09 - 2024.05 | 백엔드 아키텍처 및 매칭 엔진 개발 (팀 5인)**
 - **Core**: Redis ZSet 기반 매칭 엔진 및 JWT/Redis 보안 아키텍처
 
 #### **💫 Key Achievements & Troubleshooting**
