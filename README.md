@@ -38,7 +38,7 @@
 ### [D-HASH: 분산 캐시 Hot-key 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
 > **대규모 트래픽 환경의 특정 노드 부하 집중 문제를 해결하는 알고리즘 연구**
 
-- **Publication**: [TIIS 2026 게재 예정 (SCIE 제1저자)]
+- **Publication**: TIIS 2026 게재 예정 (SCIE 제1저자)
 - **Impact**: **부하 불균형 33.8% 개선** (NASA 웹 로그 기반 Consistent Hashing 대비)
 
 #### Key Achievements & Troubleshooting
