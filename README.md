@@ -2,7 +2,7 @@
   <img src="./assets/banner.svg" width="100%" alt="banner" />
 </p>
 
-# 안녕하세요. 백엔드 개발자 방혁입니다. 
+# 안녕하세요. 백엔드 개발자 방혁입니다.
 
 > **"대용량 트래픽 환경의 성능 최적화와 보안 아키텍처 설계에 집중합니다."**
 
@@ -38,7 +38,7 @@
 ### [D-HASH: 분산 캐시 Hot-key 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
 > **대규모 트래픽 환경의 특정 노드 부하 집중 문제를 해결하는 알고리즘 연구**
 
-- **Publication**: [📝 TIIS 2026 게재 예정 (SCIE 제1저자)]
+- **Publication**: [TIIS 2026 게재 예정 (SCIE 제1저자)]
 - **Impact**: **부하 불균형 33.8% 개선** (NASA 웹 로그 기반 Consistent Hashing 대비)
 
 #### Key Achievements & Troubleshooting
@@ -51,10 +51,10 @@
 
 <br/>
 
-### [⚖️ MySQL vs Redis 성능 비교 벤치마크](https://github.com/bh1848/mysql-redis-benchmark)
+### [MySQL vs Redis 성능 비교 벤치마크](https://github.com/bh1848/mysql-redis-benchmark)
 > **저장 매체 및 데이터 구조 차이에 따른 기술적 의사결정 근거 수립 연구**
 
-- **Publication**: [📜 JICS 2024 게재 (KCI 제1저자)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
+- **Publication**: [JICS 2024 게재 (KCI 제1저자)](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
 - **Impact**: 연산 유형별 성능 차이(평균 7.8배) 수치화를 통해 **캐시 도입의 객관적 기술 근거 마련**
 
 #### Key Achievements & Troubleshooting
