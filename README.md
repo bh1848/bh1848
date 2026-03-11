@@ -28,8 +28,6 @@
 
 <br/>
 
-## Projects
-
 ### [동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
 > **2024.04 – 2025.03 | Backend | 팀 12명**
 
