@@ -5,27 +5,16 @@
 # 백엔드 개발자 방혁입니다.
 
 > **Java/Spring 기반 백엔드 개발자입니다.**  
-> **인증, 캐시, 데이터 처리 성능 개선에 관심이 있습니다.**
+> **인증, 캐시, 데이터 처리 병목을 측정하고 개선하는 데 관심이 있습니다.**
 
 - **Email:** bh1848@naver.com
 - **Blog:** [banghyeok.blog](https://velog.io/@bh1848/posts)
 
-## Tech Stack
-<p>
-  <img src="https://img.shields.io/badge/Java-111827?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring%20Boot-111827?style=flat-square&logo=springboot&logoColor=white" />
-  <img src="https://img.shields.io/badge/JPA%2FHibernate-111827?style=flat-square&logo=hibernate&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-111827?style=flat-square&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-111827?style=flat-square&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS-111827?style=flat-square&logo=amazonaws&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-111827?style=flat-square&logo=docker&logoColor=white" />
-</p>
-
 ## Research
 
-### [D-HASH: 분산 캐시 Hot-key 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
+### [D-HASH: 분산 캐시 Hot key 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
 
-- Hot-key로 인한 캐시 노드 부하 집중 문제를 다뤘습니다.
+- Hot key로 인한 캐시 노드 부하 집중 문제를 다뤘습니다.
 - 동적 해싱 알고리즘과 재현 가능한 벤치마크 환경을 구현했습니다.
 - NASA 웹 로그 기반 실험에서 Consistent Hashing 대비 **부하 불균형을 33.8% 개선**했습니다.  
   *(TIIS 2026 accepted, SCIE, 제1저자)*
@@ -38,8 +27,6 @@
 - MySQL과 Redis를 연산 유형별로 비교하는 벤치마크를 설계했습니다.
 - 연산 유형에 따라 평균 **7.8배 성능 차이**를 확인했습니다.  
   *(JICS 2024, KCI 제1저자)*
-
-<br/>
 
 ## Projects
 
@@ -58,3 +45,6 @@
 - Redis ZSet 기반 매칭 엔진을 구현했습니다.
 - JWT/Redis 기반 인증 구조를 설계했습니다.
 - 매칭 로직과 인증 책임을 분리해 서비스 구조를 단순화했습니다.
+
+## Tech Stack
+Java, Spring Boot, JPA, MySQL, Redis, Docker, AWS
