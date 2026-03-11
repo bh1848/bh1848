@@ -21,6 +21,24 @@
   <img src="https://img.shields.io/badge/Docker-111827?style=flat-square&logo=docker&logoColor=white" />
 </p>
 
+## Research
+
+### [D-HASH: 분산 캐시 Hot-key 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
+
+- Hot-key로 인한 캐시 노드 부하 집중 문제를 다뤘습니다.
+- 동적 해싱 알고리즘과 재현 가능한 벤치마크 환경을 구현했습니다.
+- NASA 웹 로그 기반 실험에서 Consistent Hashing 대비 **부하 불균형을 33.8% 개선**했습니다.  
+  *(TIIS 2026 accepted, SCIE, 제1저자)*
+
+<br/>
+
+### [MySQL vs Redis 성능 비교 벤치마크](https://github.com/bh1848/mysql-redis-benchmark)
+
+- 캐시 도입 판단을 위한 정량적 근거를 만들고자 했습니다.
+- MySQL과 Redis를 연산 유형별로 비교하는 벤치마크를 설계했습니다.
+- 연산 유형에 따라 평균 **7.8배 성능 차이**를 확인했습니다.  
+  *(JICS 2024, KCI 제1저자)*
+
 <br/>
 
 ## Projects
@@ -40,23 +58,3 @@
 - Redis ZSet 기반 매칭 엔진을 구현했습니다.
 - JWT/Redis 기반 인증 구조를 설계했습니다.
 - 매칭 로직과 인증 책임을 분리해 서비스 구조를 단순화했습니다.
-
-<br/>
-
-## Research
-
-### [D-HASH: 분산 캐시 Hot-key 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
-
-- Hot-key로 인한 캐시 노드 부하 집중 문제를 다뤘습니다.
-- 동적 해싱 알고리즘과 재현 가능한 벤치마크 환경을 구현했습니다.
-- NASA 웹 로그 기반 실험에서 Consistent Hashing 대비 **부하 불균형을 33.8% 개선**했습니다.  
-  *(TIIS 2026 accepted, SCIE, 제1저자)*
-
-<br/>
-
-### [MySQL vs Redis 성능 비교 벤치마크](https://github.com/bh1848/mysql-redis-benchmark)
-
-- 캐시 도입 판단을 위한 정량적 근거를 만들고자 했습니다.
-- MySQL과 Redis를 연산 유형별로 비교하는 벤치마크를 설계했습니다.
-- 연산 유형에 따라 평균 **7.8배 성능 차이**를 확인했습니다.  
-  *(JICS 2024, KCI 제1저자)*
