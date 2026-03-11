@@ -8,13 +8,13 @@
 > 인증, 캐시, 데이터 처리 병목을 측정하고 개선하는 시스템 설계에 관심이 있습니다.
 
 - **Email**: bh1848@naver.com  
-- **Blog**: https://velog.io/@bh1848/posts
+- **Blog**: [velog](https://velog.io/@bh1848/posts)
 
 
 
 ## Featured Work
 
-### **D-HASH: 분산 캐시 Hot Key 완화를 위한 동적 해싱 알고리즘**
+### [D-HASH: 분산 캐시 Hot Key 완화를 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
 
 분산 캐시 환경에서 **Hot key로 인한 노드 부하 집중 문제**를 해결하기 위해  
 동적 해싱 기반 라우팅 알고리즘을 설계하고, 재현 가능한 실험 환경을 구현했습니다.
@@ -24,15 +24,13 @@
 - NASA 웹 로그 기반 실험 환경 구축
 - Consistent Hashing 대비 **부하 불균형 33.8% 개선**
 
-**SCIE Journal (TIIS 2026 accepted)**  
-**DOI**: 추후 입력
+*Accepted to TIIS (SCIE), 2026 — 제1저자*  
 
 <br/>
 
-
 ## Projects
 
-### **동구라미 — 대학교 동아리 통합 관리 플랫폼**
+### [동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
 > **2024.04 – 2025.03 | Backend | 팀 12명**
 
 - JWT + Redis 기반 **RTR(Refresh Token Rotation) 인증 구조 설계**
@@ -40,11 +38,9 @@
 - 인증 로직과 도메인 로직을 분리해 **서비스 구조 단순화**
 - 인증 및 데이터 처리 책임을 명확히 분리해 **유지보수성 개선**
 
-**Repository**: https://github.com/bh1848/USW-Circle-Link-Server
-
 <br/>
 
-### **수챗 — 대학교 커뮤니티 기반 랜덤 채팅 서비스**
+### [수챗: 대학교 커뮤니티 기반 랜덤 채팅 서비스](https://github.com/bh1848/suchat-backend)
 > **2023.09 – 2024.05 | Backend | 팀 5명**
 
 - Redis ZSet 기반 **랜덤 매칭 엔진 구현**
@@ -52,10 +48,7 @@
 - 매칭 로직과 인증 로직을 분리해 **서비스 책임 구조 단순화**
 - Redis 자료구조를 활용해 **매칭 처리 효율 개선**
 
-**Repository**: https://github.com/bh1848/suchat-backend
-
 <br/>
-
 
 ## Research
 
