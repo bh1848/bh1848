@@ -5,46 +5,73 @@
 # 백엔드 개발자 방혁입니다.
 
 > **Java/Spring 기반 백엔드 개발자입니다.**  
-> **인증, 캐시, 데이터 처리 병목을 측정하고 개선하는 데 관심이 있습니다.**
+> 인증, 캐시, 데이터 처리 병목을 **측정하고 개선하는 시스템 설계**에 관심이 있습니다.
 
-- **Email:** bh1848@naver.com
-- **Blog:** [banghyeok.blog](https://velog.io/@bh1848/posts)
+- **Email**: bh1848@naver.com  
+- **Blog**: https://velog.io/@bh1848/posts
 
-## Research
 
-### [D-HASH: 분산 캐시 Hot key 해결을 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
 
-- Hot key로 인한 캐시 노드 부하 집중 문제를 다뤘습니다.
-- 동적 해싱 알고리즘과 재현 가능한 벤치마크 환경을 구현했습니다.
-- NASA 웹 로그 기반 실험에서 Consistent Hashing 대비 **부하 불균형을 33.8% 개선**했습니다.  
-  *(TIIS 2026 accepted, SCIE, 제1저자)*
+## Featured Work
+
+### **D-HASH: 분산 캐시 Hot Key 완화를 위한 동적 해싱 알고리즘**
+
+분산 캐시 환경에서 **Hot key로 인한 노드 부하 집중 문제**를 해결하기 위해  
+동적 해싱 기반 라우팅 알고리즘을 설계하고, 재현 가능한 실험 환경을 구현했습니다.
+
+- Hot key 감지와 read 전환을 분리하는 **동적 라우팅 구조 설계**
+- Consistent Hashing 기반 캐시 라우팅 환경 재현
+- NASA 웹 로그 기반 실험 환경 구축
+- Consistent Hashing 대비 **부하 불균형 33.8% 개선**
+
+**SCIE Journal (TIIS 2026 accepted)**  
+**DOI**: 추후 입력
 
 <br/>
 
-### [MySQL vs Redis 성능 비교 벤치마크](https://github.com/bh1848/mysql-redis-benchmark)
-
-- 캐시 도입 판단을 위한 정량적 근거를 만들고자 했습니다.
-- MySQL과 Redis를 연산 유형별로 비교하는 벤치마크를 설계했습니다.
-- 연산 유형에 따라 평균 **7.8배 성능 차이**를 확인했습니다.  
-  *(JICS 2024, KCI 제1저자)*
 
 ## Projects
 
-### [동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
-> **2024.04 - 2025.03 | 백엔드 설계 및 API 개발 (팀 12인)**
+### **동구라미 — 대학교 동아리 통합 관리 플랫폼**
+> **2024.04 – 2025.03 | Backend | 팀 12명**
 
-- JWT/Redis 기반 RTR 인증 구조를 설계했습니다.
-- JPA 벌크 연산으로 대량 데이터 처리 방식을 개선했습니다.
-- 인증과 데이터 처리 구조를 분리해 유지보수성과 처리 효율을 높였습니다.
+- JWT + Redis 기반 **RTR(Refresh Token Rotation) 인증 구조 설계**
+- JPA 벌크 연산을 활용한 **대량 데이터 처리 성능 개선**
+- 인증 로직과 도메인 로직을 분리해 **서비스 구조 단순화**
+- 인증 및 데이터 처리 책임을 명확히 분리해 **유지보수성 개선**
+
+**Repository**: https://github.com/bh1848/USW-Circle-Link-Server
 
 <br/>
 
-### [수챗: 대학교 커뮤니티 기반 랜덤 채팅 서비스](https://github.com/bh1848/suchat-backend)
-> **2023.09 - 2024.05 | 백엔드 아키텍처 및 매칭 엔진 개발 (팀 5인)**
+### **수챗 — 대학교 커뮤니티 기반 랜덤 채팅 서비스**
+> **2023.09 – 2024.05 | Backend | 팀 5명**
 
-- Redis ZSet 기반 매칭 엔진을 구현했습니다.
-- JWT/Redis 기반 인증 구조를 설계했습니다.
-- 매칭 로직과 인증 책임을 분리해 서비스 구조를 단순화했습니다.
+- Redis ZSet 기반 **랜덤 매칭 엔진 구현**
+- JWT + Redis 기반 **인증 구조 설계**
+- 매칭 로직과 인증 로직을 분리해 **서비스 책임 구조 단순화**
+- Redis 자료구조를 활용해 **매칭 처리 효율 개선**
+
+**Repository**: https://github.com/bh1848/suchat-backend
+
+<br/>
+
+
+## Research
+
+- [**MySQL과 Redis의 데이터 처리 성능 비교 평가**](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)  
+  *Journal of KSIIS (KCI), 2024 — 제 1저자*  
+  DOI: 10.7472/jksii.2024.25.3.35
+
+<br/>
 
 ## Tech Stack
-Java, Spring Boot, JPA, MySQL, Redis, Docker, AWS
+
+**Backend**  
+Java, Spring Boot, JPA / Hibernate
+
+**Data**  
+MySQL, Redis
+
+**Infra**  
+Docker, AWS
