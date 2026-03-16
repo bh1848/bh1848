@@ -31,9 +31,9 @@
 ### [동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)
 > **2024.04 – 2025.03 | Backend | 팀 12명**
 
-- JWT + Redis 기반 Refresh Token Rotation 인증 구현
-- JPA 벌크 연산 활용 데이터 처리
-- 인증 및 데이터 처리 책임 분리
+- JPQL 벌크 DELETE로 동아리 삭제 쿼리 수 개선 (206ms → 111ms, 약 46%)
+- JWT Access Token에 role 클레임 추가로 인증 흐름 단순화
+- TransactionSynchronizationManager afterCommit으로 S3-DB 불일치 방지
 
 <br/>
 
