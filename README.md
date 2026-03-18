@@ -14,10 +14,9 @@
 
 ## Featured Work
 
-### [D-HASH: 분산 캐시 Hot Key 완화를 위한 동적 해싱 알고리즘](https://github.com/bh1848/D-HASH)
+### [D-HASH: Dynamic Hot-key Aware Scalable Hashing for Load Balancing in Distributed Cache Systems](https://github.com/bh1848/D-HASH)
 
-분산 캐시 환경에서 **Hot key로 인한 노드 부하 집중 문제**를 해결하기 위해  
-동적 해싱 기반 라우팅 알고리즘을 설계했습니다.
+분산 캐시 환경에서 Hot key로 인한 노드 부하 집중 문제를 해결하기 위한 동적 해싱 기반 라우팅 알고리즘 설계
 
 - Hot key 감지, read 전환 분리 동적 라우팅 구현
 - Consistent Hashing 기반 캐시 라우팅 구현
@@ -37,18 +36,9 @@
 
 <br/>
 
-### [수챗: 대학교 커뮤니티 기반 랜덤 채팅 서비스](https://github.com/bh1848/suchat-backend)
-> **2023.09 – 2024.05 | Backend | 팀 5명**
-
-- Redis ZSet 기반 랜덤 매칭 구현
-- JWT + Redis 기반 Refresh Token Rotation 인증 구현
-- Redis 자료구조 활용 매칭 처리 구현
-
-<br/>
-
 ## Research
 
-- [**MySQL과 Redis의 데이터 처리 성능 비교 평가**](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)  
+- [MySQL과 Redis의 데이터 처리 성능 비교 평가](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)  
   *Journal of KSIIS (KCI), 2024 — 제 1저자*  
   DOI: 10.7472/jksii.2024.25.3.35
 
