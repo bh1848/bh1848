@@ -21,7 +21,7 @@
 - Hot key 감지, read 전환 분리 동적 라우팅 구현
 - Consistent Hashing 기반 캐시 라우팅 구현
 - NASA web log, eBay aution 기반 실험 구현
-- Consistent Hashing 대비 노드 부하 표준편차 33.8% 개선
+- Consistent Hashing 대비 노드 부하 표준편차 26.7% 개선
 
 *Accepted to TIIS (SCIE), 2026 — 제1저자*  
 
