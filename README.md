@@ -35,4 +35,6 @@ Java, Spring Boot, JPA / Hibernate
 MySQL, Redis
 
 **Infra**  
-Docker, AWS
+Docker, AWS  
+
+![](https://komarev.com/ghpvc/?username=bh1848&color=grey&style=flat&label=👁)
