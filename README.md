@@ -36,5 +36,3 @@ MySQL, Redis
 
 **Infra**  
 Docker, AWS  
-
-![](https://komarev.com/ghpvc/?username=bh1848&color=grey&style=flat&label=👁)
