@@ -7,7 +7,7 @@
 
 - [D-HASH: Dynamic Hot-key Aware Scalable Hashing](https://github.com/bh1848/D-HASH)  
   분산 캐시 환경에서 Hot key 노드 부하 문제를 해결하기 위한 동적 해싱 알고리즘 설계  
-  *Journal of TIIS (SCIE), 2026 — 1저자* | [paper](https://itiis.org/digital-library/search?all=hyeok+bang)  
+  *Journal of TIIS (SCIE), 2026 — 1저자* | [paper](https://bh1848.github.io/paper)  
 
 
 - [동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)  
