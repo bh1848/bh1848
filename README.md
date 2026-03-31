@@ -17,6 +17,7 @@
 ## Research
 
 - MySQL과 Redis의 데이터 처리 성능 비교 평가  
+  RDBMS와 NoSQL 간 데이터 처리(C.R.D) 성능 실험 및 수치 분석  
   *Journal of KSIIS (KCI), 2024 — 1저자* | [paper](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)    
 
 ## Tech Stack
