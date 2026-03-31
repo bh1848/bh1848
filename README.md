@@ -8,22 +8,21 @@ Java/Spring 기반 백엔드 개발자입니다.
 
 ## Featured Work
 
-- [D-HASH: Dynamic Hot-key Aware Scalable Hashing for Load Balancing in Distributed Cache Systems](https://github.com/bh1848/D-HASH)  
-  분산 캐시 환경에서 Hot key로 인한 노드 부하 집중 문제를 해결하기 위한 동적 해싱 기반 라우팅 알고리즘 설계  
-  *Accepted to TIIS (SCIE), 2026 — 1저자*  
+- [D-HASH: Dynamic Hot-key Aware Scalable Hashing](https://github.com/bh1848/D-HASH)  
+  분산 캐시 환경에서 Hot key 노드 부하 문제를 해결하기 위한 동적 해싱 알고리즘 설계  
+  *Journal of TIIS (SCIE), 2026 — 1 저자* | DOI: 10.3837/tiis.2026.03.013  
 
 
-- [동구라미](https://github.com/bh1848/USW-Circle-Link-Server)  
-  대학교 동아리 통합 관리 플랫폼  
+- [동구라미: 대학교 동아리 통합 관리 플랫폼](https://github.com/bh1848/USW-Circle-Link-Server)  
+  Spring Boot 기반 백엔드 API 설계 및 동아리 관리 로직 개발    
   2024.04 – 2025.03 | Backend | 팀 12명  
 
 
 ## Research
 
 - [MySQL과 Redis의 데이터 처리 성능 비교 평가](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)  
-  RDBMS-NoSQL 간 삽입·조회·삭제 성능 실험 측정  
-  *Journal of KSIIS (KCI), 2024 — 1저자*  
-  DOI: 10.7472/jksii.2024.25.3.35
+  RDBMS와 NoSQL 간 데이터 처리(C.R.D) 성능 실험 및 수치 분석  
+  *Journal of KSIIS (KCI), 2024 — 1저자* | DOI: 10.7472/jksii.2024.25.3.35  
 
 
 ## Tech Stack
