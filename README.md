@@ -23,7 +23,7 @@
 ## Tech Stack
 
 **Backend**  
-Java, Spring Boot, JPA / Hibernate
+Java, Python, Spring Boot, Spring Security, JPA, JWT
 
 **Data**  
 MySQL, Redis
