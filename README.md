@@ -22,4 +22,4 @@ Spring Boot backend for club discovery, applications, and QR-based event entry
 
 **MySQL vs Redis: A Performance Comparison Study**  
 Benchmarked C/R/D operations across RDBMS and NoSQL  
-*JICS (KCI), 2024 — 1st author* | [paper](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiId=ART003098301)
+*JICS (KCI), 2024 — 1st author* | [paper](https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003098301)
