@@ -15,5 +15,5 @@ Client-side routing algorithm for hot-key load balancing in consistent hashing e
 *2024.10 – 2026.01 · Backend / Research · 2-person project*
 
 **[Donggurami: University Club Management Platform](https://github.com/bh1848/USW-Circle-Link-Server)**  
-Spring Boot backend for club discovery, applications, and QR-based event entry  
+Spring Boot backend for club discovery, applications, and event management    
 *2024.04 – 2025.03 · Backend · Team of 12*
