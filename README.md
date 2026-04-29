@@ -21,7 +21,3 @@ Spring Boot backend for club discovery, applications, and event management
 **[Yobunjeong: AI Recycling Guide System](https://github.com/bh1848/yobunjung-backend)**  
 Flask backend for QR authentication, image classification inference, recycling logs, point rewards, and real-time SSE feedback  
 *2024.09 – 2024.11 · Backend · Solo backend*
-
-**[Suchat: University Random Chat Service](https://github.com/bh1848/suchat-backend)**  
-Spring Boot backend for user authentication, email verification, JWT authorization, and Redis-based random matching  
-*2023.10 – 2024.06 · Backend · Team project*
