@@ -17,14 +17,14 @@ Backend developer focused on building reliable Java/Spring services, improving d
 Spring Boot backend for club discovery, applications, announcements, admin features, file upload, and operation logs.  
 *2024.04 – 2025.03 · Java/Spring Backend · Team of 12*  
 
----
+
 
 ### [D-HASH: Redis Hot Key Load Balancing Project](https://github.com/bh1848/D-HASH)
 
 Client-side routing project for reducing hot-key bottlenecks in Redis-based distributed cache environments.  
 *2024.10 – 2026.01 · Python/Redis · Performance Optimization · First Author* 
 
----
+
 
 ### [Yobunjeong: AI Recycling Guide System](https://github.com/bh1848/yobunjung-backend)
 
